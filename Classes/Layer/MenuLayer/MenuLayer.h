@@ -8,7 +8,7 @@ public:
 
     CREATE_FUNC(MenuLayer);
 
-    void startGame();
+    void menuStartCallback();
 
     void menuCloseCallback(cocos2d::Ref* pSender);
 };

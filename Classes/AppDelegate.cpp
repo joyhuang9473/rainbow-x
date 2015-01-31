@@ -31,6 +31,9 @@ bool AppDelegate::applicationDidFinishLaunching() {
         director->setOpenGLView(glview);
     }
 
+    glview->setFrameSize(1024, 768);
+    glview->setDesignResolutionSize(1024, 768, ResolutionPolicy::EXACT_FIT);
+    
     // turn on display FPS
     director->setDisplayStats(true);
 

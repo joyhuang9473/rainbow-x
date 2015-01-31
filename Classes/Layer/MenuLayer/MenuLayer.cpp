@@ -1,4 +1,5 @@
 #include "MenuLayer.h"
+#include "../../Scene/GameScene.h"
 
 USING_NS_CC;
 
@@ -9,16 +10,24 @@ bool MenuLayer::init() {
     
     Size visibleSize = Director::getInstance()->getVisibleSize();
     Vec2 origin = Director::getInstance()->getVisibleOrigin();
+    Vector<MenuItem*> MenuItems;
 
-    auto closeItem = MenuItemImage::create("CloseNormal.png",
-                                           "CloseSelected.png",
+    auto startItem = MenuItemImage::create("buttons/StartNormal.png",
+                                           "buttons/StartNormal.png",
+                                           CC_CALLBACK_0(MenuLayer::menuStartCallback, this));
+
+    auto closeItem = MenuItemImage::create("buttons/CloseNormal.png",
+                                           "buttons/CloseSelected.png",
                                            CC_CALLBACK_1(MenuLayer::menuCloseCallback, this));
-
+    
+    startItem->setPosition(Vec2(origin.x + visibleSize.width/2, origin.y + visibleSize.height/2));
     closeItem->setPosition(Vec2(origin.x + visibleSize.width - closeItem->getContentSize().width/2 ,
                                 origin.y + closeItem->getContentSize().height/2));
 
-    auto menu = Menu::create(closeItem, NULL);
+    MenuItems.pushBack(startItem);
+    MenuItems.pushBack(closeItem);
 
+    auto menu = Menu::createWithArray(MenuItems);
     menu->setPosition(Vec2::ZERO);
     this->addChild(menu, 1);
 
@@ -28,19 +37,14 @@ bool MenuLayer::init() {
                             origin.y + visibleSize.height - label->getContentSize().height));
 
     this->addChild(label, 1);
-
-    auto sprite = Sprite::create("HelloWorld.png");
-
-    sprite->setPosition(Vec2(visibleSize.width/2 + origin.x, visibleSize.height/2 + origin.y));
-
-    this->addChild(sprite, 0);
     
     return true;
 }
 
-void MenuLayer::startGame(){
+void MenuLayer::menuStartCallback() {
     CCLOG("START!");
     
+    Director::getInstance()->replaceScene(GameScene::create());
 }
 
 void MenuLayer::menuCloseCallback(Ref* pSender) {

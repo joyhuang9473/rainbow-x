@@ -1,5 +1,5 @@
 #include "MenuScene.h"
-#include "../Layer/MenuLayer.h"
+#include "../Layer/MenuLayer/MenuLayer.h"
 
 USING_NS_CC;
 
