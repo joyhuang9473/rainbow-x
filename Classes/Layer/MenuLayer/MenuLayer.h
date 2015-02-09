@@ -5,12 +5,10 @@
 class MenuLayer : public cocos2d::Layer {
 public:
     virtual bool init();
-
     CREATE_FUNC(MenuLayer);
-
     void menuStartCallback();
-
     void menuCloseCallback(cocos2d::Ref* pSender);
+
 };
 
 #endif
