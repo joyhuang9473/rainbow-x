@@ -87,6 +87,12 @@
 		96B9F4B01A8F0A1400677CF4 /* floor.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 96B9F49D1A8F0A1400677CF4 /* floor.jpg */; };
 		96B9F4B11A8F0A1400677CF4 /* floor.tmx in Resources */ = {isa = PBXBuildFile; fileRef = 96B9F49E1A8F0A1400677CF4 /* floor.tmx */; };
 		96B9F4B21A8F0A1400677CF4 /* floor.tmx in Resources */ = {isa = PBXBuildFile; fileRef = 96B9F49E1A8F0A1400677CF4 /* floor.tmx */; };
+		A830F7451A8FB5DB00C9F691 /* CsvParseUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A830F73F1A8FB5DB00C9F691 /* CsvParseUtil.cpp */; };
+		A830F7461A8FB5DB00C9F691 /* CsvParseUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A830F73F1A8FB5DB00C9F691 /* CsvParseUtil.cpp */; };
+		A830F7471A8FB5DB00C9F691 /* FileLoadUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A830F7411A8FB5DB00C9F691 /* FileLoadUtil.cpp */; };
+		A830F7481A8FB5DB00C9F691 /* FileLoadUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A830F7411A8FB5DB00C9F691 /* FileLoadUtil.cpp */; };
+		A830F7491A8FB5DB00C9F691 /* StringUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A830F7431A8FB5DB00C9F691 /* StringUtil.cpp */; };
+		A830F74A1A8FB5DB00C9F691 /* StringUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A830F7431A8FB5DB00C9F691 /* StringUtil.cpp */; };
 		BF171245129291EC00B8313A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB012928DE900B8313A /* OpenGLES.framework */; };
 		BF1712471292920000B8313A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB412928DE900B8313A /* libz.dylib */; };
 		BF1C47F01293687400B63C5D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF1C47EA1293683800B63C5D /* QuartzCore.framework */; };
@@ -202,6 +208,12 @@
 		96B9F49C1A8F0A1400677CF4 /* bg_village.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg_village.jpg; sourceTree = "<group>"; };
 		96B9F49D1A8F0A1400677CF4 /* floor.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = floor.jpg; sourceTree = "<group>"; };
 		96B9F49E1A8F0A1400677CF4 /* floor.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = floor.tmx; sourceTree = "<group>"; };
+		A830F73F1A8FB5DB00C9F691 /* CsvParseUtil.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CsvParseUtil.cpp; sourceTree = "<group>"; };
+		A830F7401A8FB5DB00C9F691 /* CSVParseUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSVParseUtil.h; sourceTree = "<group>"; };
+		A830F7411A8FB5DB00C9F691 /* FileLoadUtil.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FileLoadUtil.cpp; sourceTree = "<group>"; };
+		A830F7421A8FB5DB00C9F691 /* FileLoadUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileLoadUtil.h; sourceTree = "<group>"; };
+		A830F7431A8FB5DB00C9F691 /* StringUtil.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StringUtil.cpp; sourceTree = "<group>"; };
+		A830F7441A8FB5DB00C9F691 /* StringUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringUtil.h; sourceTree = "<group>"; };
 		BF170DB012928DE900B8313A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		BF170DB412928DE900B8313A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		BF1C47EA1293683800B63C5D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -469,6 +481,7 @@
 		96B9F4791A8F09FA00677CF4 /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				A830F73E1A8FB5DB00C9F691 /* CSVParse */,
 				96B9F47A1A8F09FA00677CF4 /* Animation */,
 			);
 			path = Util;
@@ -519,6 +532,19 @@
 				96B9F49E1A8F0A1400677CF4 /* floor.tmx */,
 			);
 			path = maps;
+			sourceTree = "<group>";
+		};
+		A830F73E1A8FB5DB00C9F691 /* CSVParse */ = {
+			isa = PBXGroup;
+			children = (
+				A830F73F1A8FB5DB00C9F691 /* CsvParseUtil.cpp */,
+				A830F7401A8FB5DB00C9F691 /* CSVParseUtil.h */,
+				A830F7411A8FB5DB00C9F691 /* FileLoadUtil.cpp */,
+				A830F7421A8FB5DB00C9F691 /* FileLoadUtil.h */,
+				A830F7431A8FB5DB00C9F691 /* StringUtil.cpp */,
+				A830F7441A8FB5DB00C9F691 /* StringUtil.h */,
+			);
+			path = CSVParse;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -573,7 +599,7 @@
 					};
 				};
 			};
-			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "aslan-rainbow-x" */;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Aslan-Rainbow-x" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 1;
@@ -685,12 +711,15 @@
 				96B9F47D1A8F09FA00677CF4 /* Controller.cpp in Sources */,
 				96B9F48B1A8F09FA00677CF4 /* GameScene.cpp in Sources */,
 				96B9F4851A8F09FA00677CF4 /* GameLayer.cpp in Sources */,
+				A830F7451A8FB5DB00C9F691 /* CsvParseUtil.cpp in Sources */,
 				96B9F4891A8F09FA00677CF4 /* MenuLayer.cpp in Sources */,
 				96B9F48F1A8F09FA00677CF4 /* AnimationUtil.cpp in Sources */,
 				503AE10017EB989F00D1A890 /* AppController.mm in Sources */,
 				503AE10217EB989F00D1A890 /* RootViewController.mm in Sources */,
+				A830F7491A8FB5DB00C9F691 /* StringUtil.cpp in Sources */,
 				503AE10117EB989F00D1A890 /* main.m in Sources */,
 				96B9F48D1A8F09FA00677CF4 /* MenuScene.cpp in Sources */,
+				A830F7471A8FB5DB00C9F691 /* FileLoadUtil.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -699,8 +728,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				46880B8919C43A87006E1F66 /* AppDelegate.cpp in Sources */,
+				A830F7481A8FB5DB00C9F691 /* FileLoadUtil.cpp in Sources */,
 				96B9F48E1A8F09FA00677CF4 /* MenuScene.cpp in Sources */,
 				96B9F4881A8F09FA00677CF4 /* MapLayer.cpp in Sources */,
+				A830F7461A8FB5DB00C9F691 /* CsvParseUtil.cpp in Sources */,
 				96B9F48A1A8F09FA00677CF4 /* MenuLayer.cpp in Sources */,
 				503AE10517EB98FF00D1A890 /* main.cpp in Sources */,
 				96B9F4841A8F09FA00677CF4 /* Hero.cpp in Sources */,
@@ -708,6 +739,7 @@
 				96B9F4901A8F09FA00677CF4 /* AnimationUtil.cpp in Sources */,
 				96B9F4861A8F09FA00677CF4 /* GameLayer.cpp in Sources */,
 				96B9F48C1A8F09FA00677CF4 /* GameScene.cpp in Sources */,
+				A830F74A1A8FB5DB00C9F691 /* StringUtil.cpp in Sources */,
 				96B9F4821A8F09FA00677CF4 /* Entity.cpp in Sources */,
 				96B9F4801A8F09FA00677CF4 /* ThreeDirectionController.cpp in Sources */,
 			);
@@ -945,7 +977,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "aslan-rainbow-x" */ = {
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Aslan-Rainbow-x" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C01FCF4F08A954540054247B /* Debug */,
