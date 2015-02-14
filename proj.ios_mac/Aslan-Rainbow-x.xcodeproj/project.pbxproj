@@ -71,22 +71,12 @@
 		A8250F451A80622300C6E94B /* Entity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8250F421A80622300C6E94B /* Entity.cpp */; };
 		A8250F4C1A8062F600C6E94B /* Hero.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8250F4B1A8062F600C6E94B /* Hero.cpp */; };
 		A8250F4D1A8062F600C6E94B /* Hero.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8250F4B1A8062F600C6E94B /* Hero.cpp */; };
-		A8250F511A80A0A300C6E94B /* Monster.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8250F501A80A0A300C6E94B /* Monster.cpp */; };
-		A8250F521A80A0A300C6E94B /* Monster.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8250F501A80A0A300C6E94B /* Monster.cpp */; };
 		A8250F7B1A82594E00C6E94B /* AnimationUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8250F791A82594E00C6E94B /* AnimationUtil.cpp */; };
 		A8250F7C1A82594E00C6E94B /* AnimationUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8250F791A82594E00C6E94B /* AnimationUtil.cpp */; };
-		A8250F851A825C2A00C6E94B /* MonsterUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8250F831A825C2A00C6E94B /* MonsterUtil.cpp */; };
-		A8250F861A825C2A00C6E94B /* MonsterUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8250F831A825C2A00C6E94B /* MonsterUtil.cpp */; };
 		A8250F8C1A8300E100C6E94B /* Controller.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8250F8A1A8300E100C6E94B /* Controller.cpp */; };
 		A8250F8D1A8300E100C6E94B /* Controller.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8250F8A1A8300E100C6E94B /* Controller.cpp */; };
 		A8250F981A83467C00C6E94B /* ThreeDirectionController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8250F961A83467C00C6E94B /* ThreeDirectionController.cpp */; };
 		A8250F991A83467C00C6E94B /* ThreeDirectionController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8250F961A83467C00C6E94B /* ThreeDirectionController.cpp */; };
-		A8250F9D1A89859B00C6E94B /* StringUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8250F9B1A89859B00C6E94B /* StringUtil.cpp */; };
-		A8250F9E1A89859B00C6E94B /* StringUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8250F9B1A89859B00C6E94B /* StringUtil.cpp */; };
-		A8250FA11A8985D000C6E94B /* FileLoadUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8250F9F1A8985D000C6E94B /* FileLoadUtil.cpp */; };
-		A8250FA21A8985D000C6E94B /* FileLoadUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8250F9F1A8985D000C6E94B /* FileLoadUtil.cpp */; };
-		A8250FA51A8985E500C6E94B /* CsvUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8250FA31A8985E500C6E94B /* CsvUtil.cpp */; };
-		A8250FA61A8985E500C6E94B /* CsvUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8250FA31A8985E500C6E94B /* CsvUtil.cpp */; };
 		BF171245129291EC00B8313A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB012928DE900B8313A /* OpenGLES.framework */; };
 		BF1712471292920000B8313A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB412928DE900B8313A /* libz.dylib */; };
 		BF1C47F01293687400B63C5D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF1C47EA1293683800B63C5D /* QuartzCore.framework */; };
@@ -189,23 +179,13 @@
 		A8250F431A80622300C6E94B /* Entity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Entity.h; path = ../Classes/Entity/Entity.h; sourceTree = "<group>"; };
 		A8250F4A1A8062F600C6E94B /* Hero.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Hero.h; path = ../Classes/Entity/Hero/Hero.h; sourceTree = "<group>"; };
 		A8250F4B1A8062F600C6E94B /* Hero.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Hero.cpp; path = ../Classes/Entity/Hero/Hero.cpp; sourceTree = "<group>"; };
-		A8250F4F1A80A0A300C6E94B /* Monster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Monster.h; path = ../Classes/Entity/Monster/Monster.h; sourceTree = "<group>"; };
-		A8250F501A80A0A300C6E94B /* Monster.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Monster.cpp; path = ../Classes/Entity/Monster/Monster.cpp; sourceTree = "<group>"; };
 		A8250F791A82594E00C6E94B /* AnimationUtil.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AnimationUtil.cpp; sourceTree = "<group>"; };
 		A8250F7A1A82594E00C6E94B /* AnimationUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationUtil.h; sourceTree = "<group>"; };
-		A8250F831A825C2A00C6E94B /* MonsterUtil.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MonsterUtil.cpp; sourceTree = "<group>"; };
-		A8250F841A825C2A00C6E94B /* MonsterUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MonsterUtil.h; sourceTree = "<group>"; };
 		A8250F8A1A8300E100C6E94B /* Controller.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Controller.cpp; sourceTree = "<group>"; };
 		A8250F8B1A8300E100C6E94B /* Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Controller.h; sourceTree = "<group>"; };
 		A8250F8F1A8302E500C6E94B /* ControllerListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ControllerListener.h; sourceTree = "<group>"; };
 		A8250F961A83467C00C6E94B /* ThreeDirectionController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ThreeDirectionController.cpp; sourceTree = "<group>"; };
 		A8250F971A83467C00C6E94B /* ThreeDirectionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThreeDirectionController.h; sourceTree = "<group>"; };
-		A8250F9B1A89859B00C6E94B /* StringUtil.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StringUtil.cpp; sourceTree = "<group>"; };
-		A8250F9C1A89859B00C6E94B /* StringUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringUtil.h; sourceTree = "<group>"; };
-		A8250F9F1A8985D000C6E94B /* FileLoadUtil.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FileLoadUtil.cpp; sourceTree = "<group>"; };
-		A8250FA01A8985D000C6E94B /* FileLoadUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileLoadUtil.h; sourceTree = "<group>"; };
-		A8250FA31A8985E500C6E94B /* CsvUtil.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CsvUtil.cpp; sourceTree = "<group>"; };
-		A8250FA41A8985E500C6E94B /* CsvUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CsvUtil.h; sourceTree = "<group>"; };
 		BF170DB012928DE900B8313A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		BF170DB412928DE900B8313A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		BF1C47EA1293683800B63C5D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -418,7 +398,6 @@
 			isa = PBXGroup;
 			children = (
 				A81756851A7F4CBD00C105BE /* Hero */,
-				A8250F4E1A80A07400C6E94B /* Monster */,
 				A8250F431A80622300C6E94B /* Entity.h */,
 				A8250F421A80622300C6E94B /* Entity.cpp */,
 			);
@@ -448,7 +427,6 @@
 		A817566E1A7F4C4600C105BE /* Util */ = {
 			isa = PBXGroup;
 			children = (
-				A8250F9A1A89856500C6E94B /* Csv */,
 				A8250F701A82589F00C6E94B /* Animation */,
 			);
 			name = Util;
@@ -483,15 +461,6 @@
 			name = Hero;
 			sourceTree = "<group>";
 		};
-		A8250F4E1A80A07400C6E94B /* Monster */ = {
-			isa = PBXGroup;
-			children = (
-				A8250F4F1A80A0A300C6E94B /* Monster.h */,
-				A8250F501A80A0A300C6E94B /* Monster.cpp */,
-			);
-			name = Monster;
-			sourceTree = "<group>";
-		};
 		A8250F701A82589F00C6E94B /* Animation */ = {
 			isa = PBXGroup;
 			children = (
@@ -505,7 +474,6 @@
 		A8250F7E1A825BED00C6E94B /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				A8250F821A825C2A00C6E94B /* Monster */,
 				A8250F8A1A8300E100C6E94B /* Controller.cpp */,
 				A8250F8B1A8300E100C6E94B /* Controller.h */,
 				A8250F8F1A8302E500C6E94B /* ControllerListener.h */,
@@ -514,29 +482,6 @@
 			);
 			name = Controller;
 			path = ../Classes/Controller;
-			sourceTree = "<group>";
-		};
-		A8250F821A825C2A00C6E94B /* Monster */ = {
-			isa = PBXGroup;
-			children = (
-				A8250F831A825C2A00C6E94B /* MonsterUtil.cpp */,
-				A8250F841A825C2A00C6E94B /* MonsterUtil.h */,
-			);
-			path = Monster;
-			sourceTree = "<group>";
-		};
-		A8250F9A1A89856500C6E94B /* Csv */ = {
-			isa = PBXGroup;
-			children = (
-				A8250F9B1A89859B00C6E94B /* StringUtil.cpp */,
-				A8250F9C1A89859B00C6E94B /* StringUtil.h */,
-				A8250F9F1A8985D000C6E94B /* FileLoadUtil.cpp */,
-				A8250FA01A8985D000C6E94B /* FileLoadUtil.h */,
-				A8250FA31A8985E500C6E94B /* CsvUtil.cpp */,
-				A8250FA41A8985E500C6E94B /* CsvUtil.h */,
-			);
-			name = Csv;
-			path = ../Classes/Util/Csv;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -689,19 +634,14 @@
 				503AE10017EB989F00D1A890 /* AppController.mm in Sources */,
 				A8250F4C1A8062F600C6E94B /* Hero.cpp in Sources */,
 				A817567D1A7F4C9A00C105BE /* MapLayer.cpp in Sources */,
-				A8250F851A825C2A00C6E94B /* MonsterUtil.cpp in Sources */,
-				A8250FA51A8985E500C6E94B /* CsvUtil.cpp in Sources */,
 				A8250F7B1A82594E00C6E94B /* AnimationUtil.cpp in Sources */,
-				A8250F511A80A0A300C6E94B /* Monster.cpp in Sources */,
 				A8250F8C1A8300E100C6E94B /* Controller.cpp in Sources */,
 				A81756731A7F4C6200C105BE /* MenuScene.cpp in Sources */,
 				503AE10217EB989F00D1A890 /* RootViewController.mm in Sources */,
 				A81756831A7F4CA700C105BE /* MenuLayer.cpp in Sources */,
 				A817567F1A7F4C9A00C105BE /* GameLayer.cpp in Sources */,
 				A81756751A7F4C6200C105BE /* GameScene.cpp in Sources */,
-				A8250F9D1A89859B00C6E94B /* StringUtil.cpp in Sources */,
 				A8250F441A80622300C6E94B /* Entity.cpp in Sources */,
-				A8250FA11A8985D000C6E94B /* FileLoadUtil.cpp in Sources */,
 				503AE10117EB989F00D1A890 /* main.m in Sources */,
 				A8250F981A83467C00C6E94B /* ThreeDirectionController.cpp in Sources */,
 			);
@@ -713,8 +653,6 @@
 			files = (
 				A8250F4D1A8062F600C6E94B /* Hero.cpp in Sources */,
 				A8250F451A80622300C6E94B /* Entity.cpp in Sources */,
-				A8250FA61A8985E500C6E94B /* CsvUtil.cpp in Sources */,
-				A8250F521A80A0A300C6E94B /* Monster.cpp in Sources */,
 				A81756841A7F4CA700C105BE /* MenuLayer.cpp in Sources */,
 				A8250F7C1A82594E00C6E94B /* AnimationUtil.cpp in Sources */,
 				A817566A1A7F4BB800C105BE /* AppDelegate.cpp in Sources */,
@@ -723,11 +661,8 @@
 				A8250F991A83467C00C6E94B /* ThreeDirectionController.cpp in Sources */,
 				A817567E1A7F4C9A00C105BE /* MapLayer.cpp in Sources */,
 				503AE10517EB98FF00D1A890 /* main.cpp in Sources */,
-				A8250F861A825C2A00C6E94B /* MonsterUtil.cpp in Sources */,
-				A8250F9E1A89859B00C6E94B /* StringUtil.cpp in Sources */,
 				A8250F8D1A8300E100C6E94B /* Controller.cpp in Sources */,
 				A81756801A7F4C9A00C105BE /* GameLayer.cpp in Sources */,
-				A8250FA21A8985D000C6E94B /* FileLoadUtil.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
