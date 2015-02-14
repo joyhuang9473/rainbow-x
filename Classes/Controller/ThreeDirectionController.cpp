@@ -55,8 +55,21 @@ void ThreeDirectionController::keyPressed(cocos2d::EventKeyboard::KeyCode keyCod
 }
 
 void ThreeDirectionController::keyReleased(cocos2d::EventKeyboard::KeyCode keyCode, cocos2d::Event *event) {
-    this->setXSpeed(0);
-    this->setYSpeed(0);
+
+    switch(keyCode) {
+        case EventKeyboard::KeyCode::KEY_LEFT_ARROW:
+        case EventKeyboard::KeyCode::KEY_A:
+        case EventKeyboard::KeyCode::KEY_RIGHT_ARROW:
+        case EventKeyboard::KeyCode::KEY_D:
+            this->setXSpeed(0);
+            break;
+        case EventKeyboard::KeyCode::KEY_UP_ARROW:
+        case EventKeyboard::KeyCode::KEY_W:
+        case EventKeyboard::KeyCode::KEY_DOWN_ARROW:
+        case EventKeyboard::KeyCode::KEY_S:
+            this->setYSpeed(0);
+            break;
+    }
 }
 
 void ThreeDirectionController::registerWithKeyboardDispatcher() {
