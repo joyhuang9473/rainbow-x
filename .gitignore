@@ -1,0 +1,10 @@
+bin/*
+CMakeLists.txt
+cocos2d/*
+proj.android/*
+proj.ios_mac/build/*
+proj.linux/*
+proj.win32/*
+proj.win8.1-universal/*
+proj.wp8-xaml/*
+.*
