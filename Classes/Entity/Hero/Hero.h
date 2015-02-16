@@ -2,9 +2,9 @@
 #define __HERO_ENTITY_H__
 
 #include "cocos2d.h"
-#include "../Entity.h"
+#include "../Role.h"
 
-class Hero : public Entity {
+class Hero : public Role {
 public:
     Hero();
     ~Hero();

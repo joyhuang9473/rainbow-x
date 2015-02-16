@@ -1,13 +1,13 @@
-#ifndef __ENTITY_H__
-#define __ENTITY_H__
+#ifndef __ROLE_H__
+#define __ROLE_H__
 
 #include "cocos2d.h"
 #include "../Controller/Controller.h"
 
-class Entity : public cocos2d::Node, public ControllerListener {
+class Role : public cocos2d::Node, public ControllerListener {
 public:
-    Entity();
-    ~Entity();
+    Role();
+    ~Role();
     cocos2d::Sprite* getSprite();
     void bindSprite(cocos2d::Sprite* sprite);
     void setController(Controller* controller);

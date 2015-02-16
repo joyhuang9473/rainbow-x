@@ -1,31 +1,31 @@
-#include "Entity.h"
+#include "Role.h"
 
 USING_NS_CC;
 
-Entity::Entity() {
+Role::Role() {
     this->m_sprite = nullptr;
 }
 
-Entity::~Entity() {}
+Role::~Role() {}
 
-Sprite* Entity::getSprite() {
+Sprite* Role::getSprite() {
     return this->m_sprite;
 }
 
-void Entity::bindSprite(Sprite* sprite) {
+void Role::bindSprite(Sprite* sprite) {
     this->m_sprite = sprite;
     this->addChild(m_sprite);
 }
 
-void Entity::setController(Controller* controller) {
+void Role::setController(Controller* controller) {
     this->m_controller = controller;
     this->m_controller->setControllerListener(this);
 }
 
-void Entity::setTagPosition(int x, int y) {
+void Role::setTagPosition(int x, int y) {
     this->setPosition(Vec2(x, y));
 }
 
-Point Entity::getTagPosition() {
+Point Role::getTagPosition() {
     return this->getPosition();
 }

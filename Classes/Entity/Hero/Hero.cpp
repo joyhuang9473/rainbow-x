@@ -61,7 +61,7 @@ void Hero::setViewPointByPlayer() {
 }
 
 void Hero::setTagPosition(int x, int y) {
-    Entity::setTagPosition(x, y);
+    Role::setTagPosition(x, y);
     this->setViewPointByPlayer();
 }
 
