@@ -70,3 +70,27 @@ void Hero::setTiledMap(cocos2d::TMXTiledMap *map) {
     CC_SAFE_RELEASE(this->m_map);
     this->m_map = map;
 }
+
+void Hero::stand() {
+    log("stand state !");
+}
+
+void Hero::move() {
+    log("move state !");
+}
+
+void Hero::attack() {
+    log("attack state !");
+}
+
+void Hero::skill() {
+    log("skill state !");
+}
+
+void Hero::injured() {
+    log("injured state !");
+}
+
+void Hero::die() {
+    log("die state !");
+}

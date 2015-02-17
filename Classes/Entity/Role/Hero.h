@@ -2,7 +2,7 @@
 #define __HERO_ENTITY_H__
 
 #include "cocos2d.h"
-#include "../Role.h"
+#include "Role.h"
 
 class Hero : public Role {
 public:
@@ -16,6 +16,13 @@ public:
 
     virtual void setTagPosition(int x, int y);
 
+    virtual void stand();
+    virtual void move();
+    virtual void attack();
+    virtual void skill();
+    virtual void injured();
+    virtual void die();
+    
 private:
     cocos2d::TMXTiledMap* m_map;
 };

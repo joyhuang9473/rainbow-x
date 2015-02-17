@@ -2,7 +2,7 @@
 #define __GAME_LAYER_H__
 
 #include "cocos2d.h"
-#include "../../Entity/Hero/Hero.h"
+#include "../../Entity/Role/Hero.h"
 
 class GameLayer : public cocos2d::Layer {
 public:

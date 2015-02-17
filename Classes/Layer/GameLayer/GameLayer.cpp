@@ -1,6 +1,7 @@
 #include "GameLayer.h"
-#include "../../Entity/Hero/Hero.h"
+#include "../../Entity/Role/Hero.h"
 #include "../../Controller/ThreeDirectionController.h"
+#include "MoveState.h"
 
 USING_NS_CC;
 
@@ -47,6 +48,7 @@ void GameLayer::addPlayer(TMXTiledMap* map) {
 
     this->addChild(threeMoveController);
     m_player->setController(threeMoveController);
+    m_player->getFSM()->changeState(new MoveState());
 
     map->addChild(m_player);
 }
