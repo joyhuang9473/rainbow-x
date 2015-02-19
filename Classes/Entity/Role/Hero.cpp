@@ -4,7 +4,7 @@
 USING_NS_CC;
 
 Hero::Hero() {
-    m_map = nullptr;
+    this->m_map = nullptr;
 }
 
 Hero::~Hero() {
@@ -16,16 +16,7 @@ bool Hero::init() {
 }
 
 void Hero::run() {
-    int numFrame = 6;
-    cocos2d::Vector<cocos2d::SpriteFrame *> frames;
-    SpriteFrameCache* frameCache = SpriteFrameCache::getInstance();
-
-    for (int i = 0 ; i < numFrame ; i++) {
-        SpriteFrame* frame = frameCache->getSpriteFrameByName(String::createWithFormat("frame-%d.png", i+1)->getCString());
-        frames.pushBack(frame);
-    }
-
-    Animation* animation = Animation::createWithSpriteFrames(frames, 0.3);
+    Animation* animation = AnimationUtil::createAnimWithFrameName("frame");
     Animate* animate = Animate::create(animation);
     RepeatForever* repeat = RepeatForever::create(animate);
 
