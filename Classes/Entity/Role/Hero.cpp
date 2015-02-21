@@ -12,15 +12,21 @@ Hero::~Hero() {
 }
 
 bool Hero::init() {
+    Animation* standAnim = AnimationUtil::createAnimWithFrameName("frame");
+    Animation* moveAnim = AnimationUtil::createAnimWithFrameName("frame");
+    Animation* attackAnim = AnimationUtil::createAnimWithFrameName("frame");
+    Animation* skillAnim = AnimationUtil::createAnimWithFrameName("frame");
+    Animation* injuredAnim = AnimationUtil::createAnimWithFrameName("frame");
+    Animation* dieAnim = AnimationUtil::createAnimWithFrameName("frame");
+
+    this->setStandAction(RepeatForever::create(Animate::create(standAnim)));
+    this->setMoveAction(RepeatForever::create(Animate::create(moveAnim)));
+    this->setAttackAction(RepeatForever::create(Animate::create(attackAnim)));
+    this->setSkillAction(RepeatForever::create(Animate::create(skillAnim)));
+    this->setInjuredAction(RepeatForever::create(Animate::create(injuredAnim)));
+    this->setDieAction(RepeatForever::create(Animate::create(dieAnim)));
+
     return true;
-}
-
-void Hero::run() {
-    Animation* animation = AnimationUtil::createAnimWithFrameName("frame");
-    Animate* animate = Animate::create(animation);
-    RepeatForever* repeat = RepeatForever::create(animate);
-
-    this->m_sprite->runAction(repeat);
 }
 
 void Hero::setViewPointByPlayer() {
@@ -60,28 +66,4 @@ void Hero::setTiledMap(cocos2d::TMXTiledMap *map) {
     CC_SAFE_RETAIN(map);
     CC_SAFE_RELEASE(this->m_map);
     this->m_map = map;
-}
-
-void Hero::stand() {
-    log("stand state !");
-}
-
-void Hero::move() {
-    log("move state !");
-}
-
-void Hero::attack() {
-    log("attack state !");
-}
-
-void Hero::skill() {
-    log("skill state !");
-}
-
-void Hero::injured() {
-    log("injured state !");
-}
-
-void Hero::die() {
-    log("die state !");
 }

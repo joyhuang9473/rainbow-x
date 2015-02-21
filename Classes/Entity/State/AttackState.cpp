@@ -1,6 +1,4 @@
 #include "AttackState.h"
 #include "Role.h"
 
-void AttackState::execute(Role* role) {
-    role->attack();
-}
+void AttackState::execute(Role* role) {}

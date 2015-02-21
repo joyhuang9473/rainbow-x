@@ -19,17 +19,24 @@ public:
     RoleFSM* getFSM();
     virtual void update(float dt);
 
-    virtual void stand() = 0;
-    virtual void move() = 0;
-    virtual void attack() = 0;
-    virtual void skill() = 0;
-    virtual void injured() = 0;
-    virtual void die() = 0;
+    void runStandAction();
+    void runMoveAction();
+    void runAttackAction();
+    void runSkillAction();
+    void runInjuredAction();
+    void runDieAction();
 
 protected:
     cocos2d::Sprite* m_sprite;
     Controller* m_controller;
     RoleFSM* m_fsm;
+
+    CC_SYNTHESIZE_RETAIN(cocos2d::Action*, m_standAction, StandAction);
+    CC_SYNTHESIZE_RETAIN(cocos2d::Action*, m_moveAction, MoveAction);
+    CC_SYNTHESIZE_RETAIN(cocos2d::Action*, m_attackAction, AttackAction);
+    CC_SYNTHESIZE_RETAIN(cocos2d::Action*, m_skillAction, SkillAction);
+    CC_SYNTHESIZE_RETAIN(cocos2d::Action*, m_injuredAction, InjuredAction);
+    CC_SYNTHESIZE_RETAIN(cocos2d::Action*, m_dieAction, DieAction);
 };
 
 #endif

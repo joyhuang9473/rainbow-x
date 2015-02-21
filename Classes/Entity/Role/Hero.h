@@ -10,19 +10,11 @@ public:
     ~Hero();
     CREATE_FUNC(Hero);
     virtual bool init();
-    void run();
     void setViewPointByPlayer();
     void setTiledMap(cocos2d::TMXTiledMap* map);
-
+    
     virtual void setTagPosition(int x, int y);
 
-    virtual void stand();
-    virtual void move();
-    virtual void attack();
-    virtual void skill();
-    virtual void injured();
-    virtual void die();
-    
 private:
     cocos2d::TMXTiledMap* m_map;
 };
