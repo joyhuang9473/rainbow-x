@@ -97,6 +97,10 @@
 		A83112D31AA04D8A00367E52 /* ControlSituation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A83112CD1AA04D8A00367E52 /* ControlSituation.cpp */; };
 		A89CA44D1A95C1500052682C /* AnimationUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A89CA44B1A95C1500052682C /* AnimationUtil.cpp */; };
 		A89CA44E1A95C1500052682C /* AnimationUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A89CA44B1A95C1500052682C /* AnimationUtil.cpp */; };
+		A8A1B7341AA3305100BEFFD0 /* hero-kisi.png in Resources */ = {isa = PBXBuildFile; fileRef = A8A1B7321AA3305100BEFFD0 /* hero-kisi.png */; };
+		A8A1B7351AA3305100BEFFD0 /* hero-kisi.png in Resources */ = {isa = PBXBuildFile; fileRef = A8A1B7321AA3305100BEFFD0 /* hero-kisi.png */; };
+		A8A1B7361AA3305100BEFFD0 /* hero-kisi.plist in Resources */ = {isa = PBXBuildFile; fileRef = A8A1B7331AA3305100BEFFD0 /* hero-kisi.plist */; };
+		A8A1B7371AA3305100BEFFD0 /* hero-kisi.plist in Resources */ = {isa = PBXBuildFile; fileRef = A8A1B7331AA3305100BEFFD0 /* hero-kisi.plist */; };
 		A8DEE8421A93B0DE005CE926 /* Hero.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8DEE83C1A93B0DE005CE926 /* Hero.cpp */; };
 		A8DEE8431A93B0DE005CE926 /* Hero.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8DEE83C1A93B0DE005CE926 /* Hero.cpp */; };
 		A8DEE8441A93B0DE005CE926 /* Role.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8DEE83E1A93B0DE005CE926 /* Role.cpp */; };
@@ -228,6 +232,8 @@
 		A83112CD1AA04D8A00367E52 /* ControlSituation.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ControlSituation.cpp; sourceTree = "<group>"; };
 		A89CA44B1A95C1500052682C /* AnimationUtil.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AnimationUtil.cpp; sourceTree = "<group>"; };
 		A89CA44C1A95C1500052682C /* AnimationUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationUtil.h; sourceTree = "<group>"; };
+		A8A1B7321AA3305100BEFFD0 /* hero-kisi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hero-kisi.png"; sourceTree = "<group>"; };
+		A8A1B7331AA3305100BEFFD0 /* hero-kisi.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "hero-kisi.plist"; sourceTree = "<group>"; };
 		A8DEE82E1A93AF61005CE926 /* State.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = State.h; sourceTree = "<group>"; };
 		A8DEE83C1A93B0DE005CE926 /* Hero.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Hero.cpp; sourceTree = "<group>"; };
 		A8DEE83D1A93B0DE005CE926 /* Hero.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hero.h; sourceTree = "<group>"; };
@@ -514,6 +520,8 @@
 		96B9F4961A8F0A1400677CF4 /* Characters */ = {
 			isa = PBXGroup;
 			children = (
+				A8A1B7321AA3305100BEFFD0 /* hero-kisi.png */,
+				A8A1B7331AA3305100BEFFD0 /* hero-kisi.plist */,
 				96B9F4971A8F0A1400677CF4 /* red_hair_boy.plist */,
 				96B9F4981A8F0A1400677CF4 /* red_hair_boy.png */,
 			);
@@ -697,6 +705,7 @@
 			files = (
 				5087E78117EB970100C73F5D /* Icon-120.png in Resources */,
 				5087E78617EB970100C73F5D /* Icon-76.png in Resources */,
+				A8A1B7361AA3305100BEFFD0 /* hero-kisi.plist in Resources */,
 				96B9F4A91A8F0A1400677CF4 /* red_hair_boy.png in Resources */,
 				5087E77F17EB970100C73F5D /* Default@2x.png in Resources */,
 				96B9F4A71A8F0A1400677CF4 /* red_hair_boy.plist in Resources */,
@@ -720,6 +729,7 @@
 				96B9F4B11A8F0A1400677CF4 /* floor.tmx in Resources */,
 				5087E77E17EB970100C73F5D /* Default.png in Resources */,
 				521A8E6419F0C34300D177D7 /* Default-667h@2x.png in Resources */,
+				A8A1B7341AA3305100BEFFD0 /* hero-kisi.png in Resources */,
 				96B9F4A31A8F0A1400677CF4 /* HelloWorld.png in Resources */,
 				50EF629717ECD46A001EB2F8 /* Icon-58.png in Resources */,
 				96B9F49F1A8F0A1400677CF4 /* CloseNormal.png in Resources */,
@@ -733,8 +743,10 @@
 				96B9F4AC1A8F0A1400677CF4 /* Marker Felt.ttf in Resources */,
 				96B9F4AA1A8F0A1400677CF4 /* red_hair_boy.png in Resources */,
 				96B9F4A61A8F0A1400677CF4 /* StartNormal.png in Resources */,
+				A8A1B7351AA3305100BEFFD0 /* hero-kisi.png in Resources */,
 				96B9F4A81A8F0A1400677CF4 /* red_hair_boy.plist in Resources */,
 				96B9F4AE1A8F0A1400677CF4 /* bg_village.jpg in Resources */,
+				A8A1B7371AA3305100BEFFD0 /* hero-kisi.plist in Resources */,
 				503AE0F817EB97AB00D1A890 /* Icon.icns in Resources */,
 				96B9F4A41A8F0A1400677CF4 /* HelloWorld.png in Resources */,
 				96B9F4A01A8F0A1400677CF4 /* CloseNormal.png in Resources */,

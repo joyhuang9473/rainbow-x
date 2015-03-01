@@ -28,20 +28,20 @@ void OperateController::keyPressed(cocos2d::EventKeyboard::KeyCode keyCode, coco
         case EventKeyboard::KeyCode::KEY_LEFT_ARROW:
             this->m_role->getFSM()->changeSituation(State::SITUATION_MOVE);
             this->m_role->setDirection(true);
-            this->setVelocityX(-10);
+            this->setVelocityX(-5);
             break;
         case EventKeyboard::KeyCode::KEY_RIGHT_ARROW:
             this->m_role->getFSM()->changeSituation(State::SITUATION_MOVE);
             this->m_role->setDirection(false);
-            this->setVelocityX(10);
+            this->setVelocityX(5);
             break;
         case EventKeyboard::KeyCode::KEY_UP_ARROW:
             this->m_role->getFSM()->changeSituation(State::SITUATION_MOVE);
-            this->setVelocityY(10);
+            this->setVelocityY(5);
             break;
         case EventKeyboard::KeyCode::KEY_DOWN_ARROW:
             this->m_role->getFSM()->changeSituation(State::SITUATION_MOVE);
-            this->setVelocityY(-10);
+            this->setVelocityY(-5);
             break;
         case EventKeyboard::KeyCode::KEY_S:
             this->m_role->getFSM()->changeSituation(State::SITUATION_ATTACK);

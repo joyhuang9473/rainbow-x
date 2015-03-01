@@ -12,12 +12,12 @@ Hero::~Hero() {
 }
 
 bool Hero::init() {
-    Animation* standAnim = AnimationUtil::createAnimWithFrameName("frame");
-    Animation* moveAnim = AnimationUtil::createAnimWithFrameName("frame");
-    Animation* attackAnim = AnimationUtil::createAnimWithFrameName("frame");
-    Animation* skillAnim = AnimationUtil::createAnimWithFrameName("frame");
-    Animation* injuredAnim = AnimationUtil::createAnimWithFrameName("frame");
-    Animation* dieAnim = AnimationUtil::createAnimWithFrameName("frame");
+    Animation* standAnim = AnimationUtil::createAnimWithFrameName("kisi-idle");
+    Animation* moveAnim = AnimationUtil::createAnimWithFrameName("kisi-move");
+    Animation* attackAnim = AnimationUtil::createAnimWithFrameName("kisi-attack");
+    Animation* skillAnim = AnimationUtil::createAnimWithFrameName("kisi-skill");
+    Animation* injuredAnim = AnimationUtil::createAnimWithFrameName("kisi-hurt");
+    Animation* dieAnim = AnimationUtil::createAnimWithFrameName("kisi-die");
 
     this->setStandAction(RepeatForever::create(Animate::create(standAnim)));
     this->setMoveAction(RepeatForever::create(Animate::create(moveAnim)));

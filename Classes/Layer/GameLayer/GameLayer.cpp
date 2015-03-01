@@ -17,8 +17,8 @@ bool GameLayer::init() {
     searchPaths.push_back("Characters");
     FileUtils::getInstance()->setSearchPaths(searchPaths);
 
-    SpriteFrameCache::getInstance()->addSpriteFramesWithFile("red_hair_boy.plist",
-                                                             "red_hair_boy.png");
+    SpriteFrameCache::getInstance()->addSpriteFramesWithFile("hero-kisi.plist",
+                                                             "hero-kisi.png");
 
     this->addChild(map, -1);
     this->addPlayer(map);
@@ -30,7 +30,8 @@ void GameLayer::addPlayer(TMXTiledMap* map) {
     Size visibleSize = Director::getInstance()->getVisibleSize();
 
     SpriteFrameCache* frameCache = SpriteFrameCache::getInstance();
-    Sprite* playerSprite = Sprite::createWithSpriteFrame(frameCache->getSpriteFrameByName("frame-1.png"));
+    Sprite* playerSprite = Sprite::createWithSpriteFrame(frameCache->getSpriteFrameByName("kisi-idle-1.png"));
+    playerSprite->setScale(1.5);
 
     Hero* m_player = Hero::create();
 
