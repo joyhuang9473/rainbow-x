@@ -87,20 +87,16 @@
 		A830F7481A8FB5DB00C9F691 /* FileLoadUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A830F7411A8FB5DB00C9F691 /* FileLoadUtil.cpp */; };
 		A830F7491A8FB5DB00C9F691 /* StringUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A830F7431A8FB5DB00C9F691 /* StringUtil.cpp */; };
 		A830F74A1A8FB5DB00C9F691 /* StringUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A830F7431A8FB5DB00C9F691 /* StringUtil.cpp */; };
+		A83112C41AA01BA600367E52 /* OperateController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A83112C21AA01BA600367E52 /* OperateController.cpp */; };
+		A83112C51AA01BA600367E52 /* OperateController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A83112C21AA01BA600367E52 /* OperateController.cpp */; };
+		A83112CE1AA04D8A00367E52 /* StandSituation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A83112C91AA04D8A00367E52 /* StandSituation.cpp */; };
+		A83112CF1AA04D8A00367E52 /* StandSituation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A83112C91AA04D8A00367E52 /* StandSituation.cpp */; };
+		A83112D01AA04D8A00367E52 /* DieSituation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A83112CB1AA04D8A00367E52 /* DieSituation.cpp */; };
+		A83112D11AA04D8A00367E52 /* DieSituation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A83112CB1AA04D8A00367E52 /* DieSituation.cpp */; };
+		A83112D21AA04D8A00367E52 /* ControlSituation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A83112CD1AA04D8A00367E52 /* ControlSituation.cpp */; };
+		A83112D31AA04D8A00367E52 /* ControlSituation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A83112CD1AA04D8A00367E52 /* ControlSituation.cpp */; };
 		A89CA44D1A95C1500052682C /* AnimationUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A89CA44B1A95C1500052682C /* AnimationUtil.cpp */; };
 		A89CA44E1A95C1500052682C /* AnimationUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A89CA44B1A95C1500052682C /* AnimationUtil.cpp */; };
-		A8DEE82F1A93AF61005CE926 /* AttackState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8DEE8221A93AF61005CE926 /* AttackState.cpp */; };
-		A8DEE8301A93AF61005CE926 /* AttackState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8DEE8221A93AF61005CE926 /* AttackState.cpp */; };
-		A8DEE8311A93AF61005CE926 /* DieState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8DEE8241A93AF61005CE926 /* DieState.cpp */; };
-		A8DEE8321A93AF61005CE926 /* DieState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8DEE8241A93AF61005CE926 /* DieState.cpp */; };
-		A8DEE8331A93AF61005CE926 /* InjuredState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8DEE8261A93AF61005CE926 /* InjuredState.cpp */; };
-		A8DEE8341A93AF61005CE926 /* InjuredState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8DEE8261A93AF61005CE926 /* InjuredState.cpp */; };
-		A8DEE8351A93AF61005CE926 /* MoveState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8DEE8281A93AF61005CE926 /* MoveState.cpp */; };
-		A8DEE8361A93AF61005CE926 /* MoveState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8DEE8281A93AF61005CE926 /* MoveState.cpp */; };
-		A8DEE8371A93AF61005CE926 /* SkillState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8DEE82A1A93AF61005CE926 /* SkillState.cpp */; };
-		A8DEE8381A93AF61005CE926 /* SkillState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8DEE82A1A93AF61005CE926 /* SkillState.cpp */; };
-		A8DEE8391A93AF61005CE926 /* StandState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8DEE82C1A93AF61005CE926 /* StandState.cpp */; };
-		A8DEE83A1A93AF61005CE926 /* StandState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8DEE82C1A93AF61005CE926 /* StandState.cpp */; };
 		A8DEE8421A93B0DE005CE926 /* Hero.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8DEE83C1A93B0DE005CE926 /* Hero.cpp */; };
 		A8DEE8431A93B0DE005CE926 /* Hero.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8DEE83C1A93B0DE005CE926 /* Hero.cpp */; };
 		A8DEE8441A93B0DE005CE926 /* Role.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8DEE83E1A93B0DE005CE926 /* Role.cpp */; };
@@ -222,20 +218,16 @@
 		A830F7421A8FB5DB00C9F691 /* FileLoadUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileLoadUtil.h; sourceTree = "<group>"; };
 		A830F7431A8FB5DB00C9F691 /* StringUtil.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StringUtil.cpp; sourceTree = "<group>"; };
 		A830F7441A8FB5DB00C9F691 /* StringUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringUtil.h; sourceTree = "<group>"; };
+		A83112C21AA01BA600367E52 /* OperateController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OperateController.cpp; sourceTree = "<group>"; };
+		A83112C31AA01BA600367E52 /* OperateController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OperateController.h; sourceTree = "<group>"; };
+		A83112C81AA04D8A00367E52 /* StandSituation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StandSituation.h; sourceTree = "<group>"; };
+		A83112C91AA04D8A00367E52 /* StandSituation.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StandSituation.cpp; sourceTree = "<group>"; };
+		A83112CA1AA04D8A00367E52 /* DieSituation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DieSituation.h; sourceTree = "<group>"; };
+		A83112CB1AA04D8A00367E52 /* DieSituation.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DieSituation.cpp; sourceTree = "<group>"; };
+		A83112CC1AA04D8A00367E52 /* ControlSituation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ControlSituation.h; sourceTree = "<group>"; };
+		A83112CD1AA04D8A00367E52 /* ControlSituation.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ControlSituation.cpp; sourceTree = "<group>"; };
 		A89CA44B1A95C1500052682C /* AnimationUtil.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AnimationUtil.cpp; sourceTree = "<group>"; };
 		A89CA44C1A95C1500052682C /* AnimationUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationUtil.h; sourceTree = "<group>"; };
-		A8DEE8221A93AF61005CE926 /* AttackState.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AttackState.cpp; sourceTree = "<group>"; };
-		A8DEE8231A93AF61005CE926 /* AttackState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AttackState.h; sourceTree = "<group>"; };
-		A8DEE8241A93AF61005CE926 /* DieState.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DieState.cpp; sourceTree = "<group>"; };
-		A8DEE8251A93AF61005CE926 /* DieState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DieState.h; sourceTree = "<group>"; };
-		A8DEE8261A93AF61005CE926 /* InjuredState.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = InjuredState.cpp; sourceTree = "<group>"; };
-		A8DEE8271A93AF61005CE926 /* InjuredState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InjuredState.h; sourceTree = "<group>"; };
-		A8DEE8281A93AF61005CE926 /* MoveState.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MoveState.cpp; sourceTree = "<group>"; };
-		A8DEE8291A93AF61005CE926 /* MoveState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoveState.h; sourceTree = "<group>"; };
-		A8DEE82A1A93AF61005CE926 /* SkillState.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SkillState.cpp; sourceTree = "<group>"; };
-		A8DEE82B1A93AF61005CE926 /* SkillState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SkillState.h; sourceTree = "<group>"; };
-		A8DEE82C1A93AF61005CE926 /* StandState.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StandState.cpp; sourceTree = "<group>"; };
-		A8DEE82D1A93AF61005CE926 /* StandState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StandState.h; sourceTree = "<group>"; };
 		A8DEE82E1A93AF61005CE926 /* State.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = State.h; sourceTree = "<group>"; };
 		A8DEE83C1A93B0DE005CE926 /* Hero.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Hero.cpp; sourceTree = "<group>"; };
 		A8DEE83D1A93B0DE005CE926 /* Hero.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hero.h; sourceTree = "<group>"; };
@@ -444,6 +436,8 @@
 				96B9F4621A8F09FA00677CF4 /* ControllerListener.h */,
 				96B9F4631A8F09FA00677CF4 /* ThreeDirectionController.cpp */,
 				96B9F4641A8F09FA00677CF4 /* ThreeDirectionController.h */,
+				A83112C21AA01BA600367E52 /* OperateController.cpp */,
+				A83112C31AA01BA600367E52 /* OperateController.h */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -557,6 +551,19 @@
 			path = CSVParse;
 			sourceTree = "<group>";
 		};
+		A83112C71AA04C4C00367E52 /* Situation */ = {
+			isa = PBXGroup;
+			children = (
+				A83112C81AA04D8A00367E52 /* StandSituation.h */,
+				A83112C91AA04D8A00367E52 /* StandSituation.cpp */,
+				A83112CA1AA04D8A00367E52 /* DieSituation.h */,
+				A83112CB1AA04D8A00367E52 /* DieSituation.cpp */,
+				A83112CC1AA04D8A00367E52 /* ControlSituation.h */,
+				A83112CD1AA04D8A00367E52 /* ControlSituation.cpp */,
+			);
+			path = Situation;
+			sourceTree = "<group>";
+		};
 		A89CA44A1A95C1500052682C /* Animation */ = {
 			isa = PBXGroup;
 			children = (
@@ -569,18 +576,7 @@
 		A8DEE8211A93AF61005CE926 /* State */ = {
 			isa = PBXGroup;
 			children = (
-				A8DEE8221A93AF61005CE926 /* AttackState.cpp */,
-				A8DEE8231A93AF61005CE926 /* AttackState.h */,
-				A8DEE8241A93AF61005CE926 /* DieState.cpp */,
-				A8DEE8251A93AF61005CE926 /* DieState.h */,
-				A8DEE8261A93AF61005CE926 /* InjuredState.cpp */,
-				A8DEE8271A93AF61005CE926 /* InjuredState.h */,
-				A8DEE8281A93AF61005CE926 /* MoveState.cpp */,
-				A8DEE8291A93AF61005CE926 /* MoveState.h */,
-				A8DEE82A1A93AF61005CE926 /* SkillState.cpp */,
-				A8DEE82B1A93AF61005CE926 /* SkillState.h */,
-				A8DEE82C1A93AF61005CE926 /* StandState.cpp */,
-				A8DEE82D1A93AF61005CE926 /* StandState.h */,
+				A83112C71AA04C4C00367E52 /* Situation */,
 				A8DEE82E1A93AF61005CE926 /* State.h */,
 			);
 			path = State;
@@ -755,28 +751,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A8DEE8311A93AF61005CE926 /* DieState.cpp in Sources */,
-				A8DEE8371A93AF61005CE926 /* SkillState.cpp in Sources */,
 				46880B8819C43A87006E1F66 /* AppDelegate.cpp in Sources */,
 				96B9F4871A8F09FA00677CF4 /* MapLayer.cpp in Sources */,
+				A83112D01AA04D8A00367E52 /* DieSituation.cpp in Sources */,
 				96B9F47F1A8F09FA00677CF4 /* ThreeDirectionController.cpp in Sources */,
 				96B9F47D1A8F09FA00677CF4 /* Controller.cpp in Sources */,
 				96B9F48B1A8F09FA00677CF4 /* GameScene.cpp in Sources */,
 				96B9F4851A8F09FA00677CF4 /* GameLayer.cpp in Sources */,
+				A83112D21AA04D8A00367E52 /* ControlSituation.cpp in Sources */,
 				A830F7451A8FB5DB00C9F691 /* CsvParseUtil.cpp in Sources */,
-				A8DEE8391A93AF61005CE926 /* StandState.cpp in Sources */,
+				A83112C41AA01BA600367E52 /* OperateController.cpp in Sources */,
 				96B9F4891A8F09FA00677CF4 /* MenuLayer.cpp in Sources */,
+				A83112CE1AA04D8A00367E52 /* StandSituation.cpp in Sources */,
 				A8DEE8461A93B0DE005CE926 /* RoleFSM.cpp in Sources */,
-				A8DEE8331A93AF61005CE926 /* InjuredState.cpp in Sources */,
 				A8DEE8421A93B0DE005CE926 /* Hero.cpp in Sources */,
 				503AE10017EB989F00D1A890 /* AppController.mm in Sources */,
 				503AE10217EB989F00D1A890 /* RootViewController.mm in Sources */,
 				A89CA44D1A95C1500052682C /* AnimationUtil.cpp in Sources */,
-				A8DEE82F1A93AF61005CE926 /* AttackState.cpp in Sources */,
 				A830F7491A8FB5DB00C9F691 /* StringUtil.cpp in Sources */,
 				503AE10117EB989F00D1A890 /* main.m in Sources */,
 				96B9F48D1A8F09FA00677CF4 /* MenuScene.cpp in Sources */,
-				A8DEE8351A93AF61005CE926 /* MoveState.cpp in Sources */,
 				A830F7471A8FB5DB00C9F691 /* FileLoadUtil.cpp in Sources */,
 				A8DEE8441A93B0DE005CE926 /* Role.cpp in Sources */,
 			);
@@ -789,23 +783,21 @@
 				A8DEE8471A93B0DE005CE926 /* RoleFSM.cpp in Sources */,
 				46880B8919C43A87006E1F66 /* AppDelegate.cpp in Sources */,
 				A830F7481A8FB5DB00C9F691 /* FileLoadUtil.cpp in Sources */,
+				A83112C51AA01BA600367E52 /* OperateController.cpp in Sources */,
 				96B9F48E1A8F09FA00677CF4 /* MenuScene.cpp in Sources */,
 				A89CA44E1A95C1500052682C /* AnimationUtil.cpp in Sources */,
-				A8DEE8321A93AF61005CE926 /* DieState.cpp in Sources */,
 				96B9F4881A8F09FA00677CF4 /* MapLayer.cpp in Sources */,
-				A8DEE8341A93AF61005CE926 /* InjuredState.cpp in Sources */,
 				A830F7461A8FB5DB00C9F691 /* CsvParseUtil.cpp in Sources */,
 				96B9F48A1A8F09FA00677CF4 /* MenuLayer.cpp in Sources */,
+				A83112D31AA04D8A00367E52 /* ControlSituation.cpp in Sources */,
 				503AE10517EB98FF00D1A890 /* main.cpp in Sources */,
-				A8DEE8361A93AF61005CE926 /* MoveState.cpp in Sources */,
-				A8DEE8381A93AF61005CE926 /* SkillState.cpp in Sources */,
+				A83112CF1AA04D8A00367E52 /* StandSituation.cpp in Sources */,
 				96B9F47E1A8F09FA00677CF4 /* Controller.cpp in Sources */,
 				A8DEE8451A93B0DE005CE926 /* Role.cpp in Sources */,
-				A8DEE8301A93AF61005CE926 /* AttackState.cpp in Sources */,
 				96B9F4861A8F09FA00677CF4 /* GameLayer.cpp in Sources */,
 				96B9F48C1A8F09FA00677CF4 /* GameScene.cpp in Sources */,
 				A830F74A1A8FB5DB00C9F691 /* StringUtil.cpp in Sources */,
-				A8DEE83A1A93AF61005CE926 /* StandState.cpp in Sources */,
+				A83112D11AA04D8A00367E52 /* DieSituation.cpp in Sources */,
 				96B9F4801A8F09FA00677CF4 /* ThreeDirectionController.cpp in Sources */,
 				A8DEE8431A93B0DE005CE926 /* Hero.cpp in Sources */,
 			);

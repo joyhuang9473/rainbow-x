@@ -2,8 +2,8 @@
 #define __ROLE_FSM_H__
 
 #include "cocos2d.h"
+#include "../State/State.h"
 
-class State;
 class Role;
 
 class RoleFSM : public cocos2d::Node {
@@ -12,11 +12,14 @@ public:
     bool initWithRole(Role* role);
 
     virtual void update(float dt);
-    void changeState(State* state);
+    void updateSituation(float dt);
+
+    void changeSituation(State::Situation situation);
 
 protected:
-    State* m_state;
     Role* m_role;
+    State* m_state;
+    CC_SYNTHESIZE(State::Situation, m_situation, Situation);
 };
 
 #endif

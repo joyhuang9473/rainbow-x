@@ -1,7 +1,6 @@
 #include "GameLayer.h"
 #include "../../Entity/Role/Hero.h"
-#include "../../Controller/ThreeDirectionController.h"
-#include "StandState.h"
+#include "../../Controller/OperateController.h"
 
 USING_NS_CC;
 
@@ -37,19 +36,16 @@ void GameLayer::addPlayer(TMXTiledMap* map) {
 
     m_player->bindSprite(playerSprite);
     m_player->setTiledMap(map);
-    m_player->getFSM()->changeState(new StandState());
 
     // TODO : tilemap's player_point
     m_player->setPosition(Vec2(visibleSize.width/2, visibleSize.height/2));
 
-    ThreeDirectionController* threeMoveController = ThreeDirectionController::create();
-    threeMoveController->setXSpeed(1);
-    threeMoveController->setYSpeed(0);
-    threeMoveController->registerWithKeyboardDispatcher();
+    OperateController* operateController = OperateController::create();
+    operateController->registerWithKeyboardDispatcher();
+    operateController->setRole(m_player);
+    this->addChild(operateController);
 
-    this->addChild(threeMoveController);
-    m_player->setController(threeMoveController);
-
+    m_player->setController(operateController);
     map->addChild(m_player);
 }
 

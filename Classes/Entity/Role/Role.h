@@ -37,6 +37,8 @@ protected:
     CC_SYNTHESIZE_RETAIN(cocos2d::Action*, m_skillAction, SkillAction);
     CC_SYNTHESIZE_RETAIN(cocos2d::Action*, m_injuredAction, InjuredAction);
     CC_SYNTHESIZE_RETAIN(cocos2d::Action*, m_dieAction, DieAction);
+
+    CC_SYNTHESIZE(bool, m_direction, Direction);
 };
 
 #endif
