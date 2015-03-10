@@ -5,12 +5,14 @@
 
 class ControlSituation : public State {
 public:
-    ControlSituation();
+    ControlSituation(State::Situation situation);
     ~ControlSituation();
     virtual void execute(Role* role);
 
 private:
+    State::Situation m_situation;
     bool m_isMove;
+    bool m_isAttack;
 };
 
 #endif

@@ -62,6 +62,9 @@ void OperateController::keyReleased(cocos2d::EventKeyboard::KeyCode keyCode, coc
             this->m_role->getFSM()->changeSituation(State::SITUATION_IDLE);
             this->setVelocityY(0);
             break;
+        case EventKeyboard::KeyCode::KEY_S:
+            this->m_role->getFSM()->changeSituation(State::SITUATION_IDLE);
+            break;
     }
 }
 

@@ -21,7 +21,7 @@ bool Hero::init() {
 
     this->setStandAction(RepeatForever::create(Animate::create(standAnim)));
     this->setMoveAction(RepeatForever::create(Animate::create(moveAnim)));
-    this->setAttackAction(RepeatForever::create(Animate::create(attackAnim)));
+    this->setAttackAction(Animate::create(attackAnim));
     this->setSkillAction(RepeatForever::create(Animate::create(skillAnim)));
     this->setInjuredAction(RepeatForever::create(Animate::create(injuredAnim)));
     this->setDieAction(RepeatForever::create(Animate::create(dieAnim)));

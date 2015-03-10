@@ -31,7 +31,7 @@ void RoleFSM::changeSituation(State::Situation situation) {
         case State::SITUATION_SKILL:
         case State::SITUATION_INJURED:
         case State::SITUATION_ATTACK:
-            this->m_state = new ControlSituation();
+            this->m_state = new ControlSituation(situation);
             break;
         case State::SITUATION_IDLE:
         case State::SITUATION_BOUND:
