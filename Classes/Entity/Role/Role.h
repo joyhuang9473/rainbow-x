@@ -5,6 +5,11 @@
 #include "../../Controller/Controller.h"
 #include "RoleFSM.h"
 
+typedef struct _BoundingBox {
+    cocos2d::Rect actual;
+    cocos2d::Rect original;
+} BoundingBox;
+
 class Role : public cocos2d::Node, public ControllerListener {
 public:
     Role();
@@ -26,6 +31,9 @@ public:
     void runInjuredAction();
     void runDieAction();
 
+    BoundingBox createBoundingBox(cocos2d::Point origin, cocos2d::Size size);
+    void updateBoxes();
+
 protected:
     cocos2d::Sprite* m_sprite;
     Controller* m_controller;
@@ -39,6 +47,8 @@ protected:
     CC_SYNTHESIZE_RETAIN(cocos2d::Action*, m_dieAction, DieAction);
 
     CC_SYNTHESIZE(bool, m_direction, Direction);
+    CC_SYNTHESIZE(BoundingBox, m_bodyBox, BodyBox);
+    CC_SYNTHESIZE(BoundingBox, m_hitBox, HitBox);
 };
 
 #endif
