@@ -4,6 +4,8 @@
 
 USING_NS_CC;
 
+#define FRAMECACHE SpriteFrameCache::getInstance()
+
 bool GameLayer::init() {
     if( ! Layer::init() ) {
         return false;
@@ -17,37 +19,33 @@ bool GameLayer::init() {
     searchPaths.push_back("Characters");
     FileUtils::getInstance()->setSearchPaths(searchPaths);
 
-    SpriteFrameCache::getInstance()->addSpriteFramesWithFile("hero-kisi.plist",
-                                                             "hero-kisi.png");
+    FRAMECACHE->addSpriteFramesWithFile("hero-kisi.plist", "hero-kisi.png");
+
+    auto player = Hero::create();
+    this->setPlayer(map, player);
 
     this->addChild(map, -1);
-    this->addPlayer(map);
+    this->addChild(player);
     
     return true;
 }
 
-void GameLayer::addPlayer(TMXTiledMap* map) {
+void GameLayer::setPlayer(TMXTiledMap* map, Hero* hero) {
     Size visibleSize = Director::getInstance()->getVisibleSize();
+    Sprite* heroSprite = Sprite::createWithSpriteFrame(FRAMECACHE->getSpriteFrameByName("kisi-idle-1.png"));
+    heroSprite->setScale(1.5);
 
-    SpriteFrameCache* frameCache = SpriteFrameCache::getInstance();
-    Sprite* playerSprite = Sprite::createWithSpriteFrame(frameCache->getSpriteFrameByName("kisi-idle-1.png"));
-    playerSprite->setScale(1.5);
-
-    Hero* m_player = Hero::create();
-
-    m_player->bindSprite(playerSprite);
-    m_player->setTiledMap(map);
-
+    hero->bindSprite(heroSprite);
+    hero->setTiledMap(map);
     // TODO : tilemap's player_point
-    m_player->setPosition(Vec2(visibleSize.width/2, visibleSize.height/2));
+    hero->setPosition(Vec2(visibleSize.width/2, visibleSize.height/2));
 
     OperateController* operateController = OperateController::create();
     operateController->registerWithKeyboardDispatcher();
-    operateController->setRole(m_player);
-    this->addChild(operateController);
-
-    m_player->setController(operateController);
-    map->addChild(m_player);
+    operateController->setRole(hero);
+    
+    hero->setController(operateController);
+    hero->addChild(operateController);
 }
 
 void GameLayer::update(float delta) {}

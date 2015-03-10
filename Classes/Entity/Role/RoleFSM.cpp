@@ -7,25 +7,17 @@
 
 USING_NS_CC;
 
-RoleFSM* RoleFSM::createWithRole(Role* role) {
-    RoleFSM* fsm = new RoleFSM();
+RoleFSM::RoleFSM() {}
 
-    if (fsm && fsm->initWithRole(role)) {
-        fsm->autorelease();
-    } else {
-        CC_SAFE_DELETE(fsm);
-        fsm = nullptr;
-    }
+RoleFSM::~RoleFSM() {}
 
-    return fsm;
-}
-
-bool RoleFSM::initWithRole(Role* role) {
-    this->m_role = role;
-    this->m_role->retain();
-
+bool RoleFSM::init() {
     this->m_state = new StandSituation();
     return true;
+}
+
+void RoleFSM::setRole(Role* role) {
+    this->m_role = role;
 }
 
 void RoleFSM::changeSituation(State::Situation situation) {

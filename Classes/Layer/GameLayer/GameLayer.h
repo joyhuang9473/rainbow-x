@@ -9,11 +9,9 @@ public:
     virtual bool init();
     CREATE_FUNC(GameLayer);
     virtual void update(float dt);
-    void addPlayer(cocos2d::TMXTiledMap* map);
+    void setPlayer(cocos2d::TMXTiledMap* map, Hero* hero);
 
 private:
-    void initBG();
-    cocos2d::Sprite* m_bgSprite;
     //TODO:
     //void createHPSlider()
 };

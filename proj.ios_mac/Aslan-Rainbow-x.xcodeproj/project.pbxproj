@@ -53,8 +53,6 @@
 		96B9F4801A8F09FA00677CF4 /* ThreeDirectionController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 96B9F4631A8F09FA00677CF4 /* ThreeDirectionController.cpp */; };
 		96B9F4851A8F09FA00677CF4 /* GameLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 96B9F46D1A8F09FA00677CF4 /* GameLayer.cpp */; };
 		96B9F4861A8F09FA00677CF4 /* GameLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 96B9F46D1A8F09FA00677CF4 /* GameLayer.cpp */; };
-		96B9F4871A8F09FA00677CF4 /* MapLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 96B9F46F1A8F09FA00677CF4 /* MapLayer.cpp */; };
-		96B9F4881A8F09FA00677CF4 /* MapLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 96B9F46F1A8F09FA00677CF4 /* MapLayer.cpp */; };
 		96B9F4891A8F09FA00677CF4 /* MenuLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 96B9F4721A8F09FA00677CF4 /* MenuLayer.cpp */; };
 		96B9F48A1A8F09FA00677CF4 /* MenuLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 96B9F4721A8F09FA00677CF4 /* MenuLayer.cpp */; };
 		96B9F48B1A8F09FA00677CF4 /* GameScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 96B9F4751A8F09FA00677CF4 /* GameScene.cpp */; };
@@ -198,8 +196,6 @@
 		96B9F4641A8F09FA00677CF4 /* ThreeDirectionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThreeDirectionController.h; sourceTree = "<group>"; };
 		96B9F46D1A8F09FA00677CF4 /* GameLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameLayer.cpp; sourceTree = "<group>"; };
 		96B9F46E1A8F09FA00677CF4 /* GameLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameLayer.h; sourceTree = "<group>"; };
-		96B9F46F1A8F09FA00677CF4 /* MapLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MapLayer.cpp; sourceTree = "<group>"; };
-		96B9F4701A8F09FA00677CF4 /* MapLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapLayer.h; sourceTree = "<group>"; };
 		96B9F4721A8F09FA00677CF4 /* MenuLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MenuLayer.cpp; sourceTree = "<group>"; };
 		96B9F4731A8F09FA00677CF4 /* MenuLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuLayer.h; sourceTree = "<group>"; };
 		96B9F4751A8F09FA00677CF4 /* GameScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameScene.cpp; sourceTree = "<group>"; };
@@ -471,8 +467,6 @@
 			children = (
 				96B9F46D1A8F09FA00677CF4 /* GameLayer.cpp */,
 				96B9F46E1A8F09FA00677CF4 /* GameLayer.h */,
-				96B9F46F1A8F09FA00677CF4 /* MapLayer.cpp */,
-				96B9F4701A8F09FA00677CF4 /* MapLayer.h */,
 			);
 			path = GameLayer;
 			sourceTree = "<group>";
@@ -764,7 +758,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				46880B8819C43A87006E1F66 /* AppDelegate.cpp in Sources */,
-				96B9F4871A8F09FA00677CF4 /* MapLayer.cpp in Sources */,
 				A83112D01AA04D8A00367E52 /* DieSituation.cpp in Sources */,
 				96B9F47F1A8F09FA00677CF4 /* ThreeDirectionController.cpp in Sources */,
 				96B9F47D1A8F09FA00677CF4 /* Controller.cpp in Sources */,
@@ -798,7 +791,6 @@
 				A83112C51AA01BA600367E52 /* OperateController.cpp in Sources */,
 				96B9F48E1A8F09FA00677CF4 /* MenuScene.cpp in Sources */,
 				A89CA44E1A95C1500052682C /* AnimationUtil.cpp in Sources */,
-				96B9F4881A8F09FA00677CF4 /* MapLayer.cpp in Sources */,
 				A830F7461A8FB5DB00C9F691 /* CsvParseUtil.cpp in Sources */,
 				96B9F48A1A8F09FA00677CF4 /* MenuLayer.cpp in Sources */,
 				A83112D31AA04D8A00367E52 /* ControlSituation.cpp in Sources */,

@@ -5,8 +5,8 @@ USING_NS_CC;
 
 Role::Role() {
     this->m_sprite = nullptr;
-    this->m_fsm = RoleFSM::createWithRole(this);
-    this->m_fsm->retain();
+    this->m_fsm = RoleFSM::create();
+    this->m_fsm->setRole(this);
 
     this->m_attackAction = nullptr;
     this->m_dieAction = nullptr;
@@ -16,6 +16,7 @@ Role::Role() {
     this->m_standAction = nullptr;
 
     this->scheduleUpdate();
+    this->addChild(this->m_fsm);
 }
 
 Role::~Role() {}
