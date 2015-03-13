@@ -10,8 +10,10 @@ public:
     CREATE_FUNC(GameLayer);
     virtual void update(float dt);
     void setPlayer(cocos2d::TMXTiledMap* map, Hero* hero);
+    bool collisionDetection(const BoundingBox &hitBox, const BoundingBox &bodyBox);
 
 private:
+    Role* m_player;
     //TODO:
     //void createHPSlider()
 };

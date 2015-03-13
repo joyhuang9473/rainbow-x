@@ -23,10 +23,11 @@ bool GameLayer::init() {
 
     auto player = Hero::create();
     this->setPlayer(map, player);
-
+    
     this->addChild(map, -1);
     this->addChild(player);
-    
+
+    this->m_player = player;
     return true;
 }
 
@@ -48,5 +49,14 @@ void GameLayer::setPlayer(TMXTiledMap* map, Hero* hero) {
     hero->addChild(operateController);
 }
 
-void GameLayer::update(float delta) {}
+bool GameLayer::collisionDetection(const BoundingBox &hitBox, const BoundingBox &bodyBox) {
+    Rect hitRect = hitBox.actual;
+    Rect bodyRect = bodyBox.actual;
 
+    if(hitRect.intersectsRect(bodyRect)) {
+        return true;
+    }
+    return false;
+}
+
+void GameLayer::update(float delta) {}
