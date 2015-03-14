@@ -15,13 +15,7 @@ bool GameLayer::init() {
     auto map = TMXTiledMap::create("maps/floor.tmx");
 
     // Hero
-    std::vector<std::string> searchPaths;
-    searchPaths.push_back("Characters");
-    FileUtils::getInstance()->setSearchPaths(searchPaths);
-
-    FRAMECACHE->addSpriteFramesWithFile("hero-kisi.plist", "hero-kisi.png");
-
-    auto player = Hero::create();
+    auto player = Hero::createWithHeroType(Hero::HeroType::KISI);
     this->setPlayer(map, player);
     
     this->addChild(map, -1);
@@ -33,18 +27,14 @@ bool GameLayer::init() {
 
 void GameLayer::setPlayer(TMXTiledMap* map, Hero* hero) {
     Size visibleSize = Director::getInstance()->getVisibleSize();
-    Sprite* heroSprite = Sprite::createWithSpriteFrame(FRAMECACHE->getSpriteFrameByName("kisi-idle-1.png"));
-    heroSprite->setScale(1.5);
 
-    hero->bindSprite(heroSprite);
     hero->setTiledMap(map);
-    // TODO : tilemap's player_point
     hero->setPosition(Vec2(visibleSize.width/2, visibleSize.height/2));
 
     OperateController* operateController = OperateController::create();
     operateController->registerWithKeyboardDispatcher();
     operateController->setRole(hero);
-    
+
     hero->setController(operateController);
     hero->addChild(operateController);
 }

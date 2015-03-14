@@ -77,8 +77,6 @@
 		96B9F4AE1A8F0A1400677CF4 /* bg_village.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 96B9F49C1A8F0A1400677CF4 /* bg_village.jpg */; };
 		96B9F4AF1A8F0A1400677CF4 /* floor.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 96B9F49D1A8F0A1400677CF4 /* floor.jpg */; };
 		96B9F4B01A8F0A1400677CF4 /* floor.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 96B9F49D1A8F0A1400677CF4 /* floor.jpg */; };
-		96B9F4B11A8F0A1400677CF4 /* floor.tmx in Resources */ = {isa = PBXBuildFile; fileRef = 96B9F49E1A8F0A1400677CF4 /* floor.tmx */; };
-		96B9F4B21A8F0A1400677CF4 /* floor.tmx in Resources */ = {isa = PBXBuildFile; fileRef = 96B9F49E1A8F0A1400677CF4 /* floor.tmx */; };
 		A830F7451A8FB5DB00C9F691 /* CsvParseUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A830F73F1A8FB5DB00C9F691 /* CsvParseUtil.cpp */; };
 		A830F7461A8FB5DB00C9F691 /* CsvParseUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A830F73F1A8FB5DB00C9F691 /* CsvParseUtil.cpp */; };
 		A830F7471A8FB5DB00C9F691 /* FileLoadUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A830F7411A8FB5DB00C9F691 /* FileLoadUtil.cpp */; };
@@ -93,12 +91,18 @@
 		A83112D11AA04D8A00367E52 /* DieSituation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A83112CB1AA04D8A00367E52 /* DieSituation.cpp */; };
 		A83112D21AA04D8A00367E52 /* ControlSituation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A83112CD1AA04D8A00367E52 /* ControlSituation.cpp */; };
 		A83112D31AA04D8A00367E52 /* ControlSituation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A83112CD1AA04D8A00367E52 /* ControlSituation.cpp */; };
+		A8512B5A1AB3F78C0083BCAE /* hero-gnu.plist in Resources */ = {isa = PBXBuildFile; fileRef = A8512B581AB3F78C0083BCAE /* hero-gnu.plist */; };
+		A8512B5B1AB3F78C0083BCAE /* hero-gnu.plist in Resources */ = {isa = PBXBuildFile; fileRef = A8512B581AB3F78C0083BCAE /* hero-gnu.plist */; };
+		A8512B5C1AB3F78C0083BCAE /* hero-gnu.png in Resources */ = {isa = PBXBuildFile; fileRef = A8512B591AB3F78C0083BCAE /* hero-gnu.png */; };
+		A8512B5D1AB3F78C0083BCAE /* hero-gnu.png in Resources */ = {isa = PBXBuildFile; fileRef = A8512B591AB3F78C0083BCAE /* hero-gnu.png */; };
 		A89CA44D1A95C1500052682C /* AnimationUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A89CA44B1A95C1500052682C /* AnimationUtil.cpp */; };
 		A89CA44E1A95C1500052682C /* AnimationUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A89CA44B1A95C1500052682C /* AnimationUtil.cpp */; };
 		A8A1B7341AA3305100BEFFD0 /* hero-kisi.png in Resources */ = {isa = PBXBuildFile; fileRef = A8A1B7321AA3305100BEFFD0 /* hero-kisi.png */; };
 		A8A1B7351AA3305100BEFFD0 /* hero-kisi.png in Resources */ = {isa = PBXBuildFile; fileRef = A8A1B7321AA3305100BEFFD0 /* hero-kisi.png */; };
 		A8A1B7361AA3305100BEFFD0 /* hero-kisi.plist in Resources */ = {isa = PBXBuildFile; fileRef = A8A1B7331AA3305100BEFFD0 /* hero-kisi.plist */; };
 		A8A1B7371AA3305100BEFFD0 /* hero-kisi.plist in Resources */ = {isa = PBXBuildFile; fileRef = A8A1B7331AA3305100BEFFD0 /* hero-kisi.plist */; };
+		A8A95A261AB2CEF5006F665F /* floor.tmx in Resources */ = {isa = PBXBuildFile; fileRef = A8A95A251AB2CEF5006F665F /* floor.tmx */; };
+		A8A95A271AB2CEF5006F665F /* floor.tmx in Resources */ = {isa = PBXBuildFile; fileRef = A8A95A251AB2CEF5006F665F /* floor.tmx */; };
 		A8DEE8421A93B0DE005CE926 /* Hero.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8DEE83C1A93B0DE005CE926 /* Hero.cpp */; };
 		A8DEE8431A93B0DE005CE926 /* Hero.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8DEE83C1A93B0DE005CE926 /* Hero.cpp */; };
 		A8DEE8441A93B0DE005CE926 /* Role.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8DEE83E1A93B0DE005CE926 /* Role.cpp */; };
@@ -211,7 +215,6 @@
 		96B9F49A1A8F0A1400677CF4 /* Marker Felt.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Marker Felt.ttf"; sourceTree = "<group>"; };
 		96B9F49C1A8F0A1400677CF4 /* bg_village.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg_village.jpg; sourceTree = "<group>"; };
 		96B9F49D1A8F0A1400677CF4 /* floor.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = floor.jpg; sourceTree = "<group>"; };
-		96B9F49E1A8F0A1400677CF4 /* floor.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = floor.tmx; sourceTree = "<group>"; };
 		A830F73F1A8FB5DB00C9F691 /* CsvParseUtil.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CsvParseUtil.cpp; sourceTree = "<group>"; };
 		A830F7401A8FB5DB00C9F691 /* CSVParseUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSVParseUtil.h; sourceTree = "<group>"; };
 		A830F7411A8FB5DB00C9F691 /* FileLoadUtil.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FileLoadUtil.cpp; sourceTree = "<group>"; };
@@ -226,10 +229,13 @@
 		A83112CB1AA04D8A00367E52 /* DieSituation.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DieSituation.cpp; sourceTree = "<group>"; };
 		A83112CC1AA04D8A00367E52 /* ControlSituation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ControlSituation.h; sourceTree = "<group>"; };
 		A83112CD1AA04D8A00367E52 /* ControlSituation.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ControlSituation.cpp; sourceTree = "<group>"; };
+		A8512B581AB3F78C0083BCAE /* hero-gnu.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "hero-gnu.plist"; sourceTree = "<group>"; };
+		A8512B591AB3F78C0083BCAE /* hero-gnu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hero-gnu.png"; sourceTree = "<group>"; };
 		A89CA44B1A95C1500052682C /* AnimationUtil.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AnimationUtil.cpp; sourceTree = "<group>"; };
 		A89CA44C1A95C1500052682C /* AnimationUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationUtil.h; sourceTree = "<group>"; };
 		A8A1B7321AA3305100BEFFD0 /* hero-kisi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hero-kisi.png"; sourceTree = "<group>"; };
 		A8A1B7331AA3305100BEFFD0 /* hero-kisi.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "hero-kisi.plist"; sourceTree = "<group>"; };
+		A8A95A251AB2CEF5006F665F /* floor.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = floor.tmx; sourceTree = "<group>"; };
 		A8DEE82E1A93AF61005CE926 /* State.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = State.h; sourceTree = "<group>"; };
 		A8DEE83C1A93B0DE005CE926 /* Hero.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Hero.cpp; sourceTree = "<group>"; };
 		A8DEE83D1A93B0DE005CE926 /* Hero.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hero.h; sourceTree = "<group>"; };
@@ -514,6 +520,8 @@
 		96B9F4961A8F0A1400677CF4 /* Characters */ = {
 			isa = PBXGroup;
 			children = (
+				A8512B581AB3F78C0083BCAE /* hero-gnu.plist */,
+				A8512B591AB3F78C0083BCAE /* hero-gnu.png */,
 				A8A1B7321AA3305100BEFFD0 /* hero-kisi.png */,
 				A8A1B7331AA3305100BEFFD0 /* hero-kisi.plist */,
 				96B9F4971A8F0A1400677CF4 /* red_hair_boy.plist */,
@@ -533,9 +541,9 @@
 		96B9F49B1A8F0A1400677CF4 /* maps */ = {
 			isa = PBXGroup;
 			children = (
+				A8A95A251AB2CEF5006F665F /* floor.tmx */,
 				96B9F49C1A8F0A1400677CF4 /* bg_village.jpg */,
 				96B9F49D1A8F0A1400677CF4 /* floor.jpg */,
-				96B9F49E1A8F0A1400677CF4 /* floor.tmx */,
 			);
 			path = maps;
 			sourceTree = "<group>";
@@ -705,22 +713,24 @@
 				96B9F4A71A8F0A1400677CF4 /* red_hair_boy.plist in Resources */,
 				50EF629917ECD46A001EB2F8 /* Icon-100.png in Resources */,
 				5087E78317EB970100C73F5D /* Icon-152.png in Resources */,
+				A8512B5C1AB3F78C0083BCAE /* hero-gnu.png in Resources */,
 				96B9F4A51A8F0A1400677CF4 /* StartNormal.png in Resources */,
 				5087E77D17EB970100C73F5D /* Default-568h@2x.png in Resources */,
 				96B9F4AB1A8F0A1400677CF4 /* Marker Felt.ttf in Resources */,
 				5087E78517EB970100C73F5D /* Icon-72.png in Resources */,
 				96B9F4AD1A8F0A1400677CF4 /* bg_village.jpg in Resources */,
 				96B9F4A11A8F0A1400677CF4 /* CloseSelected.png in Resources */,
+				A8512B5A1AB3F78C0083BCAE /* hero-gnu.plist in Resources */,
 				521A8E6519F0C34300D177D7 /* Default-736h@3x.png in Resources */,
 				50EF62A317ECD613001EB2F8 /* Icon-50.png in Resources */,
 				5087E78017EB970100C73F5D /* Icon-114.png in Resources */,
+				A8A95A261AB2CEF5006F665F /* floor.tmx in Resources */,
 				50EF62A217ECD613001EB2F8 /* Icon-29.png in Resources */,
 				50EF629617ECD46A001EB2F8 /* Icon-40.png in Resources */,
 				5087E78217EB970100C73F5D /* Icon-144.png in Resources */,
 				50EF629817ECD46A001EB2F8 /* Icon-80.png in Resources */,
 				5087E78417EB970100C73F5D /* Icon-57.png in Resources */,
 				96B9F4AF1A8F0A1400677CF4 /* floor.jpg in Resources */,
-				96B9F4B11A8F0A1400677CF4 /* floor.tmx in Resources */,
 				5087E77E17EB970100C73F5D /* Default.png in Resources */,
 				521A8E6419F0C34300D177D7 /* Default-667h@2x.png in Resources */,
 				A8A1B7341AA3305100BEFFD0 /* hero-kisi.png in Resources */,
@@ -739,13 +749,15 @@
 				96B9F4A61A8F0A1400677CF4 /* StartNormal.png in Resources */,
 				A8A1B7351AA3305100BEFFD0 /* hero-kisi.png in Resources */,
 				96B9F4A81A8F0A1400677CF4 /* red_hair_boy.plist in Resources */,
+				A8A95A271AB2CEF5006F665F /* floor.tmx in Resources */,
+				A8512B5D1AB3F78C0083BCAE /* hero-gnu.png in Resources */,
 				96B9F4AE1A8F0A1400677CF4 /* bg_village.jpg in Resources */,
 				A8A1B7371AA3305100BEFFD0 /* hero-kisi.plist in Resources */,
 				503AE0F817EB97AB00D1A890 /* Icon.icns in Resources */,
 				96B9F4A41A8F0A1400677CF4 /* HelloWorld.png in Resources */,
 				96B9F4A01A8F0A1400677CF4 /* CloseNormal.png in Resources */,
+				A8512B5B1AB3F78C0083BCAE /* hero-gnu.plist in Resources */,
 				96B9F4B01A8F0A1400677CF4 /* floor.jpg in Resources */,
-				96B9F4B21A8F0A1400677CF4 /* floor.tmx in Resources */,
 				96B9F4A21A8F0A1400677CF4 /* CloseSelected.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

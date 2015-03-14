@@ -6,10 +6,17 @@
 
 class Hero : public Role {
 public:
+    enum HeroType {
+        KISI,
+        GNU
+    };
+
     Hero();
     ~Hero();
-    CREATE_FUNC(Hero);
-    virtual bool init();
+
+    bool initWithHeroType(HeroType type);
+    static Hero* createWithHeroType(HeroType type);
+
     void setViewPointByPlayer();
     void setTiledMap(cocos2d::TMXTiledMap* map);
     

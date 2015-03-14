@@ -3,7 +3,15 @@
 
 USING_NS_CC;
 
+#define FRAMECACHE SpriteFrameCache::getInstance()
+
 Hero::Hero() {
+    std::vector<std::string> searchPaths;
+    searchPaths.push_back("Characters");
+    FileUtils::getInstance()->setSearchPaths(searchPaths);
+
+    FRAMECACHE->addSpriteFramesWithFile("hero-kisi.plist", "hero-kisi.png");
+    FRAMECACHE->addSpriteFramesWithFile("hero-gnu.plist", "hero-gnu.png");
     this->m_map = nullptr;
 }
 
@@ -11,22 +19,47 @@ Hero::~Hero() {
     CC_SAFE_RELEASE(m_map);
 }
 
-bool Hero::init() {
-    Animation* standAnim = AnimationUtil::createAnimWithFrameName("kisi-idle");
-    Animation* moveAnim = AnimationUtil::createAnimWithFrameName("kisi-move");
-    Animation* attackAnim = AnimationUtil::createAnimWithFrameName("kisi-attack");
-    Animation* skillAnim = AnimationUtil::createAnimWithFrameName("kisi-skill");
-    Animation* injuredAnim = AnimationUtil::createAnimWithFrameName("kisi-hurt");
-    Animation* dieAnim = AnimationUtil::createAnimWithFrameName("kisi-die");
+bool Hero::initWithHeroType(HeroType type) {
+    std::string spName = "";
 
+    switch (type) {
+        case HeroType::KISI:
+            spName = "kisi";
+            break;
+        case HeroType::GNU:
+            spName = "gnu";
+            break;
+        default:
+            break;
+    }
+
+    // frame
+    Sprite* heroSprite = Sprite::createWithSpriteFrame(FRAMECACHE->getSpriteFrameByName(StringUtils::format("%s-idle-1.png", spName.c_str())));
+    heroSprite->setScale(1.5);
+    this->bindSprite(heroSprite);
+
+    // animation
+    Animation* standAnim = AnimationUtil::createAnimWithFrameName(StringUtils::format("%s-idle", spName.c_str()).c_str());
+    Animation* moveAnim = AnimationUtil::createAnimWithFrameName(StringUtils::format("%s-move", spName.c_str()).c_str());
+    Animation* attackAnim = AnimationUtil::createAnimWithFrameName(StringUtils::format("%s-attack", spName.c_str()).c_str());
+    Animation* skillAnim = AnimationUtil::createAnimWithFrameName(StringUtils::format("%s-skill", spName.c_str()).c_str());
+    Animation* injuredAnim = AnimationUtil::createAnimWithFrameName(StringUtils::format("%s-hurt", spName.c_str()).c_str());
+    Animation* dieAnim = AnimationUtil::createAnimWithFrameName(StringUtils::format("%s-die", spName.c_str()).c_str());
+    
     this->setStandAction(RepeatForever::create(Animate::create(standAnim)));
     this->setMoveAction(RepeatForever::create(Animate::create(moveAnim)));
     this->setAttackAction(Animate::create(attackAnim));
     this->setSkillAction(RepeatForever::create(Animate::create(skillAnim)));
     this->setInjuredAction(RepeatForever::create(Animate::create(injuredAnim)));
     this->setDieAction(RepeatForever::create(Animate::create(dieAnim)));
-
+    
     return true;
+}
+
+Hero* Hero::createWithHeroType(HeroType type) {
+    Hero* hero = new Hero();
+    hero->initWithHeroType(type);
+    return hero;
 }
 
 void Hero::setViewPointByPlayer() {
@@ -63,7 +96,5 @@ void Hero::setTagPosition(int x, int y) {
 }
 
 void Hero::setTiledMap(cocos2d::TMXTiledMap *map) {
-    CC_SAFE_RETAIN(map);
-    CC_SAFE_RELEASE(this->m_map);
     this->m_map = map;
 }
