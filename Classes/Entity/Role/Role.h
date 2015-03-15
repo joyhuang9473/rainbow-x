@@ -3,7 +3,7 @@
 
 #include "cocos2d.h"
 #include "../../Controller/Controller.h"
-#include "RoleFSM.h"
+#include "FSM.h"
 
 typedef struct _BoundingBox {
     cocos2d::Rect actual;
@@ -12,6 +12,15 @@ typedef struct _BoundingBox {
 
 class Role : public cocos2d::Node, public ControllerListener {
 public:
+    enum AnimationType {
+        IDLE,
+        WALKING,
+        SKILLING,
+        HURTING,
+        ATTACKING,
+        DEAD
+    };
+    
     Role();
     ~Role();
     cocos2d::Sprite* getSprite();
@@ -20,16 +29,9 @@ public:
 
     virtual void setTagPosition(int x, int y);
     virtual cocos2d::Point getTagPosition();
-
-    RoleFSM* getFSM();
     virtual void update(float dt);
 
-    void runStandAction();
-    void runMoveAction();
-    void runAttackAction();
-    void runSkillAction();
-    void runInjuredAction();
-    void runDieAction();
+    void initFSM();
 
     BoundingBox createBoundingBox(cocos2d::Point origin, cocos2d::Size size);
     void updateBoxes();
@@ -37,14 +39,15 @@ public:
 protected:
     cocos2d::Sprite* m_sprite;
     Controller* m_controller;
-    RoleFSM* m_fsm;
 
-    CC_SYNTHESIZE_RETAIN(cocos2d::Action*, m_standAction, StandAction);
-    CC_SYNTHESIZE_RETAIN(cocos2d::Action*, m_moveAction, MoveAction);
-    CC_SYNTHESIZE_RETAIN(cocos2d::Action*, m_attackAction, AttackAction);
-    CC_SYNTHESIZE_RETAIN(cocos2d::Action*, m_skillAction, SkillAction);
-    CC_SYNTHESIZE_RETAIN(cocos2d::Action*, m_injuredAction, InjuredAction);
-    CC_SYNTHESIZE_RETAIN(cocos2d::Action*, m_dieAction, DieAction);
+    CC_SYNTHESIZE_RETAIN(FSM*, m_fsm, FSM);
+
+    CC_SYNTHESIZE_RETAIN(cocos2d::Animation*, m_standAction, StandAction);
+    CC_SYNTHESIZE_RETAIN(cocos2d::Animation*, m_moveAction, MoveAction);
+    CC_SYNTHESIZE_RETAIN(cocos2d::Animation*, m_attackAction, AttackAction);
+    CC_SYNTHESIZE_RETAIN(cocos2d::Animation*, m_skillAction, SkillAction);
+    CC_SYNTHESIZE_RETAIN(cocos2d::Animation*, m_injuredAction, InjuredAction);
+    CC_SYNTHESIZE_RETAIN(cocos2d::Animation*, m_dieAction, DieAction);
 
     CC_SYNTHESIZE(bool, m_direction, Direction);
     CC_SYNTHESIZE(BoundingBox, m_bodyBox, BodyBox);

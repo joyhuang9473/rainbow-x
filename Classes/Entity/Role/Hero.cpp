@@ -46,12 +46,12 @@ bool Hero::initWithHeroType(HeroType type) {
     Animation* injuredAnim = AnimationUtil::createAnimWithFrameName(StringUtils::format("%s-hurt", spName.c_str()).c_str());
     Animation* dieAnim = AnimationUtil::createAnimWithFrameName(StringUtils::format("%s-die", spName.c_str()).c_str());
     
-    this->setStandAction(RepeatForever::create(Animate::create(standAnim)));
-    this->setMoveAction(RepeatForever::create(Animate::create(moveAnim)));
-    this->setAttackAction(Animate::create(attackAnim));
-    this->setSkillAction(RepeatForever::create(Animate::create(skillAnim)));
-    this->setInjuredAction(RepeatForever::create(Animate::create(injuredAnim)));
-    this->setDieAction(RepeatForever::create(Animate::create(dieAnim)));
+    this->setStandAction(standAnim);
+    this->setMoveAction(moveAnim);
+    this->setAttackAction(attackAnim);
+    this->setSkillAction(skillAnim);
+    this->setInjuredAction(injuredAnim);
+    this->setDieAction(dieAnim);
     
     return true;
 }

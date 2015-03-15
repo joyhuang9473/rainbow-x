@@ -85,16 +85,12 @@
 		A830F74A1A8FB5DB00C9F691 /* StringUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A830F7431A8FB5DB00C9F691 /* StringUtil.cpp */; };
 		A83112C41AA01BA600367E52 /* OperateController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A83112C21AA01BA600367E52 /* OperateController.cpp */; };
 		A83112C51AA01BA600367E52 /* OperateController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A83112C21AA01BA600367E52 /* OperateController.cpp */; };
-		A83112CE1AA04D8A00367E52 /* StandSituation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A83112C91AA04D8A00367E52 /* StandSituation.cpp */; };
-		A83112CF1AA04D8A00367E52 /* StandSituation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A83112C91AA04D8A00367E52 /* StandSituation.cpp */; };
-		A83112D01AA04D8A00367E52 /* DieSituation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A83112CB1AA04D8A00367E52 /* DieSituation.cpp */; };
-		A83112D11AA04D8A00367E52 /* DieSituation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A83112CB1AA04D8A00367E52 /* DieSituation.cpp */; };
-		A83112D21AA04D8A00367E52 /* ControlSituation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A83112CD1AA04D8A00367E52 /* ControlSituation.cpp */; };
-		A83112D31AA04D8A00367E52 /* ControlSituation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A83112CD1AA04D8A00367E52 /* ControlSituation.cpp */; };
 		A8512B5A1AB3F78C0083BCAE /* hero-gnu.plist in Resources */ = {isa = PBXBuildFile; fileRef = A8512B581AB3F78C0083BCAE /* hero-gnu.plist */; };
 		A8512B5B1AB3F78C0083BCAE /* hero-gnu.plist in Resources */ = {isa = PBXBuildFile; fileRef = A8512B581AB3F78C0083BCAE /* hero-gnu.plist */; };
 		A8512B5C1AB3F78C0083BCAE /* hero-gnu.png in Resources */ = {isa = PBXBuildFile; fileRef = A8512B591AB3F78C0083BCAE /* hero-gnu.png */; };
 		A8512B5D1AB3F78C0083BCAE /* hero-gnu.png in Resources */ = {isa = PBXBuildFile; fileRef = A8512B591AB3F78C0083BCAE /* hero-gnu.png */; };
+		A8512B601AB47E170083BCAE /* FSM.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8512B5E1AB47E170083BCAE /* FSM.cpp */; };
+		A8512B611AB47E170083BCAE /* FSM.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8512B5E1AB47E170083BCAE /* FSM.cpp */; };
 		A89CA44D1A95C1500052682C /* AnimationUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A89CA44B1A95C1500052682C /* AnimationUtil.cpp */; };
 		A89CA44E1A95C1500052682C /* AnimationUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A89CA44B1A95C1500052682C /* AnimationUtil.cpp */; };
 		A8A1B7341AA3305100BEFFD0 /* hero-kisi.png in Resources */ = {isa = PBXBuildFile; fileRef = A8A1B7321AA3305100BEFFD0 /* hero-kisi.png */; };
@@ -107,8 +103,6 @@
 		A8DEE8431A93B0DE005CE926 /* Hero.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8DEE83C1A93B0DE005CE926 /* Hero.cpp */; };
 		A8DEE8441A93B0DE005CE926 /* Role.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8DEE83E1A93B0DE005CE926 /* Role.cpp */; };
 		A8DEE8451A93B0DE005CE926 /* Role.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8DEE83E1A93B0DE005CE926 /* Role.cpp */; };
-		A8DEE8461A93B0DE005CE926 /* RoleFSM.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8DEE8401A93B0DE005CE926 /* RoleFSM.cpp */; };
-		A8DEE8471A93B0DE005CE926 /* RoleFSM.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8DEE8401A93B0DE005CE926 /* RoleFSM.cpp */; };
 		BF171245129291EC00B8313A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB012928DE900B8313A /* OpenGLES.framework */; };
 		BF1712471292920000B8313A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB412928DE900B8313A /* libz.dylib */; };
 		BF1C47F01293687400B63C5D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF1C47EA1293683800B63C5D /* QuartzCore.framework */; };
@@ -223,26 +217,19 @@
 		A830F7441A8FB5DB00C9F691 /* StringUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringUtil.h; sourceTree = "<group>"; };
 		A83112C21AA01BA600367E52 /* OperateController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OperateController.cpp; sourceTree = "<group>"; };
 		A83112C31AA01BA600367E52 /* OperateController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OperateController.h; sourceTree = "<group>"; };
-		A83112C81AA04D8A00367E52 /* StandSituation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StandSituation.h; sourceTree = "<group>"; };
-		A83112C91AA04D8A00367E52 /* StandSituation.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StandSituation.cpp; sourceTree = "<group>"; };
-		A83112CA1AA04D8A00367E52 /* DieSituation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DieSituation.h; sourceTree = "<group>"; };
-		A83112CB1AA04D8A00367E52 /* DieSituation.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DieSituation.cpp; sourceTree = "<group>"; };
-		A83112CC1AA04D8A00367E52 /* ControlSituation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ControlSituation.h; sourceTree = "<group>"; };
-		A83112CD1AA04D8A00367E52 /* ControlSituation.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ControlSituation.cpp; sourceTree = "<group>"; };
 		A8512B581AB3F78C0083BCAE /* hero-gnu.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "hero-gnu.plist"; sourceTree = "<group>"; };
 		A8512B591AB3F78C0083BCAE /* hero-gnu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hero-gnu.png"; sourceTree = "<group>"; };
+		A8512B5E1AB47E170083BCAE /* FSM.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FSM.cpp; sourceTree = "<group>"; };
+		A8512B5F1AB47E170083BCAE /* FSM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSM.h; sourceTree = "<group>"; };
 		A89CA44B1A95C1500052682C /* AnimationUtil.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AnimationUtil.cpp; sourceTree = "<group>"; };
 		A89CA44C1A95C1500052682C /* AnimationUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationUtil.h; sourceTree = "<group>"; };
 		A8A1B7321AA3305100BEFFD0 /* hero-kisi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hero-kisi.png"; sourceTree = "<group>"; };
 		A8A1B7331AA3305100BEFFD0 /* hero-kisi.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "hero-kisi.plist"; sourceTree = "<group>"; };
 		A8A95A251AB2CEF5006F665F /* floor.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = floor.tmx; sourceTree = "<group>"; };
-		A8DEE82E1A93AF61005CE926 /* State.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = State.h; sourceTree = "<group>"; };
 		A8DEE83C1A93B0DE005CE926 /* Hero.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Hero.cpp; sourceTree = "<group>"; };
 		A8DEE83D1A93B0DE005CE926 /* Hero.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hero.h; sourceTree = "<group>"; };
 		A8DEE83E1A93B0DE005CE926 /* Role.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Role.cpp; sourceTree = "<group>"; };
 		A8DEE83F1A93B0DE005CE926 /* Role.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Role.h; sourceTree = "<group>"; };
-		A8DEE8401A93B0DE005CE926 /* RoleFSM.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RoleFSM.cpp; sourceTree = "<group>"; };
-		A8DEE8411A93B0DE005CE926 /* RoleFSM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoleFSM.h; sourceTree = "<group>"; };
 		BF170DB012928DE900B8313A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		BF170DB412928DE900B8313A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		BF1C47EA1293683800B63C5D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -454,7 +441,6 @@
 			isa = PBXGroup;
 			children = (
 				A8DEE83B1A93B0DE005CE926 /* Role */,
-				A8DEE8211A93AF61005CE926 /* State */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -561,19 +547,6 @@
 			path = CSVParse;
 			sourceTree = "<group>";
 		};
-		A83112C71AA04C4C00367E52 /* Situation */ = {
-			isa = PBXGroup;
-			children = (
-				A83112C81AA04D8A00367E52 /* StandSituation.h */,
-				A83112C91AA04D8A00367E52 /* StandSituation.cpp */,
-				A83112CA1AA04D8A00367E52 /* DieSituation.h */,
-				A83112CB1AA04D8A00367E52 /* DieSituation.cpp */,
-				A83112CC1AA04D8A00367E52 /* ControlSituation.h */,
-				A83112CD1AA04D8A00367E52 /* ControlSituation.cpp */,
-			);
-			path = Situation;
-			sourceTree = "<group>";
-		};
 		A89CA44A1A95C1500052682C /* Animation */ = {
 			isa = PBXGroup;
 			children = (
@@ -583,15 +556,6 @@
 			path = Animation;
 			sourceTree = "<group>";
 		};
-		A8DEE8211A93AF61005CE926 /* State */ = {
-			isa = PBXGroup;
-			children = (
-				A83112C71AA04C4C00367E52 /* Situation */,
-				A8DEE82E1A93AF61005CE926 /* State.h */,
-			);
-			path = State;
-			sourceTree = "<group>";
-		};
 		A8DEE83B1A93B0DE005CE926 /* Role */ = {
 			isa = PBXGroup;
 			children = (
@@ -599,8 +563,8 @@
 				A8DEE83D1A93B0DE005CE926 /* Hero.h */,
 				A8DEE83E1A93B0DE005CE926 /* Role.cpp */,
 				A8DEE83F1A93B0DE005CE926 /* Role.h */,
-				A8DEE8401A93B0DE005CE926 /* RoleFSM.cpp */,
-				A8DEE8411A93B0DE005CE926 /* RoleFSM.h */,
+				A8512B5E1AB47E170083BCAE /* FSM.cpp */,
+				A8512B5F1AB47E170083BCAE /* FSM.h */,
 			);
 			path = Role;
 			sourceTree = "<group>";
@@ -770,17 +734,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				46880B8819C43A87006E1F66 /* AppDelegate.cpp in Sources */,
-				A83112D01AA04D8A00367E52 /* DieSituation.cpp in Sources */,
 				96B9F47F1A8F09FA00677CF4 /* ThreeDirectionController.cpp in Sources */,
 				96B9F47D1A8F09FA00677CF4 /* Controller.cpp in Sources */,
 				96B9F48B1A8F09FA00677CF4 /* GameScene.cpp in Sources */,
 				96B9F4851A8F09FA00677CF4 /* GameLayer.cpp in Sources */,
-				A83112D21AA04D8A00367E52 /* ControlSituation.cpp in Sources */,
+				A8512B601AB47E170083BCAE /* FSM.cpp in Sources */,
 				A830F7451A8FB5DB00C9F691 /* CsvParseUtil.cpp in Sources */,
 				A83112C41AA01BA600367E52 /* OperateController.cpp in Sources */,
 				96B9F4891A8F09FA00677CF4 /* MenuLayer.cpp in Sources */,
-				A83112CE1AA04D8A00367E52 /* StandSituation.cpp in Sources */,
-				A8DEE8461A93B0DE005CE926 /* RoleFSM.cpp in Sources */,
 				A8DEE8421A93B0DE005CE926 /* Hero.cpp in Sources */,
 				503AE10017EB989F00D1A890 /* AppController.mm in Sources */,
 				503AE10217EB989F00D1A890 /* RootViewController.mm in Sources */,
@@ -797,23 +758,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A8DEE8471A93B0DE005CE926 /* RoleFSM.cpp in Sources */,
 				46880B8919C43A87006E1F66 /* AppDelegate.cpp in Sources */,
+				A8512B611AB47E170083BCAE /* FSM.cpp in Sources */,
 				A830F7481A8FB5DB00C9F691 /* FileLoadUtil.cpp in Sources */,
 				A83112C51AA01BA600367E52 /* OperateController.cpp in Sources */,
 				96B9F48E1A8F09FA00677CF4 /* MenuScene.cpp in Sources */,
 				A89CA44E1A95C1500052682C /* AnimationUtil.cpp in Sources */,
 				A830F7461A8FB5DB00C9F691 /* CsvParseUtil.cpp in Sources */,
 				96B9F48A1A8F09FA00677CF4 /* MenuLayer.cpp in Sources */,
-				A83112D31AA04D8A00367E52 /* ControlSituation.cpp in Sources */,
 				503AE10517EB98FF00D1A890 /* main.cpp in Sources */,
-				A83112CF1AA04D8A00367E52 /* StandSituation.cpp in Sources */,
 				96B9F47E1A8F09FA00677CF4 /* Controller.cpp in Sources */,
 				A8DEE8451A93B0DE005CE926 /* Role.cpp in Sources */,
 				96B9F4861A8F09FA00677CF4 /* GameLayer.cpp in Sources */,
 				96B9F48C1A8F09FA00677CF4 /* GameScene.cpp in Sources */,
 				A830F74A1A8FB5DB00C9F691 /* StringUtil.cpp in Sources */,
-				A83112D11AA04D8A00367E52 /* DieSituation.cpp in Sources */,
 				96B9F4801A8F09FA00677CF4 /* ThreeDirectionController.cpp in Sources */,
 				A8DEE8431A93B0DE005CE926 /* Hero.cpp in Sources */,
 			);

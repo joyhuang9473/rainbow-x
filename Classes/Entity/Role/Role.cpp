@@ -1,13 +1,11 @@
 #include "Role.h"
-#include "RoleFSM.h"
+#include "FSM.h"
 
 USING_NS_CC;
 
 Role::Role() {
     this->m_sprite = nullptr;
-    this->m_fsm = RoleFSM::create();
-    this->m_fsm->setRole(this);
-
+    this->m_fsm = nullptr;
     this->m_attackAction = nullptr;
     this->m_dieAction = nullptr;
     this->m_injuredAction = nullptr;
@@ -15,7 +13,7 @@ Role::Role() {
     this->m_skillAction = nullptr;
     this->m_standAction = nullptr;
 
-    this->addChild(this->m_fsm);
+    this->initFSM();
     this->scheduleUpdate();
 }
 
@@ -49,40 +47,88 @@ Point Role::getTagPosition() {
     return this->getPosition();
 }
 
-RoleFSM* Role::getFSM() {
-    return this->m_fsm;
-}
-
 void Role::update(float dt) {
-    this->m_fsm->update(dt);
+    this->m_sprite->setFlippedX(this->getDirection());
 }
 
-void Role::runStandAction() {
-    this->m_sprite->runAction(this->m_standAction);
+void Role::initFSM() {
+    this->m_fsm = FSM::create("idle");
+    this->addChild(this->m_fsm);
+
+    auto onIdle = [this]() {
+        this->m_sprite->stopAllActions();
+
+        auto animate = Animate::create(this->m_standAction);
+        auto repeat = RepeatForever::create(animate);
+        repeat->setTag(AnimationType::IDLE);
+        this->m_sprite->runAction(repeat);
+    };
+    this->m_fsm->setOnEnter("idle", onIdle);
+
+    auto onWalking = [this]() {
+        this->m_sprite->stopAllActions();
+
+        auto animate = Animate::create(this->m_moveAction);
+        auto repeat = RepeatForever::create(animate);
+        repeat->setTag(AnimationType::WALKING);
+        this->m_sprite->runAction(repeat);
+    };
+    this->m_fsm->setOnEnter("walking", onWalking);
+
+    auto onSkilling = [this]() {
+        this->m_sprite->stopAllActions();
+
+        auto animate = Animate::create(this->m_skillAction);
+        auto callbackFunc = CallFunc::create([this]() {
+            this->m_fsm->doEvent("stand");
+        });
+        auto seq = Sequence::create(animate, callbackFunc, nullptr);
+        seq->setTag(AnimationType::SKILLING);
+        this->m_sprite->runAction(seq);
+    };
+    this->m_fsm->setOnEnter("skilling", onSkilling);
+
+    auto onHurting = [this]() {
+        this->m_sprite->stopAllActions();
+
+        auto animate = Animate::create(this->m_injuredAction);
+        auto callbackFunc = CallFunc::create([this]() {
+            this->m_fsm->doEvent("stand");
+        });
+        auto seq = Sequence::create(animate, callbackFunc, nullptr);
+        seq->setTag(AnimationType::HURTING);
+        this->m_sprite->runAction(seq);
+    };
+    this->m_fsm->setOnEnter("hurting", onHurting);
+
+    auto onAttacking = [this]() {
+        this->m_sprite->stopAllActions();
+
+        auto animate = Animate::create(this->m_attackAction);
+        auto callbackFunc = CallFunc::create([this]() {
+            this->m_fsm->doEvent("stand");
+        });
+        auto seq = Sequence::create(animate, callbackFunc, nullptr);
+        seq->setTag(AnimationType::ATTACKING);
+        this->m_sprite->runAction(seq);
+    };
+    this->m_fsm->setOnEnter("attacking", onAttacking);
+
+    auto onDead = [this]() {
+        this->m_sprite->stopAllActions();
+
+        auto animate = Animate::create(this->m_dieAction);
+        auto callbackFunc = CallFunc::create([this]() {
+            this->m_fsm->doEvent("stand");
+        });
+        auto seq = Sequence::create(animate, callbackFunc, nullptr);
+        seq->setTag(AnimationType::DEAD);
+        this->m_sprite->runAction(seq);
+    };
+    this->m_fsm->setOnEnter("dead", onDead);
 }
 
-void Role::runMoveAction() {
-    this->m_sprite->runAction(this->m_moveAction);
-}
-
-void Role::runAttackAction() {
-    this->m_sprite->runAction(this->m_attackAction);
-}
-
-void Role::runSkillAction() {
-    this->m_sprite->runAction(this->m_skillAction);
-}
-
-void Role::runInjuredAction() {
-    this->m_sprite->runAction(this->m_injuredAction);
-}
-
-void Role::runDieAction() {
-    this->m_sprite->runAction(this->m_dieAction);
-}
-
-BoundingBox Role::createBoundingBox(Point origin, Size size)
-{
+BoundingBox Role::createBoundingBox(Point origin, Size size) {
     BoundingBox boundingBox;
     boundingBox.original.origin= origin;
     boundingBox.original.size= size;
@@ -95,7 +141,7 @@ void Role::updateBoxes() {
     bool isFlippedX = this->m_sprite->isFlippedX();
     float x_hitBox = 0.0f;
 
-    if(isFlippedX) {
+    if (isFlippedX) {
         x_hitBox = this->getPosition().x - this->m_hitBox.original.origin.x - this->m_hitBox.original.size.width;
     } else {
         x_hitBox = this->getPosition().x + this->m_hitBox.original.origin.x;

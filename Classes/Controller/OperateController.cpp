@@ -15,7 +15,7 @@ void OperateController::update(float dt) {
     if (this->m_controllerListener == nullptr) {
         return;
     }
-    
+
     Point pos = this->m_controllerListener->getTagPosition();
     pos.x += this->getVelocityX();
     pos.y += this->getVelocityY();
@@ -26,44 +26,44 @@ void OperateController::keyPressed(cocos2d::EventKeyboard::KeyCode keyCode, coco
     switch(keyCode) {
         // Direction
         case EventKeyboard::KeyCode::KEY_LEFT_ARROW:
-            this->m_role->getFSM()->changeSituation(State::SITUATION_MOVE);
             this->m_role->setDirection(true);
+            this->m_role->getFSM()->doEvent("walk");
             this->setVelocityX(-5);
             break;
         case EventKeyboard::KeyCode::KEY_RIGHT_ARROW:
-            this->m_role->getFSM()->changeSituation(State::SITUATION_MOVE);
             this->m_role->setDirection(false);
+            this->m_role->getFSM()->doEvent("walk");
             this->setVelocityX(5);
             break;
         case EventKeyboard::KeyCode::KEY_UP_ARROW:
-            this->m_role->getFSM()->changeSituation(State::SITUATION_MOVE);
+            this->m_role->getFSM()->doEvent("walk");
             this->setVelocityY(5);
             break;
         case EventKeyboard::KeyCode::KEY_DOWN_ARROW:
-            this->m_role->getFSM()->changeSituation(State::SITUATION_MOVE);
+            this->m_role->getFSM()->doEvent("walk");
             this->setVelocityY(-5);
             break;
         case EventKeyboard::KeyCode::KEY_S:
-            this->m_role->getFSM()->changeSituation(State::SITUATION_ATTACK);
+            this->m_role->getFSM()->doEvent("attack");
             break;
-
+        default:
+            break;
     }
 }
 
-void OperateController::keyReleased(cocos2d::EventKeyboard::KeyCode keyCode, cocos2d::Event *event) {
+void OperateController::keyReleased(EventKeyboard::KeyCode keyCode, Event* event) {
     switch(keyCode) {
         case EventKeyboard::KeyCode::KEY_LEFT_ARROW:
         case EventKeyboard::KeyCode::KEY_RIGHT_ARROW:
-            this->m_role->getFSM()->changeSituation(State::SITUATION_IDLE);
+            this->m_role->getFSM()->doEvent("stand");
             this->setVelocityX(0);
             break;
         case EventKeyboard::KeyCode::KEY_UP_ARROW:
         case EventKeyboard::KeyCode::KEY_DOWN_ARROW:
-            this->m_role->getFSM()->changeSituation(State::SITUATION_IDLE);
+            this->m_role->getFSM()->doEvent("stand");
             this->setVelocityY(0);
             break;
-        case EventKeyboard::KeyCode::KEY_S:
-            this->m_role->getFSM()->changeSituation(State::SITUATION_IDLE);
+        default:
             break;
     }
 }

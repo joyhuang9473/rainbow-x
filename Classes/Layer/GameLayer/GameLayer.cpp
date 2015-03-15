@@ -16,6 +16,7 @@ bool GameLayer::init() {
 
     // Hero
     auto player = Hero::createWithHeroType(Hero::HeroType::KISI);
+    player->getFSM()->doEvent("stand");
     this->setPlayer(map, player);
     
     this->addChild(map, -1);
@@ -43,7 +44,7 @@ bool GameLayer::collisionDetection(const BoundingBox &hitBox, const BoundingBox 
     Rect hitRect = hitBox.actual;
     Rect bodyRect = bodyBox.actual;
 
-    if(hitRect.intersectsRect(bodyRect)) {
+    if (hitRect.intersectsRect(bodyRect)) {
         return true;
     }
     return false;

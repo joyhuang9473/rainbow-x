@@ -15,13 +15,13 @@ void ControlSituation::execute(Role* role) {
             if (this->m_isMove) break;
 
             role->getSprite()->setFlippedX(role->getDirection());
-            role->runMoveAction();
+//            role->runMoveAction();
             this->m_isMove = true;
             break;
         case State::SITUATION_ATTACK:
             if (this->m_isAttack) break;
 
-            role->runAttackAction();
+//            role->runAttackAction();
             this->m_isAttack = true;
             break;
         default:
