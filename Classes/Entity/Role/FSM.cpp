@@ -96,6 +96,10 @@ void FSM::setOnEnter(std::string state, std::function<void()> onEnter) {
     }
 }
 
+std::string FSM::getCurrState() {
+    return this->m_currentState;
+}
+
 bool FSM::init() {
     this->addState("idle", [this]() {
         log("enter idle");

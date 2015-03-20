@@ -46,6 +46,9 @@ void OperateController::keyPressed(cocos2d::EventKeyboard::KeyCode keyCode, coco
         case EventKeyboard::KeyCode::KEY_S:
             this->m_role->getFSM()->doEvent("attack");
             break;
+        case EventKeyboard::KeyCode::KEY_D:
+            this->m_role->getFSM()->doEvent("skill");
+            break;
         default:
             break;
     }

@@ -77,6 +77,8 @@
 		96B9F4AE1A8F0A1400677CF4 /* bg_village.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 96B9F49C1A8F0A1400677CF4 /* bg_village.jpg */; };
 		96B9F4AF1A8F0A1400677CF4 /* floor.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 96B9F49D1A8F0A1400677CF4 /* floor.jpg */; };
 		96B9F4B01A8F0A1400677CF4 /* floor.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 96B9F49D1A8F0A1400677CF4 /* floor.jpg */; };
+		A8101AEB1ABB28B3004AA3E5 /* ContactListener.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8101AE91ABB28B3004AA3E5 /* ContactListener.cpp */; };
+		A8101AEC1ABB28B3004AA3E5 /* ContactListener.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8101AE91ABB28B3004AA3E5 /* ContactListener.cpp */; };
 		A830F7451A8FB5DB00C9F691 /* CsvParseUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A830F73F1A8FB5DB00C9F691 /* CsvParseUtil.cpp */; };
 		A830F7461A8FB5DB00C9F691 /* CsvParseUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A830F73F1A8FB5DB00C9F691 /* CsvParseUtil.cpp */; };
 		A830F7471A8FB5DB00C9F691 /* FileLoadUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A830F7411A8FB5DB00C9F691 /* FileLoadUtil.cpp */; };
@@ -91,6 +93,8 @@
 		A8512B5D1AB3F78C0083BCAE /* hero-gnu.png in Resources */ = {isa = PBXBuildFile; fileRef = A8512B591AB3F78C0083BCAE /* hero-gnu.png */; };
 		A8512B601AB47E170083BCAE /* FSM.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8512B5E1AB47E170083BCAE /* FSM.cpp */; };
 		A8512B611AB47E170083BCAE /* FSM.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8512B5E1AB47E170083BCAE /* FSM.cpp */; };
+		A899240D1ABBAE0900CBD787 /* VisibleRect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A899240B1ABBAE0900CBD787 /* VisibleRect.cpp */; };
+		A899240E1ABBAE0900CBD787 /* VisibleRect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A899240B1ABBAE0900CBD787 /* VisibleRect.cpp */; };
 		A89CA44D1A95C1500052682C /* AnimationUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A89CA44B1A95C1500052682C /* AnimationUtil.cpp */; };
 		A89CA44E1A95C1500052682C /* AnimationUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A89CA44B1A95C1500052682C /* AnimationUtil.cpp */; };
 		A8A1B7341AA3305100BEFFD0 /* hero-kisi.png in Resources */ = {isa = PBXBuildFile; fileRef = A8A1B7321AA3305100BEFFD0 /* hero-kisi.png */; };
@@ -209,6 +213,8 @@
 		96B9F49A1A8F0A1400677CF4 /* Marker Felt.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Marker Felt.ttf"; sourceTree = "<group>"; };
 		96B9F49C1A8F0A1400677CF4 /* bg_village.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg_village.jpg; sourceTree = "<group>"; };
 		96B9F49D1A8F0A1400677CF4 /* floor.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = floor.jpg; sourceTree = "<group>"; };
+		A8101AE91ABB28B3004AA3E5 /* ContactListener.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ContactListener.cpp; sourceTree = "<group>"; };
+		A8101AEA1ABB28B3004AA3E5 /* ContactListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactListener.h; sourceTree = "<group>"; };
 		A830F73F1A8FB5DB00C9F691 /* CsvParseUtil.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CsvParseUtil.cpp; sourceTree = "<group>"; };
 		A830F7401A8FB5DB00C9F691 /* CSVParseUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSVParseUtil.h; sourceTree = "<group>"; };
 		A830F7411A8FB5DB00C9F691 /* FileLoadUtil.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FileLoadUtil.cpp; sourceTree = "<group>"; };
@@ -221,6 +227,8 @@
 		A8512B591AB3F78C0083BCAE /* hero-gnu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hero-gnu.png"; sourceTree = "<group>"; };
 		A8512B5E1AB47E170083BCAE /* FSM.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FSM.cpp; sourceTree = "<group>"; };
 		A8512B5F1AB47E170083BCAE /* FSM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSM.h; sourceTree = "<group>"; };
+		A899240B1ABBAE0900CBD787 /* VisibleRect.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VisibleRect.cpp; sourceTree = "<group>"; };
+		A899240C1ABBAE0900CBD787 /* VisibleRect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VisibleRect.h; sourceTree = "<group>"; };
 		A89CA44B1A95C1500052682C /* AnimationUtil.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AnimationUtil.cpp; sourceTree = "<group>"; };
 		A89CA44C1A95C1500052682C /* AnimationUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationUtil.h; sourceTree = "<group>"; };
 		A8A1B7321AA3305100BEFFD0 /* hero-kisi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hero-kisi.png"; sourceTree = "<group>"; };
@@ -433,6 +441,8 @@
 				96B9F4641A8F09FA00677CF4 /* ThreeDirectionController.h */,
 				A83112C21AA01BA600367E52 /* OperateController.cpp */,
 				A83112C31AA01BA600367E52 /* OperateController.h */,
+				A8101AE91ABB28B3004AA3E5 /* ContactListener.cpp */,
+				A8101AEA1ABB28B3004AA3E5 /* ContactListener.h */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -459,6 +469,8 @@
 			children = (
 				96B9F46D1A8F09FA00677CF4 /* GameLayer.cpp */,
 				96B9F46E1A8F09FA00677CF4 /* GameLayer.h */,
+				A899240B1ABBAE0900CBD787 /* VisibleRect.cpp */,
+				A899240C1ABBAE0900CBD787 /* VisibleRect.h */,
 			);
 			path = GameLayer;
 			sourceTree = "<group>";
@@ -737,6 +749,7 @@
 				96B9F47F1A8F09FA00677CF4 /* ThreeDirectionController.cpp in Sources */,
 				96B9F47D1A8F09FA00677CF4 /* Controller.cpp in Sources */,
 				96B9F48B1A8F09FA00677CF4 /* GameScene.cpp in Sources */,
+				A899240D1ABBAE0900CBD787 /* VisibleRect.cpp in Sources */,
 				96B9F4851A8F09FA00677CF4 /* GameLayer.cpp in Sources */,
 				A8512B601AB47E170083BCAE /* FSM.cpp in Sources */,
 				A830F7451A8FB5DB00C9F691 /* CsvParseUtil.cpp in Sources */,
@@ -751,6 +764,7 @@
 				96B9F48D1A8F09FA00677CF4 /* MenuScene.cpp in Sources */,
 				A830F7471A8FB5DB00C9F691 /* FileLoadUtil.cpp in Sources */,
 				A8DEE8441A93B0DE005CE926 /* Role.cpp in Sources */,
+				A8101AEB1ABB28B3004AA3E5 /* ContactListener.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -760,6 +774,7 @@
 			files = (
 				46880B8919C43A87006E1F66 /* AppDelegate.cpp in Sources */,
 				A8512B611AB47E170083BCAE /* FSM.cpp in Sources */,
+				A899240E1ABBAE0900CBD787 /* VisibleRect.cpp in Sources */,
 				A830F7481A8FB5DB00C9F691 /* FileLoadUtil.cpp in Sources */,
 				A83112C51AA01BA600367E52 /* OperateController.cpp in Sources */,
 				96B9F48E1A8F09FA00677CF4 /* MenuScene.cpp in Sources */,
@@ -767,6 +782,7 @@
 				A830F7461A8FB5DB00C9F691 /* CsvParseUtil.cpp in Sources */,
 				96B9F48A1A8F09FA00677CF4 /* MenuLayer.cpp in Sources */,
 				503AE10517EB98FF00D1A890 /* main.cpp in Sources */,
+				A8101AEC1ABB28B3004AA3E5 /* ContactListener.cpp in Sources */,
 				96B9F47E1A8F09FA00677CF4 /* Controller.cpp in Sources */,
 				A8DEE8451A93B0DE005CE926 /* Role.cpp in Sources */,
 				96B9F4861A8F09FA00677CF4 /* GameLayer.cpp in Sources */,

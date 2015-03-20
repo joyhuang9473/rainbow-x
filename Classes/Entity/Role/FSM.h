@@ -19,6 +19,7 @@ public:
 
     void setOnEnter(std::string state, std::function<void()> onEnter);
 
+    std::string getCurrState();
 private:
     void changeToState(std::string state);
 
