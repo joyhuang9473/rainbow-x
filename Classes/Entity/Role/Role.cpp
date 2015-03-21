@@ -84,7 +84,7 @@ void Role::initFSM() {
         });
         auto seq = Sequence::create(animate, callbackFunc, nullptr);
         seq->setTag(AnimationType::SKILLING);
-        this->m_sprite->runAction(seq);
+        this->m_sprite->runAction(Speed::create(seq, 3.0f));
     };
     this->m_fsm->setOnEnter("skilling", onSkilling);
 
@@ -95,7 +95,7 @@ void Role::initFSM() {
         auto callbackFunc = CallFunc::create([this]() {
             this->m_fsm->doEvent("stand");
         });
-        auto seq = Sequence::create(animate, callbackFunc, nullptr);
+        auto seq = Sequence::create(DelayTime::create(0.2f), animate, callbackFunc, nullptr);
         seq->setTag(AnimationType::HURTING);
         this->m_sprite->runAction(seq);
     };
@@ -110,7 +110,7 @@ void Role::initFSM() {
         });
         auto seq = Sequence::create(animate, callbackFunc, nullptr);
         seq->setTag(AnimationType::ATTACKING);
-        this->m_sprite->runAction(seq);
+        this->m_sprite->runAction(Speed::create(seq, 3.0f));
     };
     this->m_fsm->setOnEnter("attacking", onAttacking);
 
