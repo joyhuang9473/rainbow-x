@@ -3,6 +3,8 @@
 
 USING_NS_CC;
 
+#define FRAMECACHE SpriteFrameCache::getInstance()
+
 Role::Role() {
     this->m_sprite = nullptr;
     this->m_fsm = nullptr;
@@ -12,6 +14,10 @@ Role::Role() {
     this->m_moveAction = nullptr;
     this->m_skillAction = nullptr;
     this->m_standAction = nullptr;
+
+    this->m_health = 100.0f;
+    this->m_maxHealth = 100.0f;
+    this->m_attack = 20.0f;
 
     this->initFSM();
     this->scheduleUpdate();
@@ -31,11 +37,21 @@ void Role::bindSprite(Sprite* sprite) {
     Size spriteSize = this->m_sprite->getDisplayFrame()->getRect().size;
     this->m_bodyBox = this->createBoundingBox(Point(-spriteSize.width/2 - 10, -spriteSize.height / 2), Size(spriteSize.width+25, spriteSize.height));
     this->m_hitBox = this->createBoundingBox(Point(spriteSize.width / 2, -5), Size(25, 20));
+
+    // hp progress bar
+    auto size = this->m_sprite->getContentSize();
+    this->m_progress = Progress::create();
+    this->m_progress->setPosition(size.width*2/3, size.height + this->m_progress->getContentSize().height/2);
+    this->addChild(this->m_progress);
 }
 
 void Role::setController(Controller* controller) {
     this->m_controller = controller;
     this->m_controller->setControllerListener(this);
+}
+
+Controller* Role::getController() {
+    return this->m_controller;
 }
 
 void Role::setTagPosition(int x, int y) {
@@ -126,6 +142,15 @@ void Role::initFSM() {
         this->m_sprite->runAction(seq);
     };
     this->m_fsm->setOnEnter("dead", onDead);
+}
+
+void Role::beHit(float attack) {
+    if (!this->m_fsm->doEvent("hurt")) return;
+
+    this->m_health = this->m_health - attack;
+    if (this->m_health < 0) this->m_health = 0;
+
+    this->m_progress->setProgress((float)(this->m_health/this->m_maxHealth)*100);
 }
 
 BoundingBox Role::createBoundingBox(Point origin, Size size) {

@@ -1,7 +1,7 @@
 #include "GameLayer.h"
 #include "VisibleRect.h"
-#include "../../Entity/Role/Hero.h"
 #include "../../Controller/OperateController.h"
+#include "../../Controller/AIController.h"
 #include "Box2D/Box2D.h"
 
 USING_NS_CC;
@@ -27,10 +27,19 @@ bool GameLayer::init() {
     this->addBoxBodyForRole(player);
     this->m_player = player;
 
+    // Enemy
+    auto enemy = Enemy::createWithEnemyType(Enemy::EnemyType::GNU);
+    enemy->getFSM()->doEvent("stand");
+    enemy->setTag(SpriteTag::SPRITE_ENEMY);
+    this->setEnemy(map, enemy, player);
+    this->addBoxBodyForRole(enemy);
+    
     this->addChild(map, -1);
     this->addChild(player);
+    this->addChild(enemy);
 
     this->schedule(schedule_selector(GameLayer::updateBoxBody));
+    this->scheduleUpdate();
     return true;
 }
 
@@ -46,6 +55,20 @@ void GameLayer::setPlayer(TMXTiledMap* map, Hero* hero) {
 
     hero->setController(operateController);
     hero->addChild(operateController);
+}
+
+void GameLayer::setEnemy(TMXTiledMap* map, Enemy* enemy, Hero* target) {
+    Size visibleSize = Director::getInstance()->getVisibleSize();
+    
+    enemy->setTiledMap(map);
+    enemy->setPosition(Vec2(visibleSize.width/2, visibleSize.height/2));
+    
+    AIController* aiController = AIController::create();
+    aiController->setRole(enemy);
+    aiController->setTarget(target);
+
+    enemy->setController(aiController);
+    enemy->addChild(aiController);
 }
 
 bool GameLayer::collisionDetection(const BoundingBox &hitBox, const BoundingBox &bodyBox) {
@@ -129,10 +152,14 @@ void GameLayer::updateBoxBody(float dt) {
 
     std::vector<b2Body*> toDestroy;
 
-    // TODO : check all body in physics world
+    // check all body in physics world
     for (b2Body* body = this->m_world->GetBodyList() ; body ; body = body->GetNext()) {
         if (body->GetUserData() != NULL) {
-            // DO SOME CHECK
+            Role* role = (Role*)body->GetUserData();
+            if (role->getHealth() <= 0) {
+                role->getFSM()->doEvent("die");
+                role->removeChild(role->getController());
+            }
         }
     }
 
@@ -151,26 +178,28 @@ void GameLayer::updateBoxBody(float dt) {
              || roleA->getFSM()->getCurrState() == "skilling"
             ) {
                 if (this->collisionDetection(roleA->getHitBox(), roleB->getBodyBox())) {
-                    roleB->getFSM()->doEvent("hurt");
+                    roleB->beHit(roleA->getAttack());
                 }
             } else if (
                 roleB->getFSM()->getCurrState() == "attacking"
              || roleB->getFSM()->getCurrState() == "skilling"
             ) {
                 if (this->collisionDetection(roleB->getHitBox(), roleA->getBodyBox())) {
-                    roleA->getFSM()->doEvent("hurt");
+                    roleA->beHit(roleB->getAttack());
                 }
             }
         }
     }
 
-    // TODO : remove dead role
+    // remove dead role
     std::vector<b2Body*>::iterator iter2;
     for (iter2 = toDestroy.begin() ; iter2 != toDestroy.end() ; ++iter2) {
         b2Body* body = *(iter2);
         
         if (body->GetUserData() != NULL) {
-            // DO SOME REMOVE
+            Role* role = (Role*)body->GetUserData();
+            this->removeChild(role);
         }
+        this->m_world->DestroyBody(body);
     }
 }

@@ -87,6 +87,16 @@
 		A830F74A1A8FB5DB00C9F691 /* StringUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A830F7431A8FB5DB00C9F691 /* StringUtil.cpp */; };
 		A83112C41AA01BA600367E52 /* OperateController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A83112C21AA01BA600367E52 /* OperateController.cpp */; };
 		A83112C51AA01BA600367E52 /* OperateController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A83112C21AA01BA600367E52 /* OperateController.cpp */; };
+		A83424221ABFFEFB0099E768 /* Progress.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A83424201ABFFEFB0099E768 /* Progress.cpp */; };
+		A83424231ABFFEFB0099E768 /* Progress.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A83424201ABFFEFB0099E768 /* Progress.cpp */; };
+		A834242E1AC018E70099E768 /* progress-fill.png in Resources */ = {isa = PBXBuildFile; fileRef = A834242C1AC018E70099E768 /* progress-fill.png */; };
+		A834242F1AC018E70099E768 /* progress-fill.png in Resources */ = {isa = PBXBuildFile; fileRef = A834242C1AC018E70099E768 /* progress-fill.png */; };
+		A83424301AC018E70099E768 /* progress-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = A834242D1AC018E70099E768 /* progress-bg.png */; };
+		A83424311AC018E70099E768 /* progress-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = A834242D1AC018E70099E768 /* progress-bg.png */; };
+		A83D69FD1ABD415B00DD9932 /* AIController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A83D69FB1ABD415B00DD9932 /* AIController.cpp */; };
+		A83D69FE1ABD415B00DD9932 /* AIController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A83D69FB1ABD415B00DD9932 /* AIController.cpp */; };
+		A83D6A011ABD602800DD9932 /* Enemy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A83D69FF1ABD602800DD9932 /* Enemy.cpp */; };
+		A83D6A021ABD602800DD9932 /* Enemy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A83D69FF1ABD602800DD9932 /* Enemy.cpp */; };
 		A8512B5A1AB3F78C0083BCAE /* hero-gnu.plist in Resources */ = {isa = PBXBuildFile; fileRef = A8512B581AB3F78C0083BCAE /* hero-gnu.plist */; };
 		A8512B5B1AB3F78C0083BCAE /* hero-gnu.plist in Resources */ = {isa = PBXBuildFile; fileRef = A8512B581AB3F78C0083BCAE /* hero-gnu.plist */; };
 		A8512B5C1AB3F78C0083BCAE /* hero-gnu.png in Resources */ = {isa = PBXBuildFile; fileRef = A8512B591AB3F78C0083BCAE /* hero-gnu.png */; };
@@ -223,6 +233,14 @@
 		A830F7441A8FB5DB00C9F691 /* StringUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringUtil.h; sourceTree = "<group>"; };
 		A83112C21AA01BA600367E52 /* OperateController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OperateController.cpp; sourceTree = "<group>"; };
 		A83112C31AA01BA600367E52 /* OperateController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OperateController.h; sourceTree = "<group>"; };
+		A83424201ABFFEFB0099E768 /* Progress.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Progress.cpp; sourceTree = "<group>"; };
+		A83424211ABFFEFB0099E768 /* Progress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Progress.h; sourceTree = "<group>"; };
+		A834242C1AC018E70099E768 /* progress-fill.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "progress-fill.png"; path = "Other/progress-fill.png"; sourceTree = "<group>"; };
+		A834242D1AC018E70099E768 /* progress-bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "progress-bg.png"; path = "Other/progress-bg.png"; sourceTree = "<group>"; };
+		A83D69FB1ABD415B00DD9932 /* AIController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AIController.cpp; sourceTree = "<group>"; };
+		A83D69FC1ABD415B00DD9932 /* AIController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIController.h; sourceTree = "<group>"; };
+		A83D69FF1ABD602800DD9932 /* Enemy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Enemy.cpp; sourceTree = "<group>"; };
+		A83D6A001ABD602800DD9932 /* Enemy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Enemy.h; sourceTree = "<group>"; };
 		A8512B581AB3F78C0083BCAE /* hero-gnu.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "hero-gnu.plist"; sourceTree = "<group>"; };
 		A8512B591AB3F78C0083BCAE /* hero-gnu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hero-gnu.png"; sourceTree = "<group>"; };
 		A8512B5E1AB47E170083BCAE /* FSM.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FSM.cpp; sourceTree = "<group>"; };
@@ -360,6 +378,7 @@
 		46880B7519C43A67006E1F66 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				A834242B1AC018DA0099E768 /* Other */,
 				96B9F4911A8F0A1400677CF4 /* buttons */,
 				96B9F4961A8F0A1400677CF4 /* Characters */,
 				96B9F4991A8F0A1400677CF4 /* fonts */,
@@ -443,6 +462,8 @@
 				A83112C31AA01BA600367E52 /* OperateController.h */,
 				A8101AE91ABB28B3004AA3E5 /* ContactListener.cpp */,
 				A8101AEA1ABB28B3004AA3E5 /* ContactListener.h */,
+				A83D69FB1ABD415B00DD9932 /* AIController.cpp */,
+				A83D69FC1ABD415B00DD9932 /* AIController.h */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -559,6 +580,15 @@
 			path = CSVParse;
 			sourceTree = "<group>";
 		};
+		A834242B1AC018DA0099E768 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				A834242C1AC018E70099E768 /* progress-fill.png */,
+				A834242D1AC018E70099E768 /* progress-bg.png */,
+			);
+			name = Other;
+			sourceTree = "<group>";
+		};
 		A89CA44A1A95C1500052682C /* Animation */ = {
 			isa = PBXGroup;
 			children = (
@@ -571,12 +601,16 @@
 		A8DEE83B1A93B0DE005CE926 /* Role */ = {
 			isa = PBXGroup;
 			children = (
+				A83D69FF1ABD602800DD9932 /* Enemy.cpp */,
+				A83D6A001ABD602800DD9932 /* Enemy.h */,
 				A8DEE83C1A93B0DE005CE926 /* Hero.cpp */,
 				A8DEE83D1A93B0DE005CE926 /* Hero.h */,
 				A8DEE83E1A93B0DE005CE926 /* Role.cpp */,
 				A8DEE83F1A93B0DE005CE926 /* Role.h */,
 				A8512B5E1AB47E170083BCAE /* FSM.cpp */,
 				A8512B5F1AB47E170083BCAE /* FSM.h */,
+				A83424201ABFFEFB0099E768 /* Progress.cpp */,
+				A83424211ABFFEFB0099E768 /* Progress.h */,
 			);
 			path = Role;
 			sourceTree = "<group>";
@@ -686,6 +720,7 @@
 				A8A1B7361AA3305100BEFFD0 /* hero-kisi.plist in Resources */,
 				96B9F4A91A8F0A1400677CF4 /* red_hair_boy.png in Resources */,
 				5087E77F17EB970100C73F5D /* Default@2x.png in Resources */,
+				A83424301AC018E70099E768 /* progress-bg.png in Resources */,
 				96B9F4A71A8F0A1400677CF4 /* red_hair_boy.plist in Resources */,
 				50EF629917ECD46A001EB2F8 /* Icon-100.png in Resources */,
 				5087E78317EB970100C73F5D /* Icon-152.png in Resources */,
@@ -705,6 +740,7 @@
 				50EF629617ECD46A001EB2F8 /* Icon-40.png in Resources */,
 				5087E78217EB970100C73F5D /* Icon-144.png in Resources */,
 				50EF629817ECD46A001EB2F8 /* Icon-80.png in Resources */,
+				A834242E1AC018E70099E768 /* progress-fill.png in Resources */,
 				5087E78417EB970100C73F5D /* Icon-57.png in Resources */,
 				96B9F4AF1A8F0A1400677CF4 /* floor.jpg in Resources */,
 				5087E77E17EB970100C73F5D /* Default.png in Resources */,
@@ -725,6 +761,7 @@
 				96B9F4A61A8F0A1400677CF4 /* StartNormal.png in Resources */,
 				A8A1B7351AA3305100BEFFD0 /* hero-kisi.png in Resources */,
 				96B9F4A81A8F0A1400677CF4 /* red_hair_boy.plist in Resources */,
+				A83424311AC018E70099E768 /* progress-bg.png in Resources */,
 				A8A95A271AB2CEF5006F665F /* floor.tmx in Resources */,
 				A8512B5D1AB3F78C0083BCAE /* hero-gnu.png in Resources */,
 				96B9F4AE1A8F0A1400677CF4 /* bg_village.jpg in Resources */,
@@ -733,6 +770,7 @@
 				96B9F4A41A8F0A1400677CF4 /* HelloWorld.png in Resources */,
 				96B9F4A01A8F0A1400677CF4 /* CloseNormal.png in Resources */,
 				A8512B5B1AB3F78C0083BCAE /* hero-gnu.plist in Resources */,
+				A834242F1AC018E70099E768 /* progress-fill.png in Resources */,
 				96B9F4B01A8F0A1400677CF4 /* floor.jpg in Resources */,
 				96B9F4A21A8F0A1400677CF4 /* CloseSelected.png in Resources */,
 			);
@@ -760,10 +798,13 @@
 				503AE10217EB989F00D1A890 /* RootViewController.mm in Sources */,
 				A89CA44D1A95C1500052682C /* AnimationUtil.cpp in Sources */,
 				A830F7491A8FB5DB00C9F691 /* StringUtil.cpp in Sources */,
+				A83D69FD1ABD415B00DD9932 /* AIController.cpp in Sources */,
 				503AE10117EB989F00D1A890 /* main.m in Sources */,
 				96B9F48D1A8F09FA00677CF4 /* MenuScene.cpp in Sources */,
 				A830F7471A8FB5DB00C9F691 /* FileLoadUtil.cpp in Sources */,
 				A8DEE8441A93B0DE005CE926 /* Role.cpp in Sources */,
+				A83424221ABFFEFB0099E768 /* Progress.cpp in Sources */,
+				A83D6A011ABD602800DD9932 /* Enemy.cpp in Sources */,
 				A8101AEB1ABB28B3004AA3E5 /* ContactListener.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -774,6 +815,7 @@
 			files = (
 				46880B8919C43A87006E1F66 /* AppDelegate.cpp in Sources */,
 				A8512B611AB47E170083BCAE /* FSM.cpp in Sources */,
+				A83D69FE1ABD415B00DD9932 /* AIController.cpp in Sources */,
 				A899240E1ABBAE0900CBD787 /* VisibleRect.cpp in Sources */,
 				A830F7481A8FB5DB00C9F691 /* FileLoadUtil.cpp in Sources */,
 				A83112C51AA01BA600367E52 /* OperateController.cpp in Sources */,
@@ -783,7 +825,9 @@
 				96B9F48A1A8F09FA00677CF4 /* MenuLayer.cpp in Sources */,
 				503AE10517EB98FF00D1A890 /* main.cpp in Sources */,
 				A8101AEC1ABB28B3004AA3E5 /* ContactListener.cpp in Sources */,
+				A83D6A021ABD602800DD9932 /* Enemy.cpp in Sources */,
 				96B9F47E1A8F09FA00677CF4 /* Controller.cpp in Sources */,
+				A83424231ABFFEFB0099E768 /* Progress.cpp in Sources */,
 				A8DEE8451A93B0DE005CE926 /* Role.cpp in Sources */,
 				96B9F4861A8F09FA00677CF4 /* GameLayer.cpp in Sources */,
 				96B9F48C1A8F09FA00677CF4 /* GameScene.cpp in Sources */,

@@ -14,12 +14,13 @@ public:
 
     bool isContainState(std::string stateName);
     void printState();
-    void doEvent(std::string eventName);
+    bool doEvent(std::string eventName);
     bool canDoEvent(std::string eventName);
 
     void setOnEnter(std::string state, std::function<void()> onEnter);
 
     std::string getCurrState();
+
 private:
     void changeToState(std::string state);
 

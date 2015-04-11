@@ -4,6 +4,7 @@
 #include "cocos2d.h"
 #include "../../Controller/Controller.h"
 #include "FSM.h"
+#include "Progress.h"
 
 typedef struct _BoundingBox {
     cocos2d::Rect actual;
@@ -26,12 +27,14 @@ public:
     cocos2d::Sprite* getSprite();
     void bindSprite(cocos2d::Sprite* sprite);
     void setController(Controller* controller);
+    Controller* getController();
 
     virtual void setTagPosition(int x, int y);
     virtual cocos2d::Point getTagPosition();
     virtual void update(float dt);
 
     void initFSM();
+    void beHit(float attack);
 
     BoundingBox createBoundingBox(cocos2d::Point origin, cocos2d::Size size);
     void updateBoxes();
@@ -52,6 +55,11 @@ protected:
     CC_SYNTHESIZE(bool, m_direction, Direction);
     CC_SYNTHESIZE(BoundingBox, m_bodyBox, BodyBox);
     CC_SYNTHESIZE(BoundingBox, m_hitBox, HitBox);
+
+    CC_SYNTHESIZE(float, m_health, Health);
+    CC_SYNTHESIZE(float, m_maxHealth, MaxHealth);
+    CC_SYNTHESIZE(float, m_attack, Attack);
+    CC_SYNTHESIZE_RETAIN(Progress*, m_progress, Progress);
 };
 
 #endif

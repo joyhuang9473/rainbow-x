@@ -79,12 +79,14 @@ bool FSM::canDoEvent(std::string eventName) {
 }
 
 
-void FSM::doEvent(std::string eventName) {
+bool FSM::doEvent(std::string eventName) {
     if (this->canDoEvent(eventName)) {
         log("FSM::doEvent: doing event %s", eventName.c_str());
         this->changeToState(this->m_events[eventName][this->m_currentState]);
+        return true;
     } else {
         log("FSM::doEvent: cannot do event %s", eventName.c_str());
+        return false;
     }
 }
 
