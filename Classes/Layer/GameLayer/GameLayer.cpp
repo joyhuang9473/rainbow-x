@@ -3,11 +3,12 @@
 #include "../../Controller/OperateController.h"
 #include "../../Controller/AIController.h"
 #include "Box2D/Box2D.h"
+#include "GameManager.h"
 
 USING_NS_CC;
 
-#define FRAMECACHE SpriteFrameCache::getInstance()
 #define PTM_RATIO 32
+#define GAMEMANAGER GameManager::getInstance()
 
 bool GameLayer::init() {
     if( ! Layer::init() ) {
@@ -17,29 +18,28 @@ bool GameLayer::init() {
     this->initPhysics();
 
     // Map
-    auto map = TMXTiledMap::create("maps/floor.tmx");
+    this->m_map = TMXTiledMap::create("maps/floor.tmx");
 
     // Hero
     auto player = Hero::createWithHeroType(Hero::HeroType::KISI);
     player->getFSM()->doEvent("stand");
     player->setTag(SpriteTag::SPRITE_HERO);
-    this->setPlayer(map, player);
+    this->setPlayer(this->m_map, player);
     this->addBoxBodyForRole(player);
     this->m_player = player;
 
-    // Enemy
-    auto enemy = Enemy::createWithEnemyType(Enemy::EnemyType::GNU);
-    enemy->getFSM()->doEvent("stand");
-    enemy->setTag(SpriteTag::SPRITE_ENEMY);
-    this->setEnemy(map, enemy, player);
-    this->addBoxBodyForRole(enemy);
-    
-    this->addChild(map, -1);
-    this->addChild(player);
-    this->addChild(enemy);
+    // Goup Enemy
+    this->numsOfEnemy = 0;
+    this->enemyGroupCounter = 0;
 
+    // Stage
+    this->isSuccessful = false;
+
+    this->addChild(this->m_map, -1);
+    this->addChild(player);
+
+    this->schedule(schedule_selector(GameLayer::logic));
     this->schedule(schedule_selector(GameLayer::updateBoxBody));
-    this->scheduleUpdate();
     return true;
 }
 
@@ -80,8 +80,6 @@ bool GameLayer::collisionDetection(const BoundingBox &hitBox, const BoundingBox 
     }
     return false;
 }
-
-void GameLayer::update(float delta) {}
 
 void GameLayer::initPhysics() {
     b2Vec2 gravity;
@@ -147,6 +145,77 @@ void GameLayer::addBoxBodyForRole(Role* role) {
     body->CreateFixture(&fixtureDef);
 }
 
+GroupEnemy* GameLayer::currentGroup() {
+    GroupEnemy* groupEnemy;
+
+    if (!GAMEMANAGER->groupVector.empty()) {
+        groupEnemy = (GroupEnemy*)GAMEMANAGER->groupVector.at(this->enemyGroupCounter);
+    } else {
+        groupEnemy = nullptr;
+    }
+
+    return groupEnemy;
+}
+
+void GameLayer::nextGroup() {
+    if (this->enemyGroupCounter < GAMEMANAGER->getGroupNum()-1) {
+        ++this->enemyGroupCounter;
+    } else {
+        this->isSuccessful = true;
+    }
+}
+
+void GameLayer::addEnemy() {
+    GroupEnemy* groupEnemy = this->currentGroup();
+    
+    if (groupEnemy == nullptr) {
+        return;
+    }
+    if (groupEnemy->getIsFinishedAddGroup()) {
+        return;
+    }
+    if (groupEnemy->getEnemyTotal() <= 0) {
+        groupEnemy->setIsFinishedAddGroup(true);
+        return;
+    }
+
+    Enemy* enemy = nullptr;
+
+    if (groupEnemy->getType1Total() > 0) {
+        enemy = Enemy::createWithEnemyType(Enemy::EnemyType::GNU);
+        groupEnemy->setType1Total(groupEnemy->getType1Total() - 1);
+    } else if (groupEnemy->getType2Total() > 0) {
+        enemy = Enemy::createWithEnemyType(Enemy::EnemyType::KISI);
+        groupEnemy->setType2Total(groupEnemy->getType2Total() - 1);
+    }
+
+    this->numsOfEnemy += 1;
+    groupEnemy->setEnemyTotal(groupEnemy->getType1Total() + groupEnemy->getType2Total());
+
+    enemy->getFSM()->doEvent("stand");
+    enemy->setTag(SpriteTag::SPRITE_ENEMY);
+    this->setEnemy(this->m_map, enemy, this->m_player);
+    this->addBoxBodyForRole(enemy);
+    this->addChild(enemy);
+}
+
+void GameLayer::logic(float dt) {
+    if (this->isSuccessful) {
+        return;
+    }
+
+    GroupEnemy* groupEnemy = this->currentGroup();
+
+    if (groupEnemy == nullptr) {
+        return;
+    }
+    if (groupEnemy->getIsFinishedAddGroup() && this->numsOfEnemy == 0) {
+        this->nextGroup();
+    }
+
+    this->addEnemy();
+}
+
 void GameLayer::updateBoxBody(float dt) {
     this->m_world->Step(dt, 10, 10);
 
@@ -156,9 +225,12 @@ void GameLayer::updateBoxBody(float dt) {
     for (b2Body* body = this->m_world->GetBodyList() ; body ; body = body->GetNext()) {
         if (body->GetUserData() != NULL) {
             Role* role = (Role*)body->GetUserData();
-            if (role->getHealth() <= 0) {
-                role->getFSM()->doEvent("die");
+            if (role->getFSM()->getCurrState() == "dead") {
                 role->removeChild(role->getController());
+
+                if (role->getTag() == SpriteTag::SPRITE_ENEMY) {
+                    toDestroy.push_back(body);
+                }
             }
         }
     }
@@ -172,6 +244,10 @@ void GameLayer::updateBoxBody(float dt) {
         if (bodyA->GetUserData() != NULL && bodyB->GetUserData() != NULL) {
             Role* roleA = (Role*)bodyA->GetUserData();
             Role* roleB = (Role*)bodyB->GetUserData();
+
+            if (roleA->getTag() == roleB->getTag()) {
+                continue;
+            }
 
             if (
                 roleA->getFSM()->getCurrState() == "attacking"
@@ -195,10 +271,12 @@ void GameLayer::updateBoxBody(float dt) {
     std::vector<b2Body*>::iterator iter2;
     for (iter2 = toDestroy.begin() ; iter2 != toDestroy.end() ; ++iter2) {
         b2Body* body = *(iter2);
-        
+
         if (body->GetUserData() != NULL) {
             Role* role = (Role*)body->GetUserData();
             this->removeChild(role);
+            --this->numsOfEnemy;
+            
         }
         this->m_world->DestroyBody(body);
     }

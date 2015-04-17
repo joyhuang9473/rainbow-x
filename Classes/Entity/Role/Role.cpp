@@ -65,6 +65,10 @@ Point Role::getTagPosition() {
 
 void Role::update(float dt) {
     this->m_sprite->setFlippedX(this->getDirection());
+
+    if (this->m_health <= 0) {
+        this->getFSM()->doEvent("die");
+    }
 }
 
 void Role::initFSM() {
@@ -135,7 +139,7 @@ void Role::initFSM() {
 
         auto animate = Animate::create(this->m_dieAction);
         auto callbackFunc = CallFunc::create([this]() {
-            this->m_fsm->doEvent("stand");
+            // None
         });
         auto seq = Sequence::create(animate, callbackFunc, nullptr);
         seq->setTag(AnimationType::DEAD);

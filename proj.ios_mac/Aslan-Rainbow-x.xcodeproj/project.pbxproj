@@ -79,6 +79,10 @@
 		96B9F4B01A8F0A1400677CF4 /* floor.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 96B9F49D1A8F0A1400677CF4 /* floor.jpg */; };
 		A8101AEB1ABB28B3004AA3E5 /* ContactListener.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8101AE91ABB28B3004AA3E5 /* ContactListener.cpp */; };
 		A8101AEC1ABB28B3004AA3E5 /* ContactListener.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8101AE91ABB28B3004AA3E5 /* ContactListener.cpp */; };
+		A82C3C4D1ADA48B300B83E81 /* stage1.plist in Resources */ = {isa = PBXBuildFile; fileRef = A82C3C4C1ADA48B300B83E81 /* stage1.plist */; };
+		A82C3C4E1ADA48B300B83E81 /* stage1.plist in Resources */ = {isa = PBXBuildFile; fileRef = A82C3C4C1ADA48B300B83E81 /* stage1.plist */; };
+		A82C3C601ADA4D3F00B83E81 /* GameManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A82C3C5E1ADA4D3F00B83E81 /* GameManager.cpp */; };
+		A82C3C611ADA4D3F00B83E81 /* GameManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A82C3C5E1ADA4D3F00B83E81 /* GameManager.cpp */; };
 		A830F7451A8FB5DB00C9F691 /* CsvParseUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A830F73F1A8FB5DB00C9F691 /* CsvParseUtil.cpp */; };
 		A830F7461A8FB5DB00C9F691 /* CsvParseUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A830F73F1A8FB5DB00C9F691 /* CsvParseUtil.cpp */; };
 		A830F7471A8FB5DB00C9F691 /* FileLoadUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A830F7411A8FB5DB00C9F691 /* FileLoadUtil.cpp */; };
@@ -111,8 +115,24 @@
 		A8A1B7351AA3305100BEFFD0 /* hero-kisi.png in Resources */ = {isa = PBXBuildFile; fileRef = A8A1B7321AA3305100BEFFD0 /* hero-kisi.png */; };
 		A8A1B7361AA3305100BEFFD0 /* hero-kisi.plist in Resources */ = {isa = PBXBuildFile; fileRef = A8A1B7331AA3305100BEFFD0 /* hero-kisi.plist */; };
 		A8A1B7371AA3305100BEFFD0 /* hero-kisi.plist in Resources */ = {isa = PBXBuildFile; fileRef = A8A1B7331AA3305100BEFFD0 /* hero-kisi.plist */; };
+		A8A3DE701AE12A9300BF5586 /* CompleteLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8A3DE6E1AE12A9300BF5586 /* CompleteLayer.cpp */; };
+		A8A3DE711AE12A9300BF5586 /* CompleteLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8A3DE6E1AE12A9300BF5586 /* CompleteLayer.cpp */; };
+		A8A3DE741AE12B0700BF5586 /* FailLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8A3DE721AE12B0700BF5586 /* FailLayer.cpp */; };
+		A8A3DE751AE12B0700BF5586 /* FailLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8A3DE721AE12B0700BF5586 /* FailLayer.cpp */; };
 		A8A95A261AB2CEF5006F665F /* floor.tmx in Resources */ = {isa = PBXBuildFile; fileRef = A8A95A251AB2CEF5006F665F /* floor.tmx */; };
 		A8A95A271AB2CEF5006F665F /* floor.tmx in Resources */ = {isa = PBXBuildFile; fileRef = A8A95A251AB2CEF5006F665F /* floor.tmx */; };
+		A8BAB3971AE0A720005745E2 /* CompleteScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8BAB3951AE0A720005745E2 /* CompleteScene.cpp */; };
+		A8BAB3981AE0A720005745E2 /* CompleteScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8BAB3951AE0A720005745E2 /* CompleteScene.cpp */; };
+		A8BAB39B1AE0A734005745E2 /* FailScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8BAB3991AE0A734005745E2 /* FailScene.cpp */; };
+		A8BAB39C1AE0A734005745E2 /* FailScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8BAB3991AE0A734005745E2 /* FailScene.cpp */; };
+		A8BAB3A11AE0A8D8005745E2 /* HallScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8BAB39F1AE0A8D8005745E2 /* HallScene.cpp */; };
+		A8BAB3A21AE0A8D8005745E2 /* HallScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8BAB39F1AE0A8D8005745E2 /* HallScene.cpp */; };
+		A8BAB3A61AE0A9BB005745E2 /* HallLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8BAB3A41AE0A9BB005745E2 /* HallLayer.cpp */; };
+		A8BAB3A71AE0A9BB005745E2 /* HallLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8BAB3A41AE0A9BB005745E2 /* HallLayer.cpp */; };
+		A8BAB3B01AE0D6DF005745E2 /* LoadStageInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8BAB3A91AE0D6DF005745E2 /* LoadStageInfo.cpp */; };
+		A8BAB3B11AE0D6DF005745E2 /* LoadStageInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8BAB3A91AE0D6DF005745E2 /* LoadStageInfo.cpp */; };
+		A8BAB3B21AE0D6DF005745E2 /* GroupEnemy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8BAB3AC1AE0D6DF005745E2 /* GroupEnemy.cpp */; };
+		A8BAB3B31AE0D6DF005745E2 /* GroupEnemy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8BAB3AC1AE0D6DF005745E2 /* GroupEnemy.cpp */; };
 		A8DEE8421A93B0DE005CE926 /* Hero.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8DEE83C1A93B0DE005CE926 /* Hero.cpp */; };
 		A8DEE8431A93B0DE005CE926 /* Hero.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8DEE83C1A93B0DE005CE926 /* Hero.cpp */; };
 		A8DEE8441A93B0DE005CE926 /* Role.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8DEE83E1A93B0DE005CE926 /* Role.cpp */; };
@@ -225,6 +245,9 @@
 		96B9F49D1A8F0A1400677CF4 /* floor.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = floor.jpg; sourceTree = "<group>"; };
 		A8101AE91ABB28B3004AA3E5 /* ContactListener.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ContactListener.cpp; sourceTree = "<group>"; };
 		A8101AEA1ABB28B3004AA3E5 /* ContactListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactListener.h; sourceTree = "<group>"; };
+		A82C3C4C1ADA48B300B83E81 /* stage1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = stage1.plist; sourceTree = "<group>"; };
+		A82C3C5E1ADA4D3F00B83E81 /* GameManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameManager.cpp; sourceTree = "<group>"; };
+		A82C3C5F1ADA4D3F00B83E81 /* GameManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameManager.h; sourceTree = "<group>"; };
 		A830F73F1A8FB5DB00C9F691 /* CsvParseUtil.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CsvParseUtil.cpp; sourceTree = "<group>"; };
 		A830F7401A8FB5DB00C9F691 /* CSVParseUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSVParseUtil.h; sourceTree = "<group>"; };
 		A830F7411A8FB5DB00C9F691 /* FileLoadUtil.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FileLoadUtil.cpp; sourceTree = "<group>"; };
@@ -251,7 +274,23 @@
 		A89CA44C1A95C1500052682C /* AnimationUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationUtil.h; sourceTree = "<group>"; };
 		A8A1B7321AA3305100BEFFD0 /* hero-kisi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hero-kisi.png"; sourceTree = "<group>"; };
 		A8A1B7331AA3305100BEFFD0 /* hero-kisi.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "hero-kisi.plist"; sourceTree = "<group>"; };
+		A8A3DE6E1AE12A9300BF5586 /* CompleteLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CompleteLayer.cpp; sourceTree = "<group>"; };
+		A8A3DE6F1AE12A9300BF5586 /* CompleteLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompleteLayer.h; sourceTree = "<group>"; };
+		A8A3DE721AE12B0700BF5586 /* FailLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FailLayer.cpp; sourceTree = "<group>"; };
+		A8A3DE731AE12B0700BF5586 /* FailLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FailLayer.h; sourceTree = "<group>"; };
 		A8A95A251AB2CEF5006F665F /* floor.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = floor.tmx; sourceTree = "<group>"; };
+		A8BAB3951AE0A720005745E2 /* CompleteScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CompleteScene.cpp; sourceTree = "<group>"; };
+		A8BAB3961AE0A720005745E2 /* CompleteScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompleteScene.h; sourceTree = "<group>"; };
+		A8BAB3991AE0A734005745E2 /* FailScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FailScene.cpp; sourceTree = "<group>"; };
+		A8BAB39A1AE0A734005745E2 /* FailScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FailScene.h; sourceTree = "<group>"; };
+		A8BAB39F1AE0A8D8005745E2 /* HallScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HallScene.cpp; sourceTree = "<group>"; };
+		A8BAB3A01AE0A8D8005745E2 /* HallScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HallScene.h; sourceTree = "<group>"; };
+		A8BAB3A41AE0A9BB005745E2 /* HallLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HallLayer.cpp; sourceTree = "<group>"; };
+		A8BAB3A51AE0A9BB005745E2 /* HallLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HallLayer.h; sourceTree = "<group>"; };
+		A8BAB3A91AE0D6DF005745E2 /* LoadStageInfo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LoadStageInfo.cpp; sourceTree = "<group>"; };
+		A8BAB3AA1AE0D6DF005745E2 /* LoadStageInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadStageInfo.h; sourceTree = "<group>"; };
+		A8BAB3AB1AE0D6DF005745E2 /* GroupEnemy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupEnemy.h; sourceTree = "<group>"; };
+		A8BAB3AC1AE0D6DF005745E2 /* GroupEnemy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GroupEnemy.cpp; sourceTree = "<group>"; };
 		A8DEE83C1A93B0DE005CE926 /* Hero.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Hero.cpp; sourceTree = "<group>"; };
 		A8DEE83D1A93B0DE005CE926 /* Hero.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hero.h; sourceTree = "<group>"; };
 		A8DEE83E1A93B0DE005CE926 /* Role.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Role.cpp; sourceTree = "<group>"; };
@@ -378,6 +417,7 @@
 		46880B7519C43A67006E1F66 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				A82C3C471ADA482B00B83E81 /* Settings */,
 				A834242B1AC018DA0099E768 /* Other */,
 				96B9F4911A8F0A1400677CF4 /* buttons */,
 				96B9F4961A8F0A1400677CF4 /* Characters */,
@@ -479,6 +519,9 @@
 		96B9F46B1A8F09FA00677CF4 /* Layer */ = {
 			isa = PBXGroup;
 			children = (
+				A8BAB3A31AE0A91C005745E2 /* HallLayer */,
+				A8BAB39E1AE0A79C005745E2 /* CompleteLayer */,
+				A8BAB39D1AE0A795005745E2 /* FailLayer */,
 				96B9F46C1A8F09FA00677CF4 /* GameLayer */,
 				96B9F4711A8F09FA00677CF4 /* MenuLayer */,
 			);
@@ -488,6 +531,8 @@
 		96B9F46C1A8F09FA00677CF4 /* GameLayer */ = {
 			isa = PBXGroup;
 			children = (
+				A82C3C5E1ADA4D3F00B83E81 /* GameManager.cpp */,
+				A82C3C5F1ADA4D3F00B83E81 /* GameManager.h */,
 				96B9F46D1A8F09FA00677CF4 /* GameLayer.cpp */,
 				96B9F46E1A8F09FA00677CF4 /* GameLayer.h */,
 				A899240B1ABBAE0900CBD787 /* VisibleRect.cpp */,
@@ -512,6 +557,12 @@
 				96B9F4761A8F09FA00677CF4 /* GameScene.h */,
 				96B9F4771A8F09FA00677CF4 /* MenuScene.cpp */,
 				96B9F4781A8F09FA00677CF4 /* MenuScene.h */,
+				A8BAB3951AE0A720005745E2 /* CompleteScene.cpp */,
+				A8BAB3961AE0A720005745E2 /* CompleteScene.h */,
+				A8BAB3991AE0A734005745E2 /* FailScene.cpp */,
+				A8BAB39A1AE0A734005745E2 /* FailScene.h */,
+				A8BAB39F1AE0A8D8005745E2 /* HallScene.cpp */,
+				A8BAB3A01AE0A8D8005745E2 /* HallScene.h */,
 			);
 			path = Scene;
 			sourceTree = "<group>";
@@ -567,6 +618,14 @@
 			path = maps;
 			sourceTree = "<group>";
 		};
+		A82C3C471ADA482B00B83E81 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				A82C3C4C1ADA48B300B83E81 /* stage1.plist */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
 		A830F73E1A8FB5DB00C9F691 /* CSVParse */ = {
 			isa = PBXGroup;
 			children = (
@@ -596,6 +655,37 @@
 				A89CA44C1A95C1500052682C /* AnimationUtil.h */,
 			);
 			path = Animation;
+			sourceTree = "<group>";
+		};
+		A8BAB39D1AE0A795005745E2 /* FailLayer */ = {
+			isa = PBXGroup;
+			children = (
+				A8A3DE721AE12B0700BF5586 /* FailLayer.cpp */,
+				A8A3DE731AE12B0700BF5586 /* FailLayer.h */,
+			);
+			path = FailLayer;
+			sourceTree = "<group>";
+		};
+		A8BAB39E1AE0A79C005745E2 /* CompleteLayer */ = {
+			isa = PBXGroup;
+			children = (
+				A8A3DE6E1AE12A9300BF5586 /* CompleteLayer.cpp */,
+				A8A3DE6F1AE12A9300BF5586 /* CompleteLayer.h */,
+			);
+			path = CompleteLayer;
+			sourceTree = "<group>";
+		};
+		A8BAB3A31AE0A91C005745E2 /* HallLayer */ = {
+			isa = PBXGroup;
+			children = (
+				A8BAB3A91AE0D6DF005745E2 /* LoadStageInfo.cpp */,
+				A8BAB3AA1AE0D6DF005745E2 /* LoadStageInfo.h */,
+				A8BAB3AB1AE0D6DF005745E2 /* GroupEnemy.h */,
+				A8BAB3AC1AE0D6DF005745E2 /* GroupEnemy.cpp */,
+				A8BAB3A41AE0A9BB005745E2 /* HallLayer.cpp */,
+				A8BAB3A51AE0A9BB005745E2 /* HallLayer.h */,
+			);
+			path = HallLayer;
 			sourceTree = "<group>";
 		};
 		A8DEE83B1A93B0DE005CE926 /* Role */ = {
@@ -720,6 +810,7 @@
 				A8A1B7361AA3305100BEFFD0 /* hero-kisi.plist in Resources */,
 				96B9F4A91A8F0A1400677CF4 /* red_hair_boy.png in Resources */,
 				5087E77F17EB970100C73F5D /* Default@2x.png in Resources */,
+				A82C3C4D1ADA48B300B83E81 /* stage1.plist in Resources */,
 				A83424301AC018E70099E768 /* progress-bg.png in Resources */,
 				96B9F4A71A8F0A1400677CF4 /* red_hair_boy.plist in Resources */,
 				50EF629917ECD46A001EB2F8 /* Icon-100.png in Resources */,
@@ -757,6 +848,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				96B9F4AC1A8F0A1400677CF4 /* Marker Felt.ttf in Resources */,
+				A82C3C4E1ADA48B300B83E81 /* stage1.plist in Resources */,
 				96B9F4AA1A8F0A1400677CF4 /* red_hair_boy.png in Resources */,
 				96B9F4A61A8F0A1400677CF4 /* StartNormal.png in Resources */,
 				A8A1B7351AA3305100BEFFD0 /* hero-kisi.png in Resources */,
@@ -785,12 +877,17 @@
 			files = (
 				46880B8819C43A87006E1F66 /* AppDelegate.cpp in Sources */,
 				96B9F47F1A8F09FA00677CF4 /* ThreeDirectionController.cpp in Sources */,
+				A8BAB3B01AE0D6DF005745E2 /* LoadStageInfo.cpp in Sources */,
 				96B9F47D1A8F09FA00677CF4 /* Controller.cpp in Sources */,
 				96B9F48B1A8F09FA00677CF4 /* GameScene.cpp in Sources */,
 				A899240D1ABBAE0900CBD787 /* VisibleRect.cpp in Sources */,
+				A8BAB39B1AE0A734005745E2 /* FailScene.cpp in Sources */,
+				A8BAB3B21AE0D6DF005745E2 /* GroupEnemy.cpp in Sources */,
 				96B9F4851A8F09FA00677CF4 /* GameLayer.cpp in Sources */,
 				A8512B601AB47E170083BCAE /* FSM.cpp in Sources */,
+				A8BAB3A61AE0A9BB005745E2 /* HallLayer.cpp in Sources */,
 				A830F7451A8FB5DB00C9F691 /* CsvParseUtil.cpp in Sources */,
+				A8BAB3A11AE0A8D8005745E2 /* HallScene.cpp in Sources */,
 				A83112C41AA01BA600367E52 /* OperateController.cpp in Sources */,
 				96B9F4891A8F09FA00677CF4 /* MenuLayer.cpp in Sources */,
 				A8DEE8421A93B0DE005CE926 /* Hero.cpp in Sources */,
@@ -799,9 +896,13 @@
 				A89CA44D1A95C1500052682C /* AnimationUtil.cpp in Sources */,
 				A830F7491A8FB5DB00C9F691 /* StringUtil.cpp in Sources */,
 				A83D69FD1ABD415B00DD9932 /* AIController.cpp in Sources */,
+				A8BAB3971AE0A720005745E2 /* CompleteScene.cpp in Sources */,
 				503AE10117EB989F00D1A890 /* main.m in Sources */,
+				A8A3DE741AE12B0700BF5586 /* FailLayer.cpp in Sources */,
 				96B9F48D1A8F09FA00677CF4 /* MenuScene.cpp in Sources */,
 				A830F7471A8FB5DB00C9F691 /* FileLoadUtil.cpp in Sources */,
+				A82C3C601ADA4D3F00B83E81 /* GameManager.cpp in Sources */,
+				A8A3DE701AE12A9300BF5586 /* CompleteLayer.cpp in Sources */,
 				A8DEE8441A93B0DE005CE926 /* Role.cpp in Sources */,
 				A83424221ABFFEFB0099E768 /* Progress.cpp in Sources */,
 				A83D6A011ABD602800DD9932 /* Enemy.cpp in Sources */,
@@ -817,21 +918,30 @@
 				A8512B611AB47E170083BCAE /* FSM.cpp in Sources */,
 				A83D69FE1ABD415B00DD9932 /* AIController.cpp in Sources */,
 				A899240E1ABBAE0900CBD787 /* VisibleRect.cpp in Sources */,
+				A8BAB3A71AE0A9BB005745E2 /* HallLayer.cpp in Sources */,
 				A830F7481A8FB5DB00C9F691 /* FileLoadUtil.cpp in Sources */,
+				A8BAB39C1AE0A734005745E2 /* FailScene.cpp in Sources */,
 				A83112C51AA01BA600367E52 /* OperateController.cpp in Sources */,
 				96B9F48E1A8F09FA00677CF4 /* MenuScene.cpp in Sources */,
 				A89CA44E1A95C1500052682C /* AnimationUtil.cpp in Sources */,
+				A8A3DE711AE12A9300BF5586 /* CompleteLayer.cpp in Sources */,
 				A830F7461A8FB5DB00C9F691 /* CsvParseUtil.cpp in Sources */,
 				96B9F48A1A8F09FA00677CF4 /* MenuLayer.cpp in Sources */,
 				503AE10517EB98FF00D1A890 /* main.cpp in Sources */,
 				A8101AEC1ABB28B3004AA3E5 /* ContactListener.cpp in Sources */,
 				A83D6A021ABD602800DD9932 /* Enemy.cpp in Sources */,
 				96B9F47E1A8F09FA00677CF4 /* Controller.cpp in Sources */,
+				A8A3DE751AE12B0700BF5586 /* FailLayer.cpp in Sources */,
+				A8BAB3B11AE0D6DF005745E2 /* LoadStageInfo.cpp in Sources */,
+				A8BAB3B31AE0D6DF005745E2 /* GroupEnemy.cpp in Sources */,
 				A83424231ABFFEFB0099E768 /* Progress.cpp in Sources */,
 				A8DEE8451A93B0DE005CE926 /* Role.cpp in Sources */,
 				96B9F4861A8F09FA00677CF4 /* GameLayer.cpp in Sources */,
+				A8BAB3A21AE0A8D8005745E2 /* HallScene.cpp in Sources */,
 				96B9F48C1A8F09FA00677CF4 /* GameScene.cpp in Sources */,
+				A8BAB3981AE0A720005745E2 /* CompleteScene.cpp in Sources */,
 				A830F74A1A8FB5DB00C9F691 /* StringUtil.cpp in Sources */,
+				A82C3C611ADA4D3F00B83E81 /* GameManager.cpp in Sources */,
 				96B9F4801A8F09FA00677CF4 /* ThreeDirectionController.cpp in Sources */,
 				A8DEE8431A93B0DE005CE926 /* Hero.cpp in Sources */,
 			);

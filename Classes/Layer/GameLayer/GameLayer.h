@@ -5,6 +5,7 @@
 #include "../../Entity/Role/Hero.h"
 #include "../../Entity/Role/Enemy.h"
 #include "../../Controller/ContactListener.h"
+#include "GroupEnemy.h"
 
 class GameLayer : public cocos2d::Layer {
 public:
@@ -15,7 +16,6 @@ public:
 
     virtual bool init();
     CREATE_FUNC(GameLayer);
-    virtual void update(float dt);
     void setPlayer(cocos2d::TMXTiledMap* map, Hero* hero);
     void setEnemy(cocos2d::TMXTiledMap* map, Enemy* enemy, Hero* target);
 
@@ -25,12 +25,23 @@ public:
     void addBoxBodyForRole(Role* role);
     void updateBoxBody(float dt);
 
+    GroupEnemy* currentGroup();
+    void nextGroup();
+
+    void logic(float dt);
+
 private:
-    Role* m_player;
+    Hero* m_player;
     b2World* m_world;
     ContactListener* m_contactListener;
-    //TODO:
-    //void createHPSlider()
+
+    cocos2d::TMXTiledMap* m_map;
+
+    int numsOfEnemy;
+    int enemyGroupCounter;
+    void addEnemy();
+
+    bool isSuccessful;
 };
 
 #endif

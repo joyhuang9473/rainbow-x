@@ -1,5 +1,5 @@
 #include "MenuLayer.h"
-#include "../../Scene/GameScene.h"
+#include "../../Scene/HallScene.h"
 
 USING_NS_CC;
 
@@ -43,8 +43,8 @@ bool MenuLayer::init() {
 
 void MenuLayer::menuStartCallback() {
     CCLOG("START!");
-    
-    Director::getInstance()->replaceScene(GameScene::create());
+
+    Director::getInstance()->replaceScene(HallScene::create());
 }
 
 void MenuLayer::menuCloseCallback(Ref* pSender) {
