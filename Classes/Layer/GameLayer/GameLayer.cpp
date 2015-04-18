@@ -18,7 +18,10 @@ bool GameLayer::init() {
     this->initPhysics();
 
     // Map
-    this->m_map = TMXTiledMap::create("maps/floor.tmx");
+    std::vector<std::string> searchPaths;
+    searchPaths.push_back("Map");
+    FileUtils::getInstance()->setSearchPaths(searchPaths);
+    this->m_map = TMXTiledMap::create("floor.tmx");
 
     // Hero
     auto player = Hero::createWithHeroType(Hero::HeroType::KISI);

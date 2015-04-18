@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="96" height="24" tilewidth="32" tileheight="32" nextobjectid="1">
+ <tileset firstgid="1" name="floor" tilewidth="32" tileheight="32">
+  <image source="floor.jpg" width="512" height="512"/>
+ </tileset>
+ <layer name="ground" width="96" height="24">
+  <data encoding="base64" compression="zlib">
+   eJzt2FfDjgUAgOHvI6vs7L1ShMyQmb1SsiVkZCWiEsrM3nsUWrJnStMqm7JL9shIVraWq9/wHDwH73NwHd5/4I6Pi4tLQEIeIBGJSUJSkvEgD5GcFKQkFamJj/pAfRrS8jDpSE8GMpKJzGQhK9nITg5ykivqA/e5yUNe8vEI+XmUxyhAQR6nEIUpwhMUjfrAfTGKU4KSlOJJSlOGsjxFOcpTgYpUonLUB+6fpgpVqUZ1alCTWtSmDnWpxzPU51mei/rAfQOepyGNaEwTmtKM5rTgBVryIq1oTZuoD9y/RFva0Z4OvExHOtGZLnTlFbrxKt3pEfWB+9foSS9e5w3epDdv0Ye+9ONt3qE/AxgY9YH7QQxmCO8ylGEMZwQjGcVoxjCWcYxnQtQH7icyiclMYSrTmM4MZjKL93if2cxhLh9EfeD+Qz7iYz5hHp8ynwUsZBGLWcJSlrGcFVEfuF/JKj5jNZ/zBWv4kq/4mm/4lu9YyzrWR33gfgMb+Z4f2MRmtrCVbWxnBzvZxY/8xO6oD9zvYS/72M8BDvIzv3CIXznMEY5yjOOciPrA/UlOcZoz/MZZznGeC/zORf7gEpe5wtWoD9xf40+uc4Ob3OI2d7jLPf7ib/7hX/7j//ka9cH6sP93rPdh/+9Y78P+37Heh/2/Y70P+3/Heh/2/471Puz/Het92P871vv71qO+tA==
+  </data>
+ </layer>
+</map>

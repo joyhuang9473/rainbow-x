@@ -73,10 +73,6 @@
 		96B9F4AA1A8F0A1400677CF4 /* red_hair_boy.png in Resources */ = {isa = PBXBuildFile; fileRef = 96B9F4981A8F0A1400677CF4 /* red_hair_boy.png */; };
 		96B9F4AB1A8F0A1400677CF4 /* Marker Felt.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 96B9F49A1A8F0A1400677CF4 /* Marker Felt.ttf */; };
 		96B9F4AC1A8F0A1400677CF4 /* Marker Felt.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 96B9F49A1A8F0A1400677CF4 /* Marker Felt.ttf */; };
-		96B9F4AD1A8F0A1400677CF4 /* bg_village.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 96B9F49C1A8F0A1400677CF4 /* bg_village.jpg */; };
-		96B9F4AE1A8F0A1400677CF4 /* bg_village.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 96B9F49C1A8F0A1400677CF4 /* bg_village.jpg */; };
-		96B9F4AF1A8F0A1400677CF4 /* floor.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 96B9F49D1A8F0A1400677CF4 /* floor.jpg */; };
-		96B9F4B01A8F0A1400677CF4 /* floor.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 96B9F49D1A8F0A1400677CF4 /* floor.jpg */; };
 		A8101AEB1ABB28B3004AA3E5 /* ContactListener.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8101AE91ABB28B3004AA3E5 /* ContactListener.cpp */; };
 		A8101AEC1ABB28B3004AA3E5 /* ContactListener.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8101AE91ABB28B3004AA3E5 /* ContactListener.cpp */; };
 		A82C3C4D1ADA48B300B83E81 /* stage1.plist in Resources */ = {isa = PBXBuildFile; fileRef = A82C3C4C1ADA48B300B83E81 /* stage1.plist */; };
@@ -119,8 +115,6 @@
 		A8A3DE711AE12A9300BF5586 /* CompleteLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8A3DE6E1AE12A9300BF5586 /* CompleteLayer.cpp */; };
 		A8A3DE741AE12B0700BF5586 /* FailLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8A3DE721AE12B0700BF5586 /* FailLayer.cpp */; };
 		A8A3DE751AE12B0700BF5586 /* FailLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8A3DE721AE12B0700BF5586 /* FailLayer.cpp */; };
-		A8A95A261AB2CEF5006F665F /* floor.tmx in Resources */ = {isa = PBXBuildFile; fileRef = A8A95A251AB2CEF5006F665F /* floor.tmx */; };
-		A8A95A271AB2CEF5006F665F /* floor.tmx in Resources */ = {isa = PBXBuildFile; fileRef = A8A95A251AB2CEF5006F665F /* floor.tmx */; };
 		A8BAB3971AE0A720005745E2 /* CompleteScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8BAB3951AE0A720005745E2 /* CompleteScene.cpp */; };
 		A8BAB3981AE0A720005745E2 /* CompleteScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8BAB3951AE0A720005745E2 /* CompleteScene.cpp */; };
 		A8BAB39B1AE0A734005745E2 /* FailScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8BAB3991AE0A734005745E2 /* FailScene.cpp */; };
@@ -133,6 +127,10 @@
 		A8BAB3B11AE0D6DF005745E2 /* LoadStageInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8BAB3A91AE0D6DF005745E2 /* LoadStageInfo.cpp */; };
 		A8BAB3B21AE0D6DF005745E2 /* GroupEnemy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8BAB3AC1AE0D6DF005745E2 /* GroupEnemy.cpp */; };
 		A8BAB3B31AE0D6DF005745E2 /* GroupEnemy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8BAB3AC1AE0D6DF005745E2 /* GroupEnemy.cpp */; };
+		A8C18F861AE2415700B06F0D /* floor.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A8C18F841AE2415700B06F0D /* floor.jpg */; };
+		A8C18F871AE2415700B06F0D /* floor.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A8C18F841AE2415700B06F0D /* floor.jpg */; };
+		A8C18F881AE2415700B06F0D /* floor.tmx in Resources */ = {isa = PBXBuildFile; fileRef = A8C18F851AE2415700B06F0D /* floor.tmx */; };
+		A8C18F891AE2415700B06F0D /* floor.tmx in Resources */ = {isa = PBXBuildFile; fileRef = A8C18F851AE2415700B06F0D /* floor.tmx */; };
 		A8DEE8421A93B0DE005CE926 /* Hero.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8DEE83C1A93B0DE005CE926 /* Hero.cpp */; };
 		A8DEE8431A93B0DE005CE926 /* Hero.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8DEE83C1A93B0DE005CE926 /* Hero.cpp */; };
 		A8DEE8441A93B0DE005CE926 /* Role.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8DEE83E1A93B0DE005CE926 /* Role.cpp */; };
@@ -241,8 +239,6 @@
 		96B9F4971A8F0A1400677CF4 /* red_hair_boy.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = red_hair_boy.plist; sourceTree = "<group>"; };
 		96B9F4981A8F0A1400677CF4 /* red_hair_boy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = red_hair_boy.png; sourceTree = "<group>"; };
 		96B9F49A1A8F0A1400677CF4 /* Marker Felt.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Marker Felt.ttf"; sourceTree = "<group>"; };
-		96B9F49C1A8F0A1400677CF4 /* bg_village.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg_village.jpg; sourceTree = "<group>"; };
-		96B9F49D1A8F0A1400677CF4 /* floor.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = floor.jpg; sourceTree = "<group>"; };
 		A8101AE91ABB28B3004AA3E5 /* ContactListener.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ContactListener.cpp; sourceTree = "<group>"; };
 		A8101AEA1ABB28B3004AA3E5 /* ContactListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactListener.h; sourceTree = "<group>"; };
 		A82C3C4C1ADA48B300B83E81 /* stage1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = stage1.plist; sourceTree = "<group>"; };
@@ -278,7 +274,6 @@
 		A8A3DE6F1AE12A9300BF5586 /* CompleteLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompleteLayer.h; sourceTree = "<group>"; };
 		A8A3DE721AE12B0700BF5586 /* FailLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FailLayer.cpp; sourceTree = "<group>"; };
 		A8A3DE731AE12B0700BF5586 /* FailLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FailLayer.h; sourceTree = "<group>"; };
-		A8A95A251AB2CEF5006F665F /* floor.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = floor.tmx; sourceTree = "<group>"; };
 		A8BAB3951AE0A720005745E2 /* CompleteScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CompleteScene.cpp; sourceTree = "<group>"; };
 		A8BAB3961AE0A720005745E2 /* CompleteScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompleteScene.h; sourceTree = "<group>"; };
 		A8BAB3991AE0A734005745E2 /* FailScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FailScene.cpp; sourceTree = "<group>"; };
@@ -291,6 +286,8 @@
 		A8BAB3AA1AE0D6DF005745E2 /* LoadStageInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadStageInfo.h; sourceTree = "<group>"; };
 		A8BAB3AB1AE0D6DF005745E2 /* GroupEnemy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupEnemy.h; sourceTree = "<group>"; };
 		A8BAB3AC1AE0D6DF005745E2 /* GroupEnemy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GroupEnemy.cpp; sourceTree = "<group>"; };
+		A8C18F841AE2415700B06F0D /* floor.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = floor.jpg; sourceTree = "<group>"; };
+		A8C18F851AE2415700B06F0D /* floor.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = floor.tmx; sourceTree = "<group>"; };
 		A8DEE83C1A93B0DE005CE926 /* Hero.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Hero.cpp; sourceTree = "<group>"; };
 		A8DEE83D1A93B0DE005CE926 /* Hero.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hero.h; sourceTree = "<group>"; };
 		A8DEE83E1A93B0DE005CE926 /* Role.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Role.cpp; sourceTree = "<group>"; };
@@ -417,12 +414,12 @@
 		46880B7519C43A67006E1F66 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				A8C18F831AE2415700B06F0D /* Map */,
 				A82C3C471ADA482B00B83E81 /* Settings */,
 				A834242B1AC018DA0099E768 /* Other */,
 				96B9F4911A8F0A1400677CF4 /* buttons */,
 				96B9F4961A8F0A1400677CF4 /* Characters */,
 				96B9F4991A8F0A1400677CF4 /* fonts */,
-				96B9F49B1A8F0A1400677CF4 /* maps */,
 			);
 			name = Resources;
 			path = ../Resources;
@@ -608,16 +605,6 @@
 			path = fonts;
 			sourceTree = "<group>";
 		};
-		96B9F49B1A8F0A1400677CF4 /* maps */ = {
-			isa = PBXGroup;
-			children = (
-				A8A95A251AB2CEF5006F665F /* floor.tmx */,
-				96B9F49C1A8F0A1400677CF4 /* bg_village.jpg */,
-				96B9F49D1A8F0A1400677CF4 /* floor.jpg */,
-			);
-			path = maps;
-			sourceTree = "<group>";
-		};
 		A82C3C471ADA482B00B83E81 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
@@ -686,6 +673,15 @@
 				A8BAB3A51AE0A9BB005745E2 /* HallLayer.h */,
 			);
 			path = HallLayer;
+			sourceTree = "<group>";
+		};
+		A8C18F831AE2415700B06F0D /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				A8C18F841AE2415700B06F0D /* floor.jpg */,
+				A8C18F851AE2415700B06F0D /* floor.tmx */,
+			);
+			path = Map;
 			sourceTree = "<group>";
 		};
 		A8DEE83B1A93B0DE005CE926 /* Role */ = {
@@ -814,26 +810,25 @@
 				A83424301AC018E70099E768 /* progress-bg.png in Resources */,
 				96B9F4A71A8F0A1400677CF4 /* red_hair_boy.plist in Resources */,
 				50EF629917ECD46A001EB2F8 /* Icon-100.png in Resources */,
+				A8C18F861AE2415700B06F0D /* floor.jpg in Resources */,
 				5087E78317EB970100C73F5D /* Icon-152.png in Resources */,
 				A8512B5C1AB3F78C0083BCAE /* hero-gnu.png in Resources */,
 				96B9F4A51A8F0A1400677CF4 /* StartNormal.png in Resources */,
 				5087E77D17EB970100C73F5D /* Default-568h@2x.png in Resources */,
 				96B9F4AB1A8F0A1400677CF4 /* Marker Felt.ttf in Resources */,
 				5087E78517EB970100C73F5D /* Icon-72.png in Resources */,
-				96B9F4AD1A8F0A1400677CF4 /* bg_village.jpg in Resources */,
 				96B9F4A11A8F0A1400677CF4 /* CloseSelected.png in Resources */,
 				A8512B5A1AB3F78C0083BCAE /* hero-gnu.plist in Resources */,
 				521A8E6519F0C34300D177D7 /* Default-736h@3x.png in Resources */,
 				50EF62A317ECD613001EB2F8 /* Icon-50.png in Resources */,
 				5087E78017EB970100C73F5D /* Icon-114.png in Resources */,
-				A8A95A261AB2CEF5006F665F /* floor.tmx in Resources */,
 				50EF62A217ECD613001EB2F8 /* Icon-29.png in Resources */,
 				50EF629617ECD46A001EB2F8 /* Icon-40.png in Resources */,
 				5087E78217EB970100C73F5D /* Icon-144.png in Resources */,
 				50EF629817ECD46A001EB2F8 /* Icon-80.png in Resources */,
 				A834242E1AC018E70099E768 /* progress-fill.png in Resources */,
+				A8C18F881AE2415700B06F0D /* floor.tmx in Resources */,
 				5087E78417EB970100C73F5D /* Icon-57.png in Resources */,
-				96B9F4AF1A8F0A1400677CF4 /* floor.jpg in Resources */,
 				5087E77E17EB970100C73F5D /* Default.png in Resources */,
 				521A8E6419F0C34300D177D7 /* Default-667h@2x.png in Resources */,
 				A8A1B7341AA3305100BEFFD0 /* hero-kisi.png in Resources */,
@@ -854,16 +849,15 @@
 				A8A1B7351AA3305100BEFFD0 /* hero-kisi.png in Resources */,
 				96B9F4A81A8F0A1400677CF4 /* red_hair_boy.plist in Resources */,
 				A83424311AC018E70099E768 /* progress-bg.png in Resources */,
-				A8A95A271AB2CEF5006F665F /* floor.tmx in Resources */,
 				A8512B5D1AB3F78C0083BCAE /* hero-gnu.png in Resources */,
-				96B9F4AE1A8F0A1400677CF4 /* bg_village.jpg in Resources */,
 				A8A1B7371AA3305100BEFFD0 /* hero-kisi.plist in Resources */,
+				A8C18F891AE2415700B06F0D /* floor.tmx in Resources */,
 				503AE0F817EB97AB00D1A890 /* Icon.icns in Resources */,
+				A8C18F871AE2415700B06F0D /* floor.jpg in Resources */,
 				96B9F4A41A8F0A1400677CF4 /* HelloWorld.png in Resources */,
 				96B9F4A01A8F0A1400677CF4 /* CloseNormal.png in Resources */,
 				A8512B5B1AB3F78C0083BCAE /* hero-gnu.plist in Resources */,
 				A834242F1AC018E70099E768 /* progress-fill.png in Resources */,
-				96B9F4B01A8F0A1400677CF4 /* floor.jpg in Resources */,
 				96B9F4A21A8F0A1400677CF4 /* CloseSelected.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
