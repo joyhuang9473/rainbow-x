@@ -29,6 +29,7 @@ public:
     void nextGroup();
 
     void logic(float dt);
+    void updateActionScope(float dt);
 
 private:
     Hero* m_player;

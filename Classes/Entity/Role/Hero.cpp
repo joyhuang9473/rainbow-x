@@ -82,7 +82,7 @@ void Hero::setViewPointByPlayer() {
 
     x = fmin(x, mapSize.width - visibleSize.width/2);
     y = fmin(y, mapSize.height - visibleSize.height/2);
-
+    
     Point destPos = Vec2(x, y);
     Point centerPos = Vec2(visibleSize.width/2, visibleSize.height/2);
     Point viewPos = centerPos - destPos;
@@ -90,7 +90,7 @@ void Hero::setViewPointByPlayer() {
     parent->setPosition(viewPos);
 }
 
-void Hero::setTagPosition(int x, int y) {
+void Hero::setTagPosition(int x, int y) {    
     Role::setTagPosition(x, y);
     this->setViewPointByPlayer();
 }

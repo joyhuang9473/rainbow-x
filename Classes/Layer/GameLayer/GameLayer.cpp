@@ -42,6 +42,7 @@ bool GameLayer::init() {
     this->addChild(player);
 
     this->schedule(schedule_selector(GameLayer::logic));
+    this->schedule(schedule_selector(GameLayer::updateActionScope));
     this->schedule(schedule_selector(GameLayer::updateBoxBody));
     return true;
 }
@@ -62,10 +63,10 @@ void GameLayer::setPlayer(TMXTiledMap* map, Hero* hero) {
 
 void GameLayer::setEnemy(TMXTiledMap* map, Enemy* enemy, Hero* target) {
     Size visibleSize = Director::getInstance()->getVisibleSize();
-    
+
     enemy->setTiledMap(map);
     enemy->setPosition(Vec2(visibleSize.width/2, visibleSize.height/2));
-    
+
     AIController* aiController = AIController::create();
     aiController->setRole(enemy);
     aiController->setTarget(target);
@@ -217,6 +218,26 @@ void GameLayer::logic(float dt) {
     }
 
     this->addEnemy();
+}
+
+void GameLayer::updateActionScope(float dt) {
+    auto visibleSize = Size(this->m_map->getMapSize().width * this->m_map->getTileSize().width,
+                            this->m_map->getMapSize().height * this->m_map->getTileSize().height);
+
+    for (b2Body* body = this->m_world->GetBodyList() ; body ; body = body->GetNext()) {
+        if (body->GetUserData() != NULL) {
+            Role* role = (Role*)body->GetUserData();
+            Size spriteSize = role->getSprite()->getDisplayFrame()->getRect().size;
+            Point pos = role->getTagPosition();
+
+            pos.x = (pos.x < visibleSize.width - spriteSize.width) ? pos.x : visibleSize.width - spriteSize.width;
+            pos.x = (pos.x > spriteSize.width) ? pos.x : spriteSize.width;
+            pos.y = (pos.y < visibleSize.height - spriteSize.height) ? pos.y : visibleSize.height - spriteSize.height;
+            pos.y = (pos.y > spriteSize.height) ? pos.y : spriteSize.height;
+
+            role->setTagPosition(pos.x, pos.y);
+        }
+    }
 }
 
 void GameLayer::updateBoxBody(float dt) {
