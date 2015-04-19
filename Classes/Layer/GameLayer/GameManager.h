@@ -2,14 +2,19 @@
 #define __GAME_MANAGER_H__
 
 #include "cocos2d.h"
+#include "GroupEnemy.h"
 #include "../../Entity/Role/Role.h"
-#include "../HallLayer/GroupEnemy.h"
 
 class GameManager {
 public:
+    GameManager();
+    ~GameManager();
+
     cocos2d::Vector<GroupEnemy*> groupVector;
 
     static GameManager* getInstance();
+
+    void readStageInfo(const std::string plistpath);
     void clear();
 
     CC_SYNTHESIZE(int, groupNum, GroupNum);
@@ -21,6 +26,9 @@ public:
 
 private:
     static GameManager* instance;
+
+    cocos2d::ValueMap resources;
+    cocos2d::ValueMap stageInfo;
 };
 
 #endif

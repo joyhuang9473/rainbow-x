@@ -123,10 +123,6 @@
 		A8BAB3A21AE0A8D8005745E2 /* HallScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8BAB39F1AE0A8D8005745E2 /* HallScene.cpp */; };
 		A8BAB3A61AE0A9BB005745E2 /* HallLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8BAB3A41AE0A9BB005745E2 /* HallLayer.cpp */; };
 		A8BAB3A71AE0A9BB005745E2 /* HallLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8BAB3A41AE0A9BB005745E2 /* HallLayer.cpp */; };
-		A8BAB3B01AE0D6DF005745E2 /* LoadStageInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8BAB3A91AE0D6DF005745E2 /* LoadStageInfo.cpp */; };
-		A8BAB3B11AE0D6DF005745E2 /* LoadStageInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8BAB3A91AE0D6DF005745E2 /* LoadStageInfo.cpp */; };
-		A8BAB3B21AE0D6DF005745E2 /* GroupEnemy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8BAB3AC1AE0D6DF005745E2 /* GroupEnemy.cpp */; };
-		A8BAB3B31AE0D6DF005745E2 /* GroupEnemy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8BAB3AC1AE0D6DF005745E2 /* GroupEnemy.cpp */; };
 		A8C18F861AE2415700B06F0D /* floor.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A8C18F841AE2415700B06F0D /* floor.jpg */; };
 		A8C18F871AE2415700B06F0D /* floor.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A8C18F841AE2415700B06F0D /* floor.jpg */; };
 		A8C18F881AE2415700B06F0D /* floor.tmx in Resources */ = {isa = PBXBuildFile; fileRef = A8C18F851AE2415700B06F0D /* floor.tmx */; };
@@ -135,6 +131,10 @@
 		A8DEE8431A93B0DE005CE926 /* Hero.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8DEE83C1A93B0DE005CE926 /* Hero.cpp */; };
 		A8DEE8441A93B0DE005CE926 /* Role.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8DEE83E1A93B0DE005CE926 /* Role.cpp */; };
 		A8DEE8451A93B0DE005CE926 /* Role.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8DEE83E1A93B0DE005CE926 /* Role.cpp */; };
+		A8E7B2FE1AE39012007EF765 /* stage2.plist in Resources */ = {isa = PBXBuildFile; fileRef = A8E7B2FD1AE39012007EF765 /* stage2.plist */; };
+		A8E7B2FF1AE39012007EF765 /* stage2.plist in Resources */ = {isa = PBXBuildFile; fileRef = A8E7B2FD1AE39012007EF765 /* stage2.plist */; };
+		A8E7B3021AE39B53007EF765 /* GroupEnemy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8E7B3011AE39B53007EF765 /* GroupEnemy.cpp */; };
+		A8E7B3031AE39B53007EF765 /* GroupEnemy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8E7B3011AE39B53007EF765 /* GroupEnemy.cpp */; };
 		BF171245129291EC00B8313A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB012928DE900B8313A /* OpenGLES.framework */; };
 		BF1712471292920000B8313A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB412928DE900B8313A /* libz.dylib */; };
 		BF1C47F01293687400B63C5D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF1C47EA1293683800B63C5D /* QuartzCore.framework */; };
@@ -282,16 +282,15 @@
 		A8BAB3A01AE0A8D8005745E2 /* HallScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HallScene.h; sourceTree = "<group>"; };
 		A8BAB3A41AE0A9BB005745E2 /* HallLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HallLayer.cpp; sourceTree = "<group>"; };
 		A8BAB3A51AE0A9BB005745E2 /* HallLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HallLayer.h; sourceTree = "<group>"; };
-		A8BAB3A91AE0D6DF005745E2 /* LoadStageInfo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LoadStageInfo.cpp; sourceTree = "<group>"; };
-		A8BAB3AA1AE0D6DF005745E2 /* LoadStageInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadStageInfo.h; sourceTree = "<group>"; };
-		A8BAB3AB1AE0D6DF005745E2 /* GroupEnemy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupEnemy.h; sourceTree = "<group>"; };
-		A8BAB3AC1AE0D6DF005745E2 /* GroupEnemy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GroupEnemy.cpp; sourceTree = "<group>"; };
 		A8C18F841AE2415700B06F0D /* floor.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = floor.jpg; sourceTree = "<group>"; };
 		A8C18F851AE2415700B06F0D /* floor.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = floor.tmx; sourceTree = "<group>"; };
 		A8DEE83C1A93B0DE005CE926 /* Hero.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Hero.cpp; sourceTree = "<group>"; };
 		A8DEE83D1A93B0DE005CE926 /* Hero.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hero.h; sourceTree = "<group>"; };
 		A8DEE83E1A93B0DE005CE926 /* Role.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Role.cpp; sourceTree = "<group>"; };
 		A8DEE83F1A93B0DE005CE926 /* Role.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Role.h; sourceTree = "<group>"; };
+		A8E7B2FD1AE39012007EF765 /* stage2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = stage2.plist; sourceTree = "<group>"; };
+		A8E7B3001AE39B53007EF765 /* GroupEnemy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupEnemy.h; sourceTree = "<group>"; };
+		A8E7B3011AE39B53007EF765 /* GroupEnemy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GroupEnemy.cpp; sourceTree = "<group>"; };
 		BF170DB012928DE900B8313A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		BF170DB412928DE900B8313A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		BF1C47EA1293683800B63C5D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -528,6 +527,8 @@
 		96B9F46C1A8F09FA00677CF4 /* GameLayer */ = {
 			isa = PBXGroup;
 			children = (
+				A8E7B3001AE39B53007EF765 /* GroupEnemy.h */,
+				A8E7B3011AE39B53007EF765 /* GroupEnemy.cpp */,
 				A82C3C5E1ADA4D3F00B83E81 /* GameManager.cpp */,
 				A82C3C5F1ADA4D3F00B83E81 /* GameManager.h */,
 				96B9F46D1A8F09FA00677CF4 /* GameLayer.cpp */,
@@ -608,6 +609,7 @@
 		A82C3C471ADA482B00B83E81 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
+				A8E7B2FD1AE39012007EF765 /* stage2.plist */,
 				A82C3C4C1ADA48B300B83E81 /* stage1.plist */,
 			);
 			path = Settings;
@@ -665,10 +667,6 @@
 		A8BAB3A31AE0A91C005745E2 /* HallLayer */ = {
 			isa = PBXGroup;
 			children = (
-				A8BAB3A91AE0D6DF005745E2 /* LoadStageInfo.cpp */,
-				A8BAB3AA1AE0D6DF005745E2 /* LoadStageInfo.h */,
-				A8BAB3AB1AE0D6DF005745E2 /* GroupEnemy.h */,
-				A8BAB3AC1AE0D6DF005745E2 /* GroupEnemy.cpp */,
 				A8BAB3A41AE0A9BB005745E2 /* HallLayer.cpp */,
 				A8BAB3A51AE0A9BB005745E2 /* HallLayer.h */,
 			);
@@ -831,6 +829,7 @@
 				5087E78417EB970100C73F5D /* Icon-57.png in Resources */,
 				5087E77E17EB970100C73F5D /* Default.png in Resources */,
 				521A8E6419F0C34300D177D7 /* Default-667h@2x.png in Resources */,
+				A8E7B2FE1AE39012007EF765 /* stage2.plist in Resources */,
 				A8A1B7341AA3305100BEFFD0 /* hero-kisi.png in Resources */,
 				96B9F4A31A8F0A1400677CF4 /* HelloWorld.png in Resources */,
 				50EF629717ECD46A001EB2F8 /* Icon-58.png in Resources */,
@@ -852,6 +851,7 @@
 				A8512B5D1AB3F78C0083BCAE /* hero-gnu.png in Resources */,
 				A8A1B7371AA3305100BEFFD0 /* hero-kisi.plist in Resources */,
 				A8C18F891AE2415700B06F0D /* floor.tmx in Resources */,
+				A8E7B2FF1AE39012007EF765 /* stage2.plist in Resources */,
 				503AE0F817EB97AB00D1A890 /* Icon.icns in Resources */,
 				A8C18F871AE2415700B06F0D /* floor.jpg in Resources */,
 				96B9F4A41A8F0A1400677CF4 /* HelloWorld.png in Resources */,
@@ -871,12 +871,10 @@
 			files = (
 				46880B8819C43A87006E1F66 /* AppDelegate.cpp in Sources */,
 				96B9F47F1A8F09FA00677CF4 /* ThreeDirectionController.cpp in Sources */,
-				A8BAB3B01AE0D6DF005745E2 /* LoadStageInfo.cpp in Sources */,
 				96B9F47D1A8F09FA00677CF4 /* Controller.cpp in Sources */,
 				96B9F48B1A8F09FA00677CF4 /* GameScene.cpp in Sources */,
 				A899240D1ABBAE0900CBD787 /* VisibleRect.cpp in Sources */,
 				A8BAB39B1AE0A734005745E2 /* FailScene.cpp in Sources */,
-				A8BAB3B21AE0D6DF005745E2 /* GroupEnemy.cpp in Sources */,
 				96B9F4851A8F09FA00677CF4 /* GameLayer.cpp in Sources */,
 				A8512B601AB47E170083BCAE /* FSM.cpp in Sources */,
 				A8BAB3A61AE0A9BB005745E2 /* HallLayer.cpp in Sources */,
@@ -890,6 +888,7 @@
 				A89CA44D1A95C1500052682C /* AnimationUtil.cpp in Sources */,
 				A830F7491A8FB5DB00C9F691 /* StringUtil.cpp in Sources */,
 				A83D69FD1ABD415B00DD9932 /* AIController.cpp in Sources */,
+				A8E7B3021AE39B53007EF765 /* GroupEnemy.cpp in Sources */,
 				A8BAB3971AE0A720005745E2 /* CompleteScene.cpp in Sources */,
 				503AE10117EB989F00D1A890 /* main.m in Sources */,
 				A8A3DE741AE12B0700BF5586 /* FailLayer.cpp in Sources */,
@@ -926,8 +925,6 @@
 				A83D6A021ABD602800DD9932 /* Enemy.cpp in Sources */,
 				96B9F47E1A8F09FA00677CF4 /* Controller.cpp in Sources */,
 				A8A3DE751AE12B0700BF5586 /* FailLayer.cpp in Sources */,
-				A8BAB3B11AE0D6DF005745E2 /* LoadStageInfo.cpp in Sources */,
-				A8BAB3B31AE0D6DF005745E2 /* GroupEnemy.cpp in Sources */,
 				A83424231ABFFEFB0099E768 /* Progress.cpp in Sources */,
 				A8DEE8451A93B0DE005CE926 /* Role.cpp in Sources */,
 				96B9F4861A8F09FA00677CF4 /* GameLayer.cpp in Sources */,
@@ -938,6 +935,7 @@
 				A82C3C611ADA4D3F00B83E81 /* GameManager.cpp in Sources */,
 				96B9F4801A8F09FA00677CF4 /* ThreeDirectionController.cpp in Sources */,
 				A8DEE8431A93B0DE005CE926 /* Hero.cpp in Sources */,
+				A8E7B3031AE39B53007EF765 /* GroupEnemy.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

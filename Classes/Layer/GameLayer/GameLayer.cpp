@@ -1,9 +1,12 @@
 #include "GameLayer.h"
 #include "VisibleRect.h"
-#include "../../Controller/OperateController.h"
-#include "../../Controller/AIController.h"
 #include "Box2D/Box2D.h"
 #include "GameManager.h"
+#include "../../Controller/OperateController.h"
+#include "../../Controller/AIController.h"
+#include "../../Scene/CompleteScene.h"
+#include "../../Scene/FailScene.h"
+#include "../../Scene/GameScene.h"
 
 USING_NS_CC;
 
@@ -16,6 +19,15 @@ bool GameLayer::init() {
     }
 
     this->initPhysics();
+
+    // Stage
+    auto stageFile = UserDefault::getInstance()->getStringForKey("nextStageFile");
+    if (stageFile == "") {
+        stageFile = "stage1.plist";
+    }
+
+    GAMEMANAGER->readStageInfo(stageFile);
+    this->isSuccessful = false;
 
     // Map
     std::vector<std::string> searchPaths;
@@ -34,9 +46,6 @@ bool GameLayer::init() {
     // Goup Enemy
     this->numsOfEnemy = 0;
     this->enemyGroupCounter = 0;
-
-    // Stage
-    this->isSuccessful = false;
 
     this->addChild(this->m_map, -1);
     this->addChild(player);
@@ -88,7 +97,7 @@ bool GameLayer::collisionDetection(const BoundingBox &hitBox, const BoundingBox 
 void GameLayer::initPhysics() {
     b2Vec2 gravity;
     gravity.Set(0.0f, 0.0f);
-    
+
     this->m_world = new b2World(gravity);
     this->m_world->SetAllowSleeping(false);
     
@@ -205,6 +214,14 @@ void GameLayer::addEnemy() {
 
 void GameLayer::logic(float dt) {
     if (this->isSuccessful) {
+        auto nextStageFile = GAMEMANAGER->getNextStageFile();
+
+        if (nextStageFile != "") {
+            UserDefault::getInstance()->setStringForKey("nextStageFile", nextStageFile);
+            Director::getInstance()->replaceScene(GameScene::create());
+        } else {
+            Director::getInstance()->replaceScene(CompleteScene::create());
+        }
         return;
     }
 

@@ -43,19 +43,9 @@ bool HallLayer::init() {
 }
 
 void HallLayer::menuStartCallback() {
-    GAMEMANAGER->clear();
+    auto stageFileName = "stage1.plist";
 
-    auto fileName = UserDefault::getInstance()->getStringForKey("nextLevelFile");
-
-    if (fileName== "") {
-        fileName = "stage1.plist";
-    }
-
-    this->m_info = LoadStageInfo::create();
-    this->m_info->initWithPlist(fileName);
-    this->m_info->readStageInfo();
-    
-    this->addChild(this->m_info);
+    UserDefault::getInstance()->setStringForKey("nextStageFile", stageFileName);
     Director::getInstance()->replaceScene(TransitionFadeBL::create(0.1f, GameScene::create()));
 }
 
