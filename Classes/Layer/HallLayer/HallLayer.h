@@ -2,7 +2,6 @@
 #define __HALL_LAYER_H__
 
 #include "cocos2d.h"
-#include "LoadStageInfo.h"
 
 class HallLayer : public cocos2d::Layer {
 public:
@@ -14,8 +13,6 @@ public:
 
     void menuCloseCallback(Ref* pSender);
 
-private:
-    LoadStageInfo* m_info;
 };
 
 #endif
