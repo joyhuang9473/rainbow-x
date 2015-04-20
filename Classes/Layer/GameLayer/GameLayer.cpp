@@ -56,48 +56,10 @@ bool GameLayer::init() {
     return true;
 }
 
-void GameLayer::setPlayer(TMXTiledMap* map, Hero* hero) {
-    Size visibleSize = Director::getInstance()->getVisibleSize();
-
-    hero->setTiledMap(map);
-    hero->setPosition(Vec2(visibleSize.width/2, visibleSize.height/2));
-
-    OperateController* operateController = OperateController::create();
-    operateController->registerWithKeyboardDispatcher();
-    operateController->setRole(hero);
-
-    hero->setController(operateController);
-    hero->addChild(operateController);
-}
-
-void GameLayer::setEnemy(TMXTiledMap* map, Enemy* enemy, Hero* target) {
-    Size visibleSize = Director::getInstance()->getVisibleSize();
-
-    enemy->setTiledMap(map);
-    enemy->setPosition(Vec2(visibleSize.width/2, visibleSize.height/2));
-
-    AIController* aiController = AIController::create();
-    aiController->setRole(enemy);
-    aiController->setTarget(target);
-
-    enemy->setController(aiController);
-    enemy->addChild(aiController);
-}
-
-bool GameLayer::collisionDetection(const BoundingBox &hitBox, const BoundingBox &bodyBox) {
-    Rect hitRect = hitBox.actual;
-    Rect bodyRect = bodyBox.actual;
-
-    if (hitRect.intersectsRect(bodyRect)) {
-        return true;
-    }
-    return false;
-}
-
 void GameLayer::initPhysics() {
     b2Vec2 gravity;
     gravity.Set(0.0f, 0.0f);
-
+    
     this->m_world = new b2World(gravity);
     this->m_world->SetAllowSleeping(false);
     
@@ -131,6 +93,45 @@ void GameLayer::initPhysics() {
     this->m_world->SetContactListener(this->m_contactListener);
 }
 
+void GameLayer::setPlayer(TMXTiledMap* map, Hero* hero) {
+    TMXObjectGroup* playerObjects = map->getObjectGroup("player");
+    ValueMap startPoint = playerObjects->getObject("start_point");
+
+    hero->setTiledMap(map);
+    hero->setPosition(Vec2(startPoint["x"].asFloat(), startPoint["y"].asFloat()));
+
+    OperateController* operateController = OperateController::create();
+    operateController->registerWithKeyboardDispatcher();
+    operateController->setRole(hero);
+
+    hero->setController(operateController);
+    hero->addChild(operateController);
+}
+
+void GameLayer::setEnemy(TMXTiledMap* map, Enemy* enemy, Hero* target) {
+    Size visibleSize = Director::getInstance()->getVisibleSize();
+
+    enemy->setTiledMap(map);
+    enemy->setPosition(Vec2(visibleSize.width/2, visibleSize.height/2));
+
+    AIController* aiController = AIController::create();
+    aiController->setRole(enemy);
+    aiController->setTarget(target);
+
+    enemy->setController(aiController);
+    enemy->addChild(aiController);
+}
+
+bool GameLayer::collisionDetection(const BoundingBox &hitBox, const BoundingBox &bodyBox) {
+    Rect hitRect = hitBox.actual;
+    Rect bodyRect = bodyBox.actual;
+
+    if (hitRect.intersectsRect(bodyRect)) {
+        return true;
+    }
+    return false;
+}
+
 void GameLayer::addBoxBodyForRole(Role* role) {
     b2BodyDef bodyDef;
     bodyDef.type = b2_dynamicBody;
@@ -138,14 +139,13 @@ void GameLayer::addBoxBodyForRole(Role* role) {
     bodyDef.userData = role;
 
     b2Body* body = this->m_world->CreateBody(&bodyDef);
-
     int num = 5;
     b2Vec2 verts[] = {
-        b2Vec2(-26.0f / PTM_RATIO, 39.1f / PTM_RATIO),
-        b2Vec2(26.1f / PTM_RATIO, 38.1f / PTM_RATIO),
-        b2Vec2(27.1f / PTM_RATIO, -38.0f / PTM_RATIO),
-        b2Vec2(-25.9f / PTM_RATIO, -38.0f / PTM_RATIO),
-        b2Vec2(-25.9f / PTM_RATIO, 39.0f / PTM_RATIO),
+        b2Vec2(-39.0f / PTM_RATIO, 39.0f / PTM_RATIO),
+        b2Vec2(39.0f / PTM_RATIO, 39.0f / PTM_RATIO),
+        b2Vec2(39.0f / PTM_RATIO, -39.0f / PTM_RATIO),
+        b2Vec2(-39.0f / PTM_RATIO, -39.0f / PTM_RATIO),
+        b2Vec2(-39.0f / PTM_RATIO, 39.0f / PTM_RATIO),
     };
 
     b2FixtureDef fixtureDef;
@@ -266,6 +266,10 @@ void GameLayer::updateBoxBody(float dt) {
     for (b2Body* body = this->m_world->GetBodyList() ; body ; body = body->GetNext()) {
         if (body->GetUserData() != NULL) {
             Role* role = (Role*)body->GetUserData();
+
+            // update boxbody
+            body->SetTransform(b2Vec2(role->getTagPosition().x / PTM_RATIO, role->getTagPosition().y / PTM_RATIO), 0);
+
             if (role->getFSM()->getCurrState() == "dead") {
                 role->removeChild(role->getController());
 
@@ -281,7 +285,7 @@ void GameLayer::updateBoxBody(float dt) {
         Contact contact = *(iter);
         b2Body* bodyA = contact.fixtureA->GetBody();
         b2Body* bodyB = contact.fixtureB->GetBody();
-
+        
         if (bodyA->GetUserData() != NULL && bodyB->GetUserData() != NULL) {
             Role* roleA = (Role*)bodyA->GetUserData();
             Role* roleB = (Role*)bodyB->GetUserData();
@@ -317,7 +321,6 @@ void GameLayer::updateBoxBody(float dt) {
             Role* role = (Role*)body->GetUserData();
             this->removeChild(role);
             --this->numsOfEnemy;
-            
         }
         this->m_world->DestroyBody(body);
     }
