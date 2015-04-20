@@ -94,8 +94,8 @@ void GameLayer::initPhysics() {
 }
 
 void GameLayer::setPlayer(TMXTiledMap* map, Hero* hero) {
-    TMXObjectGroup* playerObjects = map->getObjectGroup("player");
-    ValueMap startPoint = playerObjects->getObject("start_point");
+    TMXObjectGroup* playerObject = map->getObjectGroup("player");
+    ValueMap startPoint = playerObject->getObject("start_point");
 
     hero->setTiledMap(map);
     hero->setPosition(Vec2(startPoint["x"].asFloat(), startPoint["y"].asFloat()));
@@ -109,10 +109,11 @@ void GameLayer::setPlayer(TMXTiledMap* map, Hero* hero) {
 }
 
 void GameLayer::setEnemy(TMXTiledMap* map, Enemy* enemy, Hero* target) {
-    Size visibleSize = Director::getInstance()->getVisibleSize();
+    TMXObjectGroup* enemyGroupObject = map->getObjectGroup(StringUtils::format("enemy_group%d", this->enemyGroupCounter));
+    ValueMap startPoint = enemyGroupObject->getObject(StringUtils::format("start_point%d", this->numsOfEnemy));
 
     enemy->setTiledMap(map);
-    enemy->setPosition(Vec2(visibleSize.width/2, visibleSize.height/2));
+    enemy->setPosition(Vec2(startPoint["x"].asFloat(), startPoint["y"].asFloat()));
 
     AIController* aiController = AIController::create();
     aiController->setRole(enemy);
@@ -180,7 +181,7 @@ void GameLayer::nextGroup() {
 
 void GameLayer::addEnemy() {
     GroupEnemy* groupEnemy = this->currentGroup();
-    
+
     if (groupEnemy == nullptr) {
         return;
     }
@@ -202,18 +203,25 @@ void GameLayer::addEnemy() {
         groupEnemy->setType2Total(groupEnemy->getType2Total() - 1);
     }
 
-    this->numsOfEnemy += 1;
-    groupEnemy->setEnemyTotal(groupEnemy->getType1Total() + groupEnemy->getType2Total());
-
     enemy->getFSM()->doEvent("stand");
     enemy->setTag(SpriteTag::SPRITE_ENEMY);
     this->setEnemy(this->m_map, enemy, this->m_player);
     this->addBoxBodyForRole(enemy);
     this->addChild(enemy);
+
+    this->numsOfEnemy += 1;
+    groupEnemy->setEnemyTotal(groupEnemy->getType1Total() + groupEnemy->getType2Total());
 }
 
 void GameLayer::logic(float dt) {
     if (this->isSuccessful) {
+        TMXObjectGroup* playerObject = this->m_map->getObjectGroup("player");
+        ValueMap accessPoint = playerObject->getObject("access_point");
+
+        if (this->m_player->getTagPosition().x < accessPoint["x"].asFloat()) {
+            return;
+        }
+
         auto nextStageFile = GAMEMANAGER->getNextStageFile();
 
         if (nextStageFile != "") {

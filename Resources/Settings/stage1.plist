@@ -10,7 +10,7 @@
 		<string>stage2.plist</string>
 		<key>group</key>
 		<dict>
-			<key>1</key>
+			<key>0</key>
 			<dict>
 				<key>type1Num</key>
 				<string>1</string>
@@ -21,7 +21,7 @@
 				<key>type2Hp</key>
 				<string>0</string>
 			</dict>
-			<key>2</key>
+			<key>1</key>
 			<dict>
 				<key>type1Num</key>
 				<string>2</string>
@@ -32,7 +32,7 @@
 				<key>type2Hp</key>
 				<string>0</string>
 			</dict>
-			<key>3</key>
+			<key>2</key>
 			<dict>
 				<key>type1Num</key>
 				<string>3</string>
