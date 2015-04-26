@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="96" height="24" tilewidth="32" tileheight="32" nextobjectid="1">
+ <tileset firstgid="1" name="canePink" tilewidth="32" tileheight="32">
+  <image source="canePink.png" width="128" height="128"/>
+ </tileset>
+ <tileset firstgid="17" name="lollipopBaseBrown" tilewidth="32" tileheight="32">
+  <image source="lollipopBaseBrown.png" width="64" height="64"/>
+ </tileset>
+ <tileset firstgid="21" name="lollipopRed" tilewidth="32" tileheight="32">
+  <image source="lollipopRed.png" width="64" height="64"/>
+ </tileset>
+ <tileset firstgid="25" name="lollipopGreen" tilewidth="32" tileheight="32">
+  <image source="lollipopGreen.png" width="64" height="64"/>
+ </tileset>
+ <tileset firstgid="29" name="chocoCenter" tilewidth="32" tileheight="32">
+  <image source="chocoCenter.png" width="70" height="70"/>
+ </tileset>
+ <tileset firstgid="33" name="waffleChoco" tilewidth="32" tileheight="32">
+  <image source="waffleChoco.png" width="96" height="96"/>
+ </tileset>
+ <tileset firstgid="42" name="cookieBrown" tilewidth="32" tileheight="32">
+  <image source="cookieBrown.png" width="64" height="64"/>
+ </tileset>
+ <tileset firstgid="46" name="candyYellow" tilewidth="32" tileheight="32">
+  <image source="candyYellow.png" width="64" height="64"/>
+ </tileset>
+ <tileset firstgid="50" name="candyRed" tilewidth="32" tileheight="32">
+  <image source="candyRed.png" width="64" height="64"/>
+ </tileset>
+ <tileset firstgid="54" name="candyGreen" tilewidth="32" tileheight="32">
+  <image source="candyGreen.png" width="64" height="64"/>
+ </tileset>
+ <tileset firstgid="58" name="candyBlue" tilewidth="32" tileheight="32">
+  <image source="candyBlue.png" width="64" height="64"/>
+ </tileset>
+ <layer name="ground" width="96" height="24">
+  <data encoding="base64" compression="zlib">
+   eJzt0UERACEQwLA1Anf+VYKLPMqjEwFdM7Nv60n8bv+Tqf/X1f/r6v919f+6+n9d/b+u/l9X/6+r/9fV/+vq/3X1/7r6f139v67+X1f/r6v/19X/6+r/dfX/uvp/Xf2/7gGhRxKQ
+  </data>
+ </layer>
+ <layer name="upper_bound" width="96" height="24">
+  <data encoding="base64" compression="zlib">
+   eJztx7cNwEAQBLGX96b/arVVXCCQwATTtdb6NKQxdb70pzSnJa2+/Le0pyOdvvyvdKcnvb78AQAAAAAAAPiHD833DME=
+  </data>
+ </layer>
+ <layer name="bottom_bound" width="96" height="24">
+  <data encoding="base64" compression="zlib">
+   eJztxokJADAMxLCs0nf/EXtbhIIEBlcBAAAAAAAAAPxtpJmWb/mdTrq+5R9xiRqh
+  </data>
+ </layer>
+ <layer name="decoration_stick" width="96" height="24">
+  <data encoding="base64" compression="zlib">
+   eJzt1sEJwDAMA0Cv0DT7z5qQZxcQce9Afz8kcBUAcKtnZ6SP+LF3Z6aP4LCFLFsAAL78Z1ld/zO9yuraKwAA6GIB91IBKQ==
+  </data>
+ </layer>
+ <layer name="decoration_lollipopRed" width="96" height="24">
+  <data encoding="base64" compression="zlib">
+   eJzt17kNADAIBEGa8NN/paYLsJiRNr/0IgD+trJdPWKwk93qEQAAAEP4wLV8YAAAALp6QngAtQ==
+  </data>
+ </layer>
+ <layer name="decoration_lollipopGreen" width="96" height="24">
+  <data encoding="base64" compression="zlib">
+   eJzt1rkNADAIBEHa8NN/naYLkJmRNr/wIgCAH6xsV48Y7GS3egQA0Ip/Vss/AwAAACZ51o4A1Q==
+  </data>
+ </layer>
+ <layer name="decoration_cookieBrown" width="96" height="24">
+  <data encoding="base64" compression="zlib">
+   eJzt1sENwCAMBEHqSUj/7YUGeB82M5L/ZiUkjwEAAHvPmje9xMX0z9I/a6750ksAwGXcP1n6Z3XsX+lNHe//Sv070j+r458GON0Pm88ECQ==
+  </data>
+ </layer>
+ <layer name="decoration_candyRed" width="96" height="24">
+  <data encoding="base64" compression="zlib">
+   eJzt2LkJADAMBEHV5Kf/1qwKlBmBPQObX3wRwEtGNrtHfGxlu3sEAAAAFHwHvXwHAAAA3HAAnnMBnQ==
+  </data>
+ </layer>
+ <layer name="decoration_candyGreen" width="96" height="24">
+  <data encoding="base64" compression="zlib">
+   eJzt2LkNACAQA8Griqf/xrguDGJG2tyxqwDgTqOb6REfW91OjwAAAADgCb68LF8eAHAAkAgBvQ==
+  </data>
+ </layer>
+ <layer name="decoration_candyBlue" width="96" height="24">
+  <data encoding="base64" compression="zlib">
+   eJzt1skJADAMA7DM1WP/tZolSkojgf9+GUcAANwzMrO6RGMrs6tLAF+x67XsOgDQnT9ayx8FAHjXATxSAss=
+  </data>
+ </layer>
+ <layer name="decoration_candyYellow" width="96" height="24">
+  <data encoding="base64" compression="zlib">
+   eJzt1skJACAMBEAr8ui/OW1BEFZ0BvafR7KkFOBHdaWlh/hYXxnpIdjiZrJeuxn7lPXaPgEA5/nXsvxr3EAPZOkBAADYNwERFAO3
+  </data>
+ </layer>
+ <objectgroup name="player">
+  <object id="1" name="start_point" x="49" y="329"/>
+  <object id="4" name="access_point" x="2991" y="344"/>
+ </objectgroup>
+ <objectgroup name="enemy_group0">
+  <object id="5" name="check_point" x="400" y="328"/>
+  <object id="7" name="start_point0" x="860" y="333"/>
+ </objectgroup>
+ <objectgroup name="enemy_group1">
+  <object id="8" name="check_point" x="1310" y="333"/>
+  <object id="12" name="start_point0" x="1789" y="206"/>
+  <object id="13" name="start_point1" x="1789" y="474"/>
+ </objectgroup>
+ <objectgroup name="enemy_group2">
+  <object id="14" name="check_point" x="2262" y="329"/>
+  <object id="15" name="start_point0" x="2787" y="111"/>
+  <object id="16" name="start_point1" x="2787" y="339"/>
+  <object id="17" name="start_point2" x="2787" y="621"/>
+ </objectgroup>
+</map>

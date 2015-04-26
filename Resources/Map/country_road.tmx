@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-up" width="96" height="24" tilewidth="32" tileheight="32" nextobjectid="18">
+ <tileset firstgid="1" name="dirt_bottom" tilewidth="32" tileheight="32">
+  <image source="dirt_bottom.png" width="128" height="128"/>
+ </tileset>
+ <tileset firstgid="17" name="dirt" tilewidth="32" tileheight="32">
+  <image source="dirt.png" width="128" height="128"/>
+ </tileset>
+ <tileset firstgid="33" name="grass" tilewidth="32" tileheight="32">
+  <image source="grass_top.png" width="128" height="128"/>
+ </tileset>
+ <tileset firstgid="49" name="cactus" tilewidth="32" tileheight="32">
+  <image source="cactus.png" width="70" height="70"/>
+ </tileset>
+ <tileset firstgid="53" name="rock" tilewidth="32" tileheight="32">
+  <image source="rock.png" width="70" height="70"/>
+ </tileset>
+ <tileset firstgid="57" name="plant" tilewidth="32" tileheight="32">
+  <image source="plant.png" width="70" height="70"/>
+ </tileset>
+ <layer name="ground" width="96" height="24">
+  <data encoding="base64" compression="zlib">
+   eJzt1DcBwDAAxEBTcHpP+KPMo7AGedBwBFRLKUMa05Rqd1PPaUlr2rqbe09HOtPV3dx3etKbvu7mpv9nN/0/u+n/2U3/z276f3bT/7Ob/p/d9P/spv9nN/0/u+n/2U3/z276f3bT/7Ob/p/d9P/spv9nN/0/u+n/2U3/z+4fFMDcgQ==
+  </data>
+ </layer>
+ <layer name="upper_bound" width="96" height="24">
+  <data encoding="base64" compression="zlib">
+   eJztx7cNwEAQBLFvRd6b/qvTVnGBQAITTNda69OQxtT50p/SnJa0+vLf0p6OdPryv9KdnvT68gcAAAAAAADgHz6K1jzB
+  </data>
+ </layer>
+ <layer name="bottom_bound" width="96" height="24">
+  <data encoding="base64" compression="zlib">
+   eJztx7cNwEAQBLGX96b/arVVXCCQwATTGgAAAAAAAAB/0KU+DWn05T+lOS1p9eW/pT0d6fTlf6U7Pen15f8BN5UMwQ==
+  </data>
+ </layer>
+ <layer name="decoration" width="96" height="24">
+  <data encoding="base64" compression="zlib">
+   eJzt1bENACAIBED20v3n0lorCxXNXUL/+QSIAAB4Q+lTb4cAvrZyZ9ykvfQLAGf5vTDLvhdjvux5f6RzACCTBrlYBDA=
+  </data>
+ </layer>
+ <layer name="obstacle0" width="96" height="24">
+  <data encoding="base64" compression="zlib">
+   eJzt2LsJACAAQ0GX8rP/ZOoEYiXBO0j/6pQCwFbX2uuIj/W18ToCAAAAgGtpv1pa70nar5bWCwCQYgKvPQKP
+  </data>
+ </layer>
+ <layer name="obstacle1" width="96" height="24">
+  <data encoding="base64" compression="zlib">
+   eJzt1LEJwDAMBECtFMf7z2Y3HiCF+YDuQL149KoCAOCLZ89IL9HYu2eml4Cm/L8s/+8f9CDj5K4HGV1y1++sLncGAABwywJ5DQPz
+  </data>
+ </layer>
+ <objectgroup name="player">
+  <object id="1" name="start_point" x="49" y="329"/>
+  <object id="4" name="access_point" x="2991" y="344"/>
+ </objectgroup>
+ <objectgroup name="enemy_group0">
+  <object id="5" name="check_point" x="400" y="328"/>
+  <object id="7" name="start_point0" x="860" y="333"/>
+ </objectgroup>
+ <objectgroup name="enemy_group1">
+  <object id="8" name="check_point" x="1310" y="333"/>
+  <object id="12" name="start_point0" x="1789" y="206"/>
+  <object id="13" name="start_point1" x="1789" y="474"/>
+ </objectgroup>
+ <objectgroup name="enemy_group2">
+  <object id="14" name="check_point" x="2262" y="329"/>
+  <object id="15" name="start_point0" x="2787" y="111"/>
+  <object id="16" name="start_point1" x="2787" y="339"/>
+  <object id="17" name="start_point2" x="2787" y="621"/>
+ </objectgroup>
+</map>

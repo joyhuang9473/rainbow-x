@@ -33,7 +33,7 @@ bool GameLayer::init() {
     std::vector<std::string> searchPaths;
     searchPaths.push_back("Map");
     FileUtils::getInstance()->setSearchPaths(searchPaths);
-    this->m_map = TMXTiledMap::create("floor.tmx");
+    this->m_map = TMXTiledMap::create(GAMEMANAGER->getCurMapName());
 
     // Hero
     auto player = Hero::createWithHeroType(Hero::HeroType::KISI);

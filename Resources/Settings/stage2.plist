@@ -48,9 +48,7 @@
 	<key>resources</key>
 	<dict>
 		<key>map</key>
-		<string>floor.tmx</string>
-		<key>image</key>
-		<string>floor.jpg</string>
+		<string>kingdom_candy.tmx</string>
 	</dict>
 </dict>
 </plist>
