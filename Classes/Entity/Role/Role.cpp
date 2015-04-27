@@ -64,6 +64,10 @@ Point Role::getTagPosition() {
 }
 
 void Role::update(float dt) {
+    if (this->m_sprite == nullptr) {
+        return;
+    }
+
     this->m_sprite->setFlippedX(this->getDirection());
 
     if (this->m_health <= 0) {
