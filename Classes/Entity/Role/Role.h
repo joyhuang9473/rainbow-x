@@ -39,6 +39,9 @@ public:
     BoundingBox createBoundingBox(cocos2d::Point origin, cocos2d::Size size);
     void updateBoxes();
 
+    void showHealthProgress();
+    void hideHealthProgress();
+
 protected:
     cocos2d::Sprite* m_sprite;
     Controller* m_controller;

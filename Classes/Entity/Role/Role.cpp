@@ -41,7 +41,7 @@ void Role::bindSprite(Sprite* sprite) {
     // hp progress bar
     auto size = this->m_sprite->getContentSize();
     this->m_progress = Progress::create();
-    this->m_progress->setPosition(size.width*2/3, size.height + this->m_progress->getContentSize().height/2);
+    this->m_progress->setPosition(0, 3*size.height/4);
     this->addChild(this->m_progress);
 }
 
@@ -182,4 +182,12 @@ void Role::updateBoxes() {
 
     this->m_hitBox.actual.origin = Point(x_hitBox, this->getPosition().y + this->m_hitBox.original.origin.y);
     this->m_bodyBox.actual.origin = this->getPosition() + this->m_bodyBox.original.origin;
+}
+
+void Role::showHealthProgress() {
+    this->m_progress->setVisible(true);
+}
+
+void Role::hideHealthProgress() {
+    this->m_progress->setVisible(false);
 }

@@ -98,7 +98,8 @@ void MenuLayer::setBackground() {
     role->getFSM()->doEvent("stand");
     role->setTiledMap(this->m_map);
     role->setPosition(Vec2(visibleSize.width - 100, visibleSize.height/4));
-    
+    role->hideHealthProgress();
+
     AIController* aiController = AIController::create();
     aiController->setRole(role);
     aiController->setTarget(this->m_conductor);
