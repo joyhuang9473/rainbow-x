@@ -28,6 +28,8 @@ public:
     GroupEnemy* currentGroup();
     void nextGroup();
 
+    void addEnemy();
+
     void logic(float dt);
     void updateActionScope(float dt);
 
@@ -40,7 +42,6 @@ private:
 
     int numsOfEnemy;
     int enemyGroupCounter;
-    void addEnemy();
 
     bool isSuccessful;
 };

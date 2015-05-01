@@ -21,9 +21,9 @@ bool GameLayer::init() {
     this->initPhysics();
 
     // Stage
-    auto stageFile = UserDefault::getInstance()->getStringForKey("nextStageFile");
+    auto stageFile = GAMEMANAGER->getCurStageFile();
     if (stageFile == "") {
-        stageFile = "stage1.plist";
+        stageFile = "country_road.plist";
     }
 
     GAMEMANAGER->readStageInfo(stageFile);
@@ -36,7 +36,12 @@ bool GameLayer::init() {
     this->m_map = TMXTiledMap::create(GAMEMANAGER->getCurMapName());
 
     // Hero
-    auto player = Hero::createWithHeroType(Hero::HeroType::KISI);
+    auto heroType = GAMEMANAGER->getHeroType();
+    if (!heroType) {
+        heroType = Hero::HeroType::KISI;
+    }
+
+    auto player = Hero::createWithHeroType(heroType);
     player->getFSM()->doEvent("stand");
     player->setTag(SpriteTag::SPRITE_HERO);
     this->setPlayer(this->m_map, player);
@@ -48,7 +53,7 @@ bool GameLayer::init() {
     this->enemyGroupCounter = 0;
 
     this->addChild(this->m_map, -1);
-    this->addChild(player);
+    this->addChild(this->m_player);
 
     this->schedule(schedule_selector(GameLayer::logic));
     this->schedule(schedule_selector(GameLayer::updateActionScope));
@@ -225,7 +230,7 @@ void GameLayer::logic(float dt) {
         auto nextStageFile = GAMEMANAGER->getNextStageFile();
 
         if (nextStageFile != "") {
-            UserDefault::getInstance()->setStringForKey("nextStageFile", nextStageFile);
+            GAMEMANAGER->setCurStageFile(nextStageFile);
             Director::getInstance()->replaceScene(GameScene::create());
         } else {
             Director::getInstance()->replaceScene(CompleteScene::create());

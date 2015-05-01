@@ -30,7 +30,7 @@ void GameManager::readStageInfo(const std::string plistpath) {
 
     ValueMap& groupDict = this->stageInfo["group"].asValueMap();
 
-    this->setCurrStageFile(this->stageInfo["currStage"].asString());
+    this->setCurStageFile(this->stageInfo["curStage"].asString());
     this->setNextStageFile(this->stageInfo["nextStage"].asString());
     this->setGroupNum(groupDict.size());
     this->setCurMapName(this->resources["map"].asString());

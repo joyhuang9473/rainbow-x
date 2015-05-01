@@ -1,5 +1,6 @@
 #include "HallScene.h"
-#include "../Layer/HallLayer/HallLayer.h"
+#include "../Layer/HallLayer/HallStageLayer.h"
+#include "../Layer/HallLayer/HallNavigationLayer.h"
 
 USING_NS_CC;
 
@@ -8,7 +9,9 @@ bool HallScene::init() {
         return false;
     }
 
-    this->addChild(HallLayer::create());
+    this->addChild(HallNavigationLayer::create());
+    this->addChild(HallStageLayer::create());
+
     return true;
 }
 

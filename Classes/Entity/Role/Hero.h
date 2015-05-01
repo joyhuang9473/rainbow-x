@@ -8,7 +8,8 @@ class Hero : public Role {
 public:
     enum HeroType {
         KISI,
-        GNU
+        GNU,
+        NONE
     };
 
     Hero();

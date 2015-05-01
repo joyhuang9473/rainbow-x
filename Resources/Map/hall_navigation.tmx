@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="96" height="24" tilewidth="32" tileheight="32" nextobjectid="1">
+ <tileset firstgid="1" name="grassCenterFit" tilewidth="32" tileheight="32">
+  <image source="grassCenter.png" width="70" height="70"/>
+ </tileset>
+ <layer name="ground" width="96" height="24">
+  <data encoding="base64" compression="zlib">
+   eJzt0YEJACEQxMDT//5r1i4CJgNLCtg1M/tuVaTf3V+x0v/bS/9vL/2/vfT/9tL/20v/by/9v730//bS/9tL/29vkiRJkiRJ3nYAp5QLQQ==
+  </data>
+ </layer>
+</map>

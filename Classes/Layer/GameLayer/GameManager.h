@@ -3,7 +3,7 @@
 
 #include "cocos2d.h"
 #include "GroupEnemy.h"
-#include "../../Entity/Role/Role.h"
+#include "../../Entity/Role/Hero.h"
 
 class GameManager {
 public:
@@ -19,10 +19,11 @@ public:
 
     CC_SYNTHESIZE(int, groupNum, GroupNum);
     CC_SYNTHESIZE(std::string, curMapName, CurMapName);
-    CC_SYNTHESIZE(std::string, currStageFile, CurrStageFile);
+    CC_SYNTHESIZE(std::string, curStageFile, CurStageFile);
     CC_SYNTHESIZE(std::string, nextStageFile, NextStageFile);
     CC_SYNTHESIZE(bool, isFinishedAddGroup, IsFinishedAddGroup);
     CC_SYNTHESIZE(std::string, curBgName, CurBgName);
+    CC_SYNTHESIZE(Hero::HeroType, heroType, HeroType);
 
 private:
     static GameManager* instance;
