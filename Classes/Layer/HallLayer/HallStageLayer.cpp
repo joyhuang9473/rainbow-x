@@ -137,7 +137,7 @@ std::string HallStageLayer::selectStage(Vec2 position) {
                         Vec2(kingdom_candy["x"].asFloat(), kingdom_candy["y"].asFloat()),
                         Vec2(kingdom_candy["x"].asFloat() + size.width, kingdom_candy["y"].asFloat() + size.height))
     ) {
-        return "kindom_candy.plist";
+        return "kingdom_candy.plist";
     }
 
     return "";

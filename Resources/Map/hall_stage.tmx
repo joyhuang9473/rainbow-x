@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="orthogonal" renderorder="right-down" width="96" height="24" tilewidth="32" tileheight="32" nextobjectid="25">
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="96" height="24" tilewidth="32" tileheight="32" nextobjectid="30">
  <tileset firstgid="1" name="castleCenterFit" tilewidth="32" tileheight="32">
   <image source="castleCenterFit.png" width="64" height="64"/>
  </tileset>
@@ -29,6 +29,9 @@
  </tileset>
  <tileset firstgid="37" name="country_road_icon" tilewidth="32" tileheight="32">
   <image source="country_road_icon.png" width="128" height="128"/>
+ </tileset>
+ <tileset firstgid="53" name="kingdom_candy_icon" tilewidth="32" tileheight="32">
+  <image source="kingdom_candy_icon.png" width="128" height="128"/>
  </tileset>
  <layer name="ground" width="96" height="24">
   <data encoding="base64" compression="zlib">
@@ -80,17 +83,22 @@
    eJzt0skNwlAQRMGfDBhjgzfyj40OwtIcpkp69z70GAAAAAAA3OWTvumRnsVbOjrSmeb0Lt7S0Zam9Ep78ZaOrrSkNf2Kt3Tk/7X8H4Du/hszBDU=
   </data>
  </layer>
+ <layer name="kingdom_candy_icon" width="96" height="24">
+  <data encoding="base64" compression="zlib">
+   eJzt0skNwlAQRMGfFBhjgzfyj4kOwtIcpkp69z70GAAAAABAV5/0TVN6FW/p6EhnWtJavKWjLT3SM+21U1q60pze6Ve8pSP/r+X/AMDd/qesBa0=
+  </data>
+ </layer>
  <objectgroup name="heroes">
-  <object id="2" name="kit" x="61" y="677"/>
-  <object id="3" name="pacman" x="191" y="482"/>
-  <object id="4" name="tux" x="192" y="675"/>
-  <object id="5" name="wilber" x="321" y="480"/>
   <object id="12" name="kisi" x="36" y="508"/>
   <object id="13" name="gnu" x="289" y="701"/>
+  <object id="25" name="kit" x="34" y="701"/>
+  <object id="26" name="pacman" x="161" y="509"/>
+  <object id="27" name="tux" x="161" y="701"/>
+  <object id="28" name="wilber" x="290" y="508"/>
  </objectgroup>
  <objectgroup name="stages">
   <object id="14" name="country_road" x="931" y="640"/>
-  <object id="17" name="kindom_candy" x="1324" y="623"/>
+  <object id="29" name="kingdom_candy" x="1282" y="607"/>
  </objectgroup>
  <objectgroup name="player">
   <object id="22" name="select_hero" x="376" y="395"/>

@@ -85,6 +85,8 @@
 		A824F7711AE6BF7700527DA2 /* candyBlue.png in Resources */ = {isa = PBXBuildFile; fileRef = A824F7691AE6BF7700527DA2 /* candyBlue.png */; };
 		A824F7731AE6BF8A00527DA2 /* chocoCenter.png in Resources */ = {isa = PBXBuildFile; fileRef = A824F7721AE6BF8A00527DA2 /* chocoCenter.png */; };
 		A824F7741AE6BF8A00527DA2 /* chocoCenter.png in Resources */ = {isa = PBXBuildFile; fileRef = A824F7721AE6BF8A00527DA2 /* chocoCenter.png */; };
+		A82ACE791AF41A2100ACEC6F /* kingdom_candy_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = A82ACE781AF41A2100ACEC6F /* kingdom_candy_icon.png */; };
+		A82ACE7A1AF41A2100ACEC6F /* kingdom_candy_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = A82ACE781AF41A2100ACEC6F /* kingdom_candy_icon.png */; };
 		A82C3C4D1ADA48B300B83E81 /* country_road.plist in Resources */ = {isa = PBXBuildFile; fileRef = A82C3C4C1ADA48B300B83E81 /* country_road.plist */; };
 		A82C3C4E1ADA48B300B83E81 /* country_road.plist in Resources */ = {isa = PBXBuildFile; fileRef = A82C3C4C1ADA48B300B83E81 /* country_road.plist */; };
 		A82C3C601ADA4D3F00B83E81 /* GameManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A82C3C5E1ADA4D3F00B83E81 /* GameManager.cpp */; };
@@ -121,8 +123,6 @@
 		A88CE55A1AE642870018D822 /* rock.png in Resources */ = {isa = PBXBuildFile; fileRef = A88CE5541AE642870018D822 /* rock.png */; };
 		A88CE5691AE64DA20018D822 /* canePink.png in Resources */ = {isa = PBXBuildFile; fileRef = A88CE5651AE64DA20018D822 /* canePink.png */; };
 		A88CE56A1AE64DA20018D822 /* canePink.png in Resources */ = {isa = PBXBuildFile; fileRef = A88CE5651AE64DA20018D822 /* canePink.png */; };
-		A88CE56B1AE64DA20018D822 /* cakeCenter.png in Resources */ = {isa = PBXBuildFile; fileRef = A88CE5661AE64DA20018D822 /* cakeCenter.png */; };
-		A88CE56C1AE64DA20018D822 /* cakeCenter.png in Resources */ = {isa = PBXBuildFile; fileRef = A88CE5661AE64DA20018D822 /* cakeCenter.png */; };
 		A88CE56E1AE6542C0018D822 /* cookieBrown.png in Resources */ = {isa = PBXBuildFile; fileRef = A88CE56D1AE6542C0018D822 /* cookieBrown.png */; };
 		A88CE56F1AE6542C0018D822 /* cookieBrown.png in Resources */ = {isa = PBXBuildFile; fileRef = A88CE56D1AE6542C0018D822 /* cookieBrown.png */; };
 		A891AEAA1AEB7ACD00130F13 /* kingdom_candy.tmx in Resources */ = {isa = PBXBuildFile; fileRef = A891AEA91AEB7ACD00130F13 /* kingdom_candy.tmx */; };
@@ -344,6 +344,7 @@
 		A824F7681AE6BF7700527DA2 /* candyGreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = candyGreen.png; sourceTree = "<group>"; };
 		A824F7691AE6BF7700527DA2 /* candyBlue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = candyBlue.png; sourceTree = "<group>"; };
 		A824F7721AE6BF8A00527DA2 /* chocoCenter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chocoCenter.png; sourceTree = "<group>"; };
+		A82ACE781AF41A2100ACEC6F /* kingdom_candy_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kingdom_candy_icon.png; sourceTree = "<group>"; };
 		A82C3C4C1ADA48B300B83E81 /* country_road.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = country_road.plist; sourceTree = "<group>"; };
 		A82C3C5E1ADA4D3F00B83E81 /* GameManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameManager.cpp; sourceTree = "<group>"; };
 		A82C3C5F1ADA4D3F00B83E81 /* GameManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameManager.h; sourceTree = "<group>"; };
@@ -371,7 +372,6 @@
 		A88CE5531AE642870018D822 /* plant.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plant.png; sourceTree = "<group>"; };
 		A88CE5541AE642870018D822 /* rock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rock.png; sourceTree = "<group>"; };
 		A88CE5651AE64DA20018D822 /* canePink.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = canePink.png; sourceTree = "<group>"; };
-		A88CE5661AE64DA20018D822 /* cakeCenter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cakeCenter.png; sourceTree = "<group>"; };
 		A88CE56D1AE6542C0018D822 /* cookieBrown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cookieBrown.png; sourceTree = "<group>"; };
 		A891AEA91AEB7ACD00130F13 /* kingdom_candy.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = kingdom_candy.tmx; sourceTree = "<group>"; };
 		A891AEAC1AECD1BC00130F13 /* menu.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = menu.tmx; sourceTree = "<group>"; };
@@ -832,6 +832,7 @@
 		A8C18F831AE2415700B06F0D /* Map */ = {
 			isa = PBXGroup;
 			children = (
+				A82ACE781AF41A2100ACEC6F /* kingdom_candy_icon.png */,
 				A8B7CC201AF3C8750046D98F /* country_road_icon.png */,
 				A8B7CC141AF326C00046D98F /* castleCenterFit.png */,
 				A8B7CB821AF31B220046D98F /* hall_navigation.tmx */,
@@ -866,7 +867,6 @@
 				A824F75C1AE6B35A00527DA2 /* lollipopBaseBrown.png */,
 				A88CE56D1AE6542C0018D822 /* cookieBrown.png */,
 				A88CE5651AE64DA20018D822 /* canePink.png */,
-				A88CE5661AE64DA20018D822 /* cakeCenter.png */,
 				A88CE5521AE642870018D822 /* cactus.png */,
 				A88CE5531AE642870018D822 /* plant.png */,
 				A88CE5541AE642870018D822 /* rock.png */,
@@ -1002,7 +1002,6 @@
 				A8B7CB791AF318B20046D98F /* wilber_icon.png in Resources */,
 				A88CE5571AE642870018D822 /* plant.png in Resources */,
 				A891AF131AEE994F00130F13 /* signExitEnable.png in Resources */,
-				A88CE56B1AE64DA20018D822 /* cakeCenter.png in Resources */,
 				A891AEB61AECD1BC00130F13 /* menu.tmx in Resources */,
 				A8B7CB711AF318B20046D98F /* gnu_icon.png in Resources */,
 				5087E78617EB970100C73F5D /* Icon-76.png in Resources */,
@@ -1012,6 +1011,7 @@
 				A8A052061AE5FBAD00987DE7 /* dirt_bottom.png in Resources */,
 				96B9F4A91A8F0A1400677CF4 /* red_hair_boy.png in Resources */,
 				5087E77F17EB970100C73F5D /* Default@2x.png in Resources */,
+				A82ACE791AF41A2100ACEC6F /* kingdom_candy_icon.png in Resources */,
 				A8B7CB831AF31B220046D98F /* hall_navigation.tmx in Resources */,
 				A82C3C4D1ADA48B300B83E81 /* country_road.plist in Resources */,
 				A891AF0B1AEE994F00130F13 /* signAbout.png in Resources */,
@@ -1124,8 +1124,8 @@
 				A8512B5D1AB3F78C0083BCAE /* hero-gnu.png in Resources */,
 				A8B7CC221AF3C8750046D98F /* country_road_icon.png in Resources */,
 				A824F76D1AE6BF7700527DA2 /* candyRed.png in Resources */,
-				A88CE56C1AE64DA20018D822 /* cakeCenter.png in Resources */,
 				A88CE5581AE642870018D822 /* plant.png in Resources */,
+				A82ACE7A1AF41A2100ACEC6F /* kingdom_candy_icon.png in Resources */,
 				A88CE56F1AE6542C0018D822 /* cookieBrown.png in Resources */,
 				A8A1B7371AA3305100BEFFD0 /* hero-kisi.plist in Resources */,
 				A8C18F891AE2415700B06F0D /* floor.tmx in Resources */,
