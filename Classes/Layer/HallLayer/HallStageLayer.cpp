@@ -111,9 +111,33 @@ Hero::HeroType HallStageLayer::selectRole(Vec2 position) {
         return Hero::HeroType::KISI;
     } else if (
         this->isInRange(position,
-                        Vec2(gnu["x"].asFloat(), gnu["y"].asFloat()),
-                        Vec2(gnu["x"].asFloat() + size.width, gnu["y"].asFloat() + size.height))
+                        Vec2(kit["x"].asFloat(), kit["y"].asFloat()),
+                        Vec2(kit["x"].asFloat() + size.width, kit["y"].asFloat() + size.height))
     ) {
+        return Hero::HeroType::KIT;
+    } else if (
+               this->isInRange(position,
+                               Vec2(pacman["x"].asFloat(), pacman["y"].asFloat()),
+                               Vec2(pacman["x"].asFloat() + size.width, pacman["y"].asFloat() + size.height))
+               ) {
+        return Hero::HeroType::PACMAN;
+    } else if (
+               this->isInRange(position,
+                               Vec2(tux["x"].asFloat(), tux["y"].asFloat()),
+                               Vec2(tux["x"].asFloat() + size.width, tux["y"].asFloat() + size.height))
+               ) {
+        return Hero::HeroType::TUX;
+    } else if (
+               this->isInRange(position,
+                               Vec2(wilber["x"].asFloat(), wilber["y"].asFloat()),
+                               Vec2(wilber["x"].asFloat() + size.width, wilber["y"].asFloat() + size.height))
+               ) {
+        return Hero::HeroType::WILBER;
+    } else if (
+               this->isInRange(position,
+                               Vec2(gnu["x"].asFloat(), gnu["y"].asFloat()),
+                               Vec2(gnu["x"].asFloat() + size.width, gnu["y"].asFloat() + size.height))
+               ) {
         return Hero::HeroType::GNU;
     }
 

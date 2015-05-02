@@ -12,6 +12,10 @@ Hero::Hero() {
 
     FRAMECACHE->addSpriteFramesWithFile("hero-kisi.plist", "hero-kisi.png");
     FRAMECACHE->addSpriteFramesWithFile("hero-gnu.plist", "hero-gnu.png");
+    FRAMECACHE->addSpriteFramesWithFile("hero-wilber.plist", "hero-wilber.png");
+    FRAMECACHE->addSpriteFramesWithFile("hero-tux.plist", "hero-tux.png");
+    FRAMECACHE->addSpriteFramesWithFile("hero-pacman.plist", "hero-pacman.png");
+    FRAMECACHE->addSpriteFramesWithFile("hero-kit.plist", "hero-kit.png");
     this->m_map = nullptr;
 }
 
@@ -28,6 +32,18 @@ bool Hero::initWithHeroType(HeroType type) {
             break;
         case HeroType::GNU:
             spName = "gnu";
+            break;
+        case HeroType::KIT:
+            spName = "kit";
+            break;
+        case HeroType::PACMAN:
+            spName = "pacman";
+            break;
+        case HeroType::TUX:
+            spName = "tux";
+            break;
+        case HeroType::WILBER:
+            spName = "wilber";
             break;
         default:
             break;

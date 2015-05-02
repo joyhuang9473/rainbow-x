@@ -9,6 +9,10 @@ public:
     enum HeroType {
         KISI,
         GNU,
+        WILBER,
+        TUX,
+        PACMAN,
+        KIT,
         NONE
     };
 
