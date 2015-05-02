@@ -123,8 +123,6 @@
 		A83424311AC018E70099E768 /* progress-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = A834242D1AC018E70099E768 /* progress-bg.png */; };
 		A83D69FD1ABD415B00DD9932 /* AIController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A83D69FB1ABD415B00DD9932 /* AIController.cpp */; };
 		A83D69FE1ABD415B00DD9932 /* AIController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A83D69FB1ABD415B00DD9932 /* AIController.cpp */; };
-		A83D6A011ABD602800DD9932 /* Enemy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A83D69FF1ABD602800DD9932 /* Enemy.cpp */; };
-		A83D6A021ABD602800DD9932 /* Enemy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A83D69FF1ABD602800DD9932 /* Enemy.cpp */; };
 		A8512B5A1AB3F78C0083BCAE /* hero-gnu.plist in Resources */ = {isa = PBXBuildFile; fileRef = A8512B581AB3F78C0083BCAE /* hero-gnu.plist */; };
 		A8512B5B1AB3F78C0083BCAE /* hero-gnu.plist in Resources */ = {isa = PBXBuildFile; fileRef = A8512B581AB3F78C0083BCAE /* hero-gnu.plist */; };
 		A8512B5C1AB3F78C0083BCAE /* hero-gnu.png in Resources */ = {isa = PBXBuildFile; fileRef = A8512B591AB3F78C0083BCAE /* hero-gnu.png */; };
@@ -386,8 +384,6 @@
 		A834242D1AC018E70099E768 /* progress-bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "progress-bg.png"; path = "Other/progress-bg.png"; sourceTree = "<group>"; };
 		A83D69FB1ABD415B00DD9932 /* AIController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AIController.cpp; sourceTree = "<group>"; };
 		A83D69FC1ABD415B00DD9932 /* AIController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIController.h; sourceTree = "<group>"; };
-		A83D69FF1ABD602800DD9932 /* Enemy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Enemy.cpp; sourceTree = "<group>"; };
-		A83D6A001ABD602800DD9932 /* Enemy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Enemy.h; sourceTree = "<group>"; };
 		A8512B581AB3F78C0083BCAE /* hero-gnu.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "hero-gnu.plist"; sourceTree = "<group>"; };
 		A8512B591AB3F78C0083BCAE /* hero-gnu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hero-gnu.png"; sourceTree = "<group>"; };
 		A8512B5E1AB47E170083BCAE /* FSM.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FSM.cpp; sourceTree = "<group>"; };
@@ -915,8 +911,6 @@
 		A8DEE83B1A93B0DE005CE926 /* Role */ = {
 			isa = PBXGroup;
 			children = (
-				A83D69FF1ABD602800DD9932 /* Enemy.cpp */,
-				A83D6A001ABD602800DD9932 /* Enemy.h */,
 				A8DEE83C1A93B0DE005CE926 /* Hero.cpp */,
 				A8DEE83D1A93B0DE005CE926 /* Hero.h */,
 				A8DEE83E1A93B0DE005CE926 /* Role.cpp */,
@@ -1241,7 +1235,6 @@
 				A8A3DE701AE12A9300BF5586 /* CompleteLayer.cpp in Sources */,
 				A8DEE8441A93B0DE005CE926 /* Role.cpp in Sources */,
 				A83424221ABFFEFB0099E768 /* Progress.cpp in Sources */,
-				A83D6A011ABD602800DD9932 /* Enemy.cpp in Sources */,
 				A8101AEB1ABB28B3004AA3E5 /* ContactListener.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1266,7 +1259,6 @@
 				96B9F48A1A8F09FA00677CF4 /* MenuLayer.cpp in Sources */,
 				503AE10517EB98FF00D1A890 /* main.cpp in Sources */,
 				A8101AEC1ABB28B3004AA3E5 /* ContactListener.cpp in Sources */,
-				A83D6A021ABD602800DD9932 /* Enemy.cpp in Sources */,
 				96B9F47E1A8F09FA00677CF4 /* Controller.cpp in Sources */,
 				A8A3DE751AE12B0700BF5586 /* FailLayer.cpp in Sources */,
 				A83424231ABFFEFB0099E768 /* Progress.cpp in Sources */,

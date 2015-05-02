@@ -35,7 +35,7 @@ bool GameLayer::init() {
     FileUtils::getInstance()->setSearchPaths(searchPaths);
     this->m_map = TMXTiledMap::create(GAMEMANAGER->getCurMapName());
 
-    // Hero
+    // Player
     auto heroType = GAMEMANAGER->getHeroType();
     if (!heroType) {
         heroType = Hero::HeroType::KISI;
@@ -113,7 +113,7 @@ void GameLayer::setPlayer(TMXTiledMap* map, Hero* hero) {
     hero->addChild(operateController);
 }
 
-void GameLayer::setEnemy(TMXTiledMap* map, Enemy* enemy, Hero* target) {
+void GameLayer::setEnemy(TMXTiledMap* map, Hero* enemy, Hero* target) {
     TMXObjectGroup* enemyGroupObject = map->getObjectGroup(StringUtils::format("enemy_group%d", this->enemyGroupCounter));
     ValueMap startPoint = enemyGroupObject->getObject(StringUtils::format("start_point%d", this->numsOfEnemy));
 
@@ -198,13 +198,13 @@ void GameLayer::addEnemy() {
         return;
     }
 
-    Enemy* enemy = nullptr;
+    Hero* enemy = nullptr;
 
     if (groupEnemy->getType1Total() > 0) {
-        enemy = Enemy::createWithEnemyType(Enemy::EnemyType::GNU);
+        enemy = Hero::createWithHeroType(Hero::HeroType::GNU);
         groupEnemy->setType1Total(groupEnemy->getType1Total() - 1);
     } else if (groupEnemy->getType2Total() > 0) {
-        enemy = Enemy::createWithEnemyType(Enemy::EnemyType::KISI);
+        enemy = Hero::createWithHeroType(Hero::HeroType::KISI);
         groupEnemy->setType2Total(groupEnemy->getType2Total() - 1);
     }
 

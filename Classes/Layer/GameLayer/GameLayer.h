@@ -3,7 +3,6 @@
 
 #include "cocos2d.h"
 #include "../../Entity/Role/Hero.h"
-#include "../../Entity/Role/Enemy.h"
 #include "../../Controller/ContactListener.h"
 #include "GroupEnemy.h"
 
@@ -16,8 +15,8 @@ public:
 
     virtual bool init();
     CREATE_FUNC(GameLayer);
-    void setPlayer(cocos2d::TMXTiledMap* map, Hero* hero);
-    void setEnemy(cocos2d::TMXTiledMap* map, Enemy* enemy, Hero* target);
+    void setPlayer(cocos2d::TMXTiledMap* map, Hero* player);
+    void setEnemy(cocos2d::TMXTiledMap* map, Hero* enemy, Hero* target);
 
     bool collisionDetection(const BoundingBox &hitBox, const BoundingBox &bodyBox);
 
