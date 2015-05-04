@@ -42,7 +42,8 @@ private:
     int numsOfEnemy;
     int enemyGroupCounter;
 
-    bool isSuccessful;
+    bool isMissionComplete;
+    bool isInterrupted;
 };
 
 #endif

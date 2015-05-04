@@ -4,8 +4,6 @@
 #include "GameManager.h"
 #include "../../Controller/OperateController.h"
 #include "../../Controller/AIController.h"
-#include "../../Scene/CompleteScene.h"
-#include "../../Scene/FailScene.h"
 #include "../../Scene/GameScene.h"
 
 USING_NS_CC;
@@ -27,7 +25,8 @@ bool GameLayer::init() {
     }
 
     GAMEMANAGER->readStageInfo(stageFile);
-    this->isSuccessful = false;
+    this->isMissionComplete = false;
+    this->isInterrupted = false;
 
     // Map
     std::vector<std::string> searchPaths;
@@ -177,11 +176,7 @@ GroupEnemy* GameLayer::currentGroup() {
 }
 
 void GameLayer::nextGroup() {
-    if (this->enemyGroupCounter < GAMEMANAGER->getGroupNum()-1) {
-        ++this->enemyGroupCounter;
-    } else {
-        this->isSuccessful = true;
-    }
+    ++this->enemyGroupCounter;
 }
 
 void GameLayer::addEnemy() {
@@ -219,7 +214,15 @@ void GameLayer::addEnemy() {
 }
 
 void GameLayer::logic(float dt) {
-    if (this->isSuccessful) {
+    if (this->isInterrupted) {
+        return;
+    }
+    if (this->m_player->getFSM()->getCurrState() == "dead") {
+        Director::getInstance()->getEventDispatcher()->dispatchCustomEvent("missionFailed");
+        this->isInterrupted = true;
+        return;
+    }
+    if (this->isMissionComplete) {
         TMXObjectGroup* playerObject = this->m_map->getObjectGroup("player");
         ValueMap accessPoint = playerObject->getObject("access_point");
 
@@ -233,8 +236,9 @@ void GameLayer::logic(float dt) {
             GAMEMANAGER->setCurStageFile(nextStageFile);
             Director::getInstance()->replaceScene(GameScene::create());
         } else {
-            Director::getInstance()->replaceScene(CompleteScene::create());
+            Director::getInstance()->getEventDispatcher()->dispatchCustomEvent("missionComplete");
         }
+        this->isInterrupted = true;
         return;
     }
 
@@ -244,7 +248,12 @@ void GameLayer::logic(float dt) {
         return;
     }
     if (groupEnemy->getIsFinishedAddGroup() && this->numsOfEnemy == 0) {
-        this->nextGroup();
+        if (this->enemyGroupCounter < GAMEMANAGER->getGroupNum()-1) {
+            this->nextGroup();
+        } else {
+            this->isMissionComplete = true;
+            return;
+        }
     }
 
     this->addEnemy();

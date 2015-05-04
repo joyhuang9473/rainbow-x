@@ -34,39 +34,5 @@ bool HallNavigationLayer::init() {
     this->addChild(sectionItem2);
     this->addChild(sectionItem3);
 
-    // Menu
-    TMXObjectGroup* menuObject = this->m_map->getObjectGroup("menu");
-    ValueMap option = menuObject->getObject("option");
-    ValueMap close = menuObject->getObject("close");
-    Vector<MenuItem*> MenuItems;
-
-    auto optionItem = MenuItemImage::create("signHangingOption.png",
-                                           "signHangingOption.png",
-                                           CC_CALLBACK_0(HallNavigationLayer::menuOptionCallback, this));
-
-    auto closeItem = MenuItemImage::create("signHangingClose.png",
-                                           "signHangingClose.png",
-                                           CC_CALLBACK_1(HallNavigationLayer::menuCloseCallback, this));
-    
-    optionItem->setPosition(Vec2(option["x"].asFloat(), option["y"].asFloat()));
-    closeItem->setPosition(Vec2(close["x"].asFloat(), close["y"].asFloat()));
-
-    MenuItems.pushBack(optionItem);
-    MenuItems.pushBack(closeItem);
-
-    auto menu = Menu::createWithArray(MenuItems);
-    menu->setPosition(Vec2::ZERO);
-    this->addChild(menu);
-
     return true;
 }
-
-void HallNavigationLayer::menuOptionCallback() {
-    // TODO
-    return;
-}
-
-void HallNavigationLayer::menuCloseCallback(cocos2d::Ref* pSender) {
-    Director::getInstance()->end();
-}
-

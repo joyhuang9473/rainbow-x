@@ -6,13 +6,9 @@
 class HallNavigationLayer : public cocos2d::Layer {
 public:
     virtual bool init();
-    
+
     CREATE_FUNC(HallNavigationLayer);
 
-    void menuOptionCallback();
-    
-    void menuCloseCallback(cocos2d::Ref* pSender);
-    
 private:
     cocos2d::TMXTiledMap* m_map;
 };

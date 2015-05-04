@@ -6,9 +6,6 @@
  <tileset firstgid="17" name="dirtCave" tilewidth="32" tileheight="32">
   <image source="dirtCave.png" width="130" height="130"/>
  </tileset>
- <tileset firstgid="33" name="signHangingCoin" tilewidth="32" tileheight="32">
-  <image source="signHangingCoin.png" width="64" height="64"/>
- </tileset>
  <layer name="ground" width="32" height="24">
   <data encoding="base64" compression="zlib">
    eJzt0UkOwCAQA8EBAiELy/9fm34FgxS3VAefHcwsIuFAWLwzCk5Uh33hxoPXYTd0DEyHvfpv/a//9f8+/yullPpnHySBDME=
@@ -23,9 +20,5 @@
   <object id="6" name="section1" x="245.333" y="217.333"/>
   <object id="9" name="section2" x="493.333" y="140"/>
   <object id="10" name="section3" x="757.333" y="216"/>
- </objectgroup>
- <objectgroup name="menu">
-  <object id="12" name="close" x="928" y="32"/>
-  <object id="13" name="option" x="864" y="32"/>
  </objectgroup>
 </map>

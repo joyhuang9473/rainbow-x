@@ -8,6 +8,12 @@ public:
     virtual bool init();
 
     CREATE_FUNC(GameScene);
+
+    void createCompleteDialog();
+    
+    void createFailedDialog();
+
+    void menuCallback();
 };
 
 #endif

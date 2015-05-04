@@ -23,6 +23,7 @@ public:
     CC_SYNTHESIZE(std::string, nextStageFile, NextStageFile);
     CC_SYNTHESIZE(bool, isFinishedAddGroup, IsFinishedAddGroup);
     CC_SYNTHESIZE(std::string, curBgName, CurBgName);
+
     CC_SYNTHESIZE(Hero::HeroType, heroType, HeroType);
 
 private:
