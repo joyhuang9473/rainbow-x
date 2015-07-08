@@ -3,7 +3,6 @@
 #include "../Layer/GameLayer/GameLayer.h"
 #include "../Layer/GameLayer/ConditionLayer.h"
 
-
 USING_NS_CC;
 
 bool GameScene::init() {

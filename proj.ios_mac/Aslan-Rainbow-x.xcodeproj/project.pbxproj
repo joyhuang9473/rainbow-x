@@ -129,6 +129,10 @@
 		A8512B5D1AB3F78C0083BCAE /* hero-gnu.png in Resources */ = {isa = PBXBuildFile; fileRef = A8512B591AB3F78C0083BCAE /* hero-gnu.png */; };
 		A8512B601AB47E170083BCAE /* FSM.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8512B5E1AB47E170083BCAE /* FSM.cpp */; };
 		A8512B611AB47E170083BCAE /* FSM.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8512B5E1AB47E170083BCAE /* FSM.cpp */; };
+		A865C3711AF86D970046DC06 /* calmbgm.wav in Resources */ = {isa = PBXBuildFile; fileRef = A865C3701AF86D970046DC06 /* calmbgm.wav */; };
+		A865C3721AF86D970046DC06 /* calmbgm.wav in Resources */ = {isa = PBXBuildFile; fileRef = A865C3701AF86D970046DC06 /* calmbgm.wav */; };
+		A865C3771AF875710046DC06 /* magic_town.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A865C3761AF875710046DC06 /* magic_town.mp3 */; };
+		A865C3781AF875710046DC06 /* magic_town.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A865C3761AF875710046DC06 /* magic_town.mp3 */; };
 		A885F0A31AF4BAE20081D9DA /* dirtCave.png in Resources */ = {isa = PBXBuildFile; fileRef = A885F0A21AF4BAE20081D9DA /* dirtCave.png */; };
 		A885F0A41AF4BAE20081D9DA /* dirtCave.png in Resources */ = {isa = PBXBuildFile; fileRef = A885F0A21AF4BAE20081D9DA /* dirtCave.png */; };
 		A885F0A91AF658850081D9DA /* houseFit.png in Resources */ = {isa = PBXBuildFile; fileRef = A885F0A81AF658850081D9DA /* houseFit.png */; };
@@ -392,6 +396,8 @@
 		A8512B591AB3F78C0083BCAE /* hero-gnu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hero-gnu.png"; sourceTree = "<group>"; };
 		A8512B5E1AB47E170083BCAE /* FSM.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FSM.cpp; sourceTree = "<group>"; };
 		A8512B5F1AB47E170083BCAE /* FSM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSM.h; sourceTree = "<group>"; };
+		A865C3701AF86D970046DC06 /* calmbgm.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = calmbgm.wav; sourceTree = "<group>"; };
+		A865C3761AF875710046DC06 /* magic_town.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = magic_town.mp3; sourceTree = "<group>"; };
 		A885F0A21AF4BAE20081D9DA /* dirtCave.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dirtCave.png; sourceTree = "<group>"; };
 		A885F0A81AF658850081D9DA /* houseFit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = houseFit.png; sourceTree = "<group>"; };
 		A885F0AB1AF65DB50081D9DA /* unknown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = unknown.png; sourceTree = "<group>"; };
@@ -584,6 +590,7 @@
 		46880B7519C43A67006E1F66 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				A865C36F1AF86D970046DC06 /* Audio */,
 				A891AEF61AEE991C00130F13 /* buttons */,
 				A8C18F831AE2415700B06F0D /* Map */,
 				A82C3C471ADA482B00B83E81 /* Settings */,
@@ -799,6 +806,15 @@
 				A834242D1AC018E70099E768 /* progress-bg.png */,
 			);
 			name = Other;
+			sourceTree = "<group>";
+		};
+		A865C36F1AF86D970046DC06 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				A865C3761AF875710046DC06 /* magic_town.mp3 */,
+				A865C3701AF86D970046DC06 /* calmbgm.wav */,
+			);
+			path = Audio;
 			sourceTree = "<group>";
 		};
 		A891AEF61AEE991C00130F13 /* buttons */ = {
@@ -1085,6 +1101,7 @@
 				A824F76C1AE6BF7700527DA2 /* candyRed.png in Resources */,
 				A891AEFD1AEE991C00130F13 /* CloseSelected.png in Resources */,
 				A824F7641AE6B6B000527DA2 /* waffleChoco.png in Resources */,
+				A865C3771AF875710046DC06 /* magic_town.mp3 in Resources */,
 				A82ACE981AF48DD600ACEC6F /* hero-kit.plist in Resources */,
 				A88CE56E1AE6542C0018D822 /* cookieBrown.png in Resources */,
 				A8B7CB771AF318B20046D98F /* tux_icon.png in Resources */,
@@ -1099,6 +1116,7 @@
 				A885F0AC1AF65DB50081D9DA /* unknown.png in Resources */,
 				521A8E6419F0C34300D177D7 /* Default-667h@2x.png in Resources */,
 				A8E7B2FE1AE39012007EF765 /* kingdom_candy.plist in Resources */,
+				A865C3711AF86D970046DC06 /* calmbgm.wav in Resources */,
 				A891AF0D1AEE994F00130F13 /* signStart.png in Resources */,
 				A8A1B7341AA3305100BEFFD0 /* hero-kisi.png in Resources */,
 				A885F0B81AF666590081D9DA /* signHangingOption.png in Resources */,
@@ -1138,6 +1156,7 @@
 				A885F0AD1AF65DB50081D9DA /* unknown.png in Resources */,
 				A891AEC71AECD1BC00130F13 /* bg_grasslands.png in Resources */,
 				A824F76B1AE6BF7700527DA2 /* candyYellow.png in Resources */,
+				A865C3721AF86D970046DC06 /* calmbgm.wav in Resources */,
 				A891AEAB1AEB7ACD00130F13 /* kingdom_candy.tmx in Resources */,
 				96B9F4AA1A8F0A1400677CF4 /* red_hair_boy.png in Resources */,
 				A82ACE971AF48DD600ACEC6F /* hero-kit.png in Resources */,
@@ -1165,6 +1184,7 @@
 				A82ACE871AF4881B00ACEC6F /* hero-wilber.plist in Resources */,
 				A8E7B2FF1AE39012007EF765 /* kingdom_candy.plist in Resources */,
 				A8B7CB811AF319DA0046D98F /* hall_stage.tmx in Resources */,
+				A865C3781AF875710046DC06 /* magic_town.mp3 in Resources */,
 				503AE0F817EB97AB00D1A890 /* Icon.icns in Resources */,
 				A891AEBD1AECD1BC00130F13 /* grassMidFit_down.png in Resources */,
 				A824F7621AE6B35A00527DA2 /* lollipopBaseBrown.png in Resources */,

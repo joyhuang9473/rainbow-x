@@ -1,15 +1,24 @@
 #include "MenuLayer.h"
+#include "SimpleAudioEngine.h"
 #include "../../Scene/HallScene.h"
 #include "../../Entity/Role/Hero.h"
 #include "../../Controller/AIController.h"
 
 USING_NS_CC;
+using namespace CocosDenshion;
 
 bool MenuLayer::init() {
     if ( !Layer::init() ) {
         return false;
     }
-    
+
+    // Audio
+    SimpleAudioEngine::getInstance()->playBackgroundMusic("magic_town.mp3", true);
+
+    // Background
+    this->setBackground();
+
+    // Menu
     Size visibleSize = Director::getInstance()->getVisibleSize();
     Vec2 origin = Director::getInstance()->getVisibleOrigin();
     Vector<MenuItem*> MenuItems;
@@ -39,13 +48,9 @@ bool MenuLayer::init() {
     this->addChild(menu, 1);
 
     auto label = Label::createWithTTF("Aslan-Rainbow-x", "fonts/Marker Felt.ttf", 72);
-
     label->setPosition(Vec2(origin.x + visibleSize.width/2,
                             origin.y + visibleSize.height - 2*label->getContentSize().height));
-
     this->addChild(label, 1);
-
-    this->setBackground();
 
     this->scheduleUpdate();
     return true;
@@ -53,12 +58,11 @@ bool MenuLayer::init() {
 
 void MenuLayer::menuAboutCallback() {
     // TODO
-    CCLOG("About!");
+    log("About!");
 }
 
 void MenuLayer::menuStartCallback() {
-    CCLOG("START!");
-
+    SimpleAudioEngine::getInstance()->stopBackgroundMusic();
     Director::getInstance()->replaceScene(HallScene::create());
 }
 
