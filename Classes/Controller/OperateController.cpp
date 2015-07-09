@@ -1,5 +1,4 @@
 #include "OperateController.h"
-#include "../Entity/State/State.h"
 
 USING_NS_CC;
 
