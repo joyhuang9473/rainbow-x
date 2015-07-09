@@ -20,13 +20,13 @@ bool GameScene::init() {
 
 void GameScene::createCompleteDialog() {
     auto visibleSize = Director::getInstance()->getVisibleSize();
-    auto label = Label::createWithTTF("Mission Complete", "fonts/Marker Felt.ttf", 72);
+    auto label = Label::createWithTTF("Mission Complete", "Fonts/Marker Felt.ttf", 72);
 
     label->setPosition(Vec2(visibleSize.width/2, 2*visibleSize.height/3));
     this->addChild(label);
 
-    auto menuItem = MenuItemImage::create("signHangingOption.png",
-                                           "signHangingOption.png",
+    auto menuItem = MenuItemImage::create("Buttons/signHangingOption.png",
+                                           "Buttons/signHangingOption.png",
                                            CC_CALLBACK_0(GameScene::menuCallback, this));
     auto menu = Menu::create(menuItem, NULL);
     this->addChild(menu);
@@ -34,13 +34,13 @@ void GameScene::createCompleteDialog() {
 
 void GameScene::createFailedDialog() {
     auto visibleSize = Director::getInstance()->getVisibleSize();
-    auto label = Label::createWithTTF("Mission Failed", "fonts/Marker Felt.ttf", 72);
+    auto label = Label::createWithTTF("Mission Failed", "Fonts/Marker Felt.ttf", 72);
 
     label->setPosition(Vec2(visibleSize.width/2, 2*visibleSize.height/3));
     this->addChild(label);
 
-    auto menuItem = MenuItemImage::create("signHangingOption.png",
-                                           "signHangingOption.png",
+    auto menuItem = MenuItemImage::create("Buttons/signHangingOption.png",
+                                           "Buttons/signHangingOption.png",
                                            CC_CALLBACK_0(GameScene::menuCallback, this));
     auto menu = Menu::create(menuItem, NULL);
     this->addChild(menu);

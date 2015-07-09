@@ -10,6 +10,60 @@
     <Filter Include="src">
       <UniqueIdentifier>{bb6c862e-70e9-49d9-81b7-3829a6f50471}</UniqueIdentifier>
     </Filter>
+    <Filter Include="src\Controller">
+      <UniqueIdentifier>{ab67c9d1-bd80-4958-88f6-1a71a2479747}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Entity">
+      <UniqueIdentifier>{345134be-e7f6-48db-82da-6a56c9923cc3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Layer">
+      <UniqueIdentifier>{6521166d-4410-4e49-ae5a-5e1d9f007c3a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Scene">
+      <UniqueIdentifier>{a0364046-b700-441f-878c-d9a37a022cf6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Util">
+      <UniqueIdentifier>{1c4e58e9-3e51-4618-be83-06f34a762170}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Entity\Role">
+      <UniqueIdentifier>{02e4afae-1dac-4107-b40e-817979cf885d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Layer\HallLayer">
+      <UniqueIdentifier>{21bace9f-16ee-4404-8889-af037340d7a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Layer\GameLayer">
+      <UniqueIdentifier>{75552fce-2f89-4d2c-a2d4-a47fc22fe2b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Layer\MenuLayer">
+      <UniqueIdentifier>{80d201b1-ddcd-4a18-b97d-ff3033599bcf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Util\Animation">
+      <UniqueIdentifier>{03cdf83d-a38d-4289-a8aa-a4665a2bdf85}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Util\CSVParse">
+      <UniqueIdentifier>{65a14c7e-e25a-488d-9ceb-ace64cc021a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resource\Audio">
+      <UniqueIdentifier>{545ad847-7583-49c1-bbc1-e7a3e781b762}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resource\buttons">
+      <UniqueIdentifier>{081668da-5bb8-4ae6-84f1-97c9d077f2ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resource\Map">
+      <UniqueIdentifier>{c8637ec4-12b5-4e74-96dd-856b5468a5b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resource\Settings">
+      <UniqueIdentifier>{3a23ba2a-434c-4415-9b63-d3f96cf6b5b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resource\Other">
+      <UniqueIdentifier>{ec3d6fa6-3ac6-422c-a2d7-5974a4a65a51}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resource\Characters">
+      <UniqueIdentifier>{0efc7b5b-5ede-4827-baa7-ded8449ccdba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resource\fonts">
+      <UniqueIdentifier>{3134a1f6-aab9-4a26-8437-da16431e3e81}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -18,8 +72,77 @@
     <ClCompile Include="..\Classes\AppDelegate.cpp">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="..\Classes\HelloWorldScene.cpp">
-      <Filter>src</Filter>
+    <ClCompile Include="..\Classes\Controller\AIController.cpp">
+      <Filter>src\Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Controller\ContactListener.cpp">
+      <Filter>src\Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Controller\Controller.cpp">
+      <Filter>src\Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Controller\OperateController.cpp">
+      <Filter>src\Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Controller\ThreeDirectionController.cpp">
+      <Filter>src\Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Entity\Role\FSM.cpp">
+      <Filter>src\Entity\Role</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Entity\Role\Hero.cpp">
+      <Filter>src\Entity\Role</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Entity\Role\Progress.cpp">
+      <Filter>src\Entity\Role</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Entity\Role\Role.cpp">
+      <Filter>src\Entity\Role</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Layer\HallLayer\HallNavigationLayer.cpp">
+      <Filter>src\Layer\HallLayer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Layer\HallLayer\HallStageLayer.cpp">
+      <Filter>src\Layer\HallLayer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Layer\GameLayer\ConditionLayer.cpp">
+      <Filter>src\Layer\GameLayer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Layer\GameLayer\GameLayer.cpp">
+      <Filter>src\Layer\GameLayer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Layer\GameLayer\GameManager.cpp">
+      <Filter>src\Layer\GameLayer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Layer\GameLayer\GroupEnemy.cpp">
+      <Filter>src\Layer\GameLayer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Layer\GameLayer\VisibleRect.cpp">
+      <Filter>src\Layer\GameLayer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Layer\MenuLayer\MenuLayer.cpp">
+      <Filter>src\Layer\MenuLayer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Util\Animation\AnimationUtil.cpp">
+      <Filter>src\Util\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Util\CSVParse\CsvParseUtil.cpp">
+      <Filter>src\Util\CSVParse</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Util\CSVParse\FileLoadUtil.cpp">
+      <Filter>src\Util\CSVParse</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Util\CSVParse\StringUtil.cpp">
+      <Filter>src\Util\CSVParse</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scene\GameScene.cpp">
+      <Filter>src\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scene\HallScene.cpp">
+      <Filter>src\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scene\MenuScene.cpp">
+      <Filter>src\Scene</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -29,13 +152,330 @@
     <ClInclude Include="..\Classes\AppDelegate.h">
       <Filter>src</Filter>
     </ClInclude>
-    <ClInclude Include="..\Classes\HelloWorldScene.h">
-      <Filter>src</Filter>
+    <ClInclude Include="..\Classes\Controller\AIController.h">
+      <Filter>src\Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Controller\ContactListener.h">
+      <Filter>src\Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Controller\Controller.h">
+      <Filter>src\Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Controller\ControllerListener.h">
+      <Filter>src\Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Controller\OperateController.h">
+      <Filter>src\Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Controller\ThreeDirectionController.h">
+      <Filter>src\Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Entity\Role\FSM.h">
+      <Filter>src\Entity\Role</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Entity\Role\Hero.h">
+      <Filter>src\Entity\Role</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Entity\Role\Progress.h">
+      <Filter>src\Entity\Role</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Entity\Role\Role.h">
+      <Filter>src\Entity\Role</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Layer\HallLayer\HallNavigationLayer.h">
+      <Filter>src\Layer\HallLayer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Layer\HallLayer\HallStageLayer.h">
+      <Filter>src\Layer\HallLayer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Layer\GameLayer\ConditionLayer.h">
+      <Filter>src\Layer\GameLayer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Layer\GameLayer\GameLayer.h">
+      <Filter>src\Layer\GameLayer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Layer\GameLayer\GameManager.h">
+      <Filter>src\Layer\GameLayer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Layer\GameLayer\GroupEnemy.h">
+      <Filter>src\Layer\GameLayer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Layer\GameLayer\VisibleRect.h">
+      <Filter>src\Layer\GameLayer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Layer\MenuLayer\MenuLayer.h">
+      <Filter>src\Layer\MenuLayer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Util\Animation\AnimationUtil.h">
+      <Filter>src\Util\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Util\CSVParse\CSVParseUtil.h">
+      <Filter>src\Util\CSVParse</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Util\CSVParse\FileLoadUtil.h">
+      <Filter>src\Util\CSVParse</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Util\CSVParse\StringUtil.h">
+      <Filter>src\Util\CSVParse</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scene\GameScene.h">
+      <Filter>src\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scene\HallScene.h">
+      <Filter>src\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scene\MenuScene.h">
+      <Filter>src\Scene</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="game.rc">
       <Filter>resource</Filter>
     </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="..\Resources\Audio\magic_town.mp3">
+      <Filter>resource\Audio</Filter>
+    </Media>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\Resources\buttons\CloseNormal.png">
+      <Filter>resource\buttons</Filter>
+    </Image>
+    <Image Include="..\Resources\buttons\CloseSelected.png">
+      <Filter>resource\buttons</Filter>
+    </Image>
+    <Image Include="..\Resources\buttons\HelloWorld.png">
+      <Filter>resource\buttons</Filter>
+    </Image>
+    <Image Include="..\Resources\buttons\signAbout.png">
+      <Filter>resource\buttons</Filter>
+    </Image>
+    <Image Include="..\Resources\buttons\signAboutEnable.png">
+      <Filter>resource\buttons</Filter>
+    </Image>
+    <Image Include="..\Resources\buttons\signExit.png">
+      <Filter>resource\buttons</Filter>
+    </Image>
+    <Image Include="..\Resources\buttons\signExitEnable.png">
+      <Filter>resource\buttons</Filter>
+    </Image>
+    <Image Include="..\Resources\buttons\signHangingClose.png">
+      <Filter>resource\buttons</Filter>
+    </Image>
+    <Image Include="..\Resources\buttons\signHangingOption.png">
+      <Filter>resource\buttons</Filter>
+    </Image>
+    <Image Include="..\Resources\buttons\signStart.png">
+      <Filter>resource\buttons</Filter>
+    </Image>
+    <Image Include="..\Resources\buttons\signStartEnable.png">
+      <Filter>resource\buttons</Filter>
+    </Image>
+    <Image Include="..\Resources\buttons\StartNormal.png">
+      <Filter>resource\buttons</Filter>
+    </Image>
+    <Image Include="..\Resources\Map\bg_grasslands.png">
+      <Filter>resource\Map</Filter>
+    </Image>
+    <Image Include="..\Resources\Map\cactus.png">
+      <Filter>resource\Map</Filter>
+    </Image>
+    <Image Include="..\Resources\Map\candyBlue.png">
+      <Filter>resource\Map</Filter>
+    </Image>
+    <Image Include="..\Resources\Map\candyGreen.png">
+      <Filter>resource\Map</Filter>
+    </Image>
+    <Image Include="..\Resources\Map\candyRed.png">
+      <Filter>resource\Map</Filter>
+    </Image>
+    <Image Include="..\Resources\Map\candyYellow.png">
+      <Filter>resource\Map</Filter>
+    </Image>
+    <Image Include="..\Resources\Map\canePink.png">
+      <Filter>resource\Map</Filter>
+    </Image>
+    <Image Include="..\Resources\Map\castleCenterFit.png">
+      <Filter>resource\Map</Filter>
+    </Image>
+    <Image Include="..\Resources\Map\chocoCenter.png">
+      <Filter>resource\Map</Filter>
+    </Image>
+    <Image Include="..\Resources\Map\cookieBrown.png">
+      <Filter>resource\Map</Filter>
+    </Image>
+    <Image Include="..\Resources\Map\country_road_icon.png">
+      <Filter>resource\Map</Filter>
+    </Image>
+    <Image Include="..\Resources\Map\dirt.png">
+      <Filter>resource\Map</Filter>
+    </Image>
+    <Image Include="..\Resources\Map\dirt_bottom.png">
+      <Filter>resource\Map</Filter>
+    </Image>
+    <Image Include="..\Resources\Map\dirtCave.png">
+      <Filter>resource\Map</Filter>
+    </Image>
+    <Image Include="..\Resources\Map\door_closedMidFit.png">
+      <Filter>resource\Map</Filter>
+    </Image>
+    <Image Include="..\Resources\Map\door_closedTopFit.png">
+      <Filter>resource\Map</Filter>
+    </Image>
+    <Image Include="..\Resources\Map\floor.jpg">
+      <Filter>resource\Map</Filter>
+    </Image>
+    <Image Include="..\Resources\Map\flyFly1.png">
+      <Filter>resource\Map</Filter>
+    </Image>
+    <Image Include="..\Resources\Map\gnu_icon.png">
+      <Filter>resource\Map</Filter>
+    </Image>
+    <Image Include="..\Resources\Map\grass_top.png">
+      <Filter>resource\Map</Filter>
+    </Image>
+    <Image Include="..\Resources\Map\grassCenter.png">
+      <Filter>resource\Map</Filter>
+    </Image>
+    <Image Include="..\Resources\Map\grassMidFit.png">
+      <Filter>resource\Map</Filter>
+    </Image>
+    <Image Include="..\Resources\Map\grassMidFit_down.png">
+      <Filter>resource\Map</Filter>
+    </Image>
+    <Image Include="..\Resources\Map\hill_smallFit.png">
+      <Filter>resource\Map</Filter>
+    </Image>
+    <Image Include="..\Resources\Map\houseFit.png">
+      <Filter>resource\Map</Filter>
+    </Image>
+    <Image Include="..\Resources\Map\kingdom_candy_icon.png">
+      <Filter>resource\Map</Filter>
+    </Image>
+    <Image Include="..\Resources\Map\kisi_icon.png">
+      <Filter>resource\Map</Filter>
+    </Image>
+    <Image Include="..\Resources\Map\kit_icon.png">
+      <Filter>resource\Map</Filter>
+    </Image>
+    <Image Include="..\Resources\Map\lollipopBaseBrown.png">
+      <Filter>resource\Map</Filter>
+    </Image>
+    <Image Include="..\Resources\Map\lollipopGreen.png">
+      <Filter>resource\Map</Filter>
+    </Image>
+    <Image Include="..\Resources\Map\lollipopRed.png">
+      <Filter>resource\Map</Filter>
+    </Image>
+    <Image Include="..\Resources\Map\pacman_icon.png">
+      <Filter>resource\Map</Filter>
+    </Image>
+    <Image Include="..\Resources\Map\plant.png">
+      <Filter>resource\Map</Filter>
+    </Image>
+    <Image Include="..\Resources\Map\rock.png">
+      <Filter>resource\Map</Filter>
+    </Image>
+    <Image Include="..\Resources\Map\snailWalk1.png">
+      <Filter>resource\Map</Filter>
+    </Image>
+    <Image Include="..\Resources\Map\stoneMid.png">
+      <Filter>resource\Map</Filter>
+    </Image>
+    <Image Include="..\Resources\Map\stoneMid_down.png">
+      <Filter>resource\Map</Filter>
+    </Image>
+    <Image Include="..\Resources\Map\tux_icon.png">
+      <Filter>resource\Map</Filter>
+    </Image>
+    <Image Include="..\Resources\Map\unknown.png">
+      <Filter>resource\Map</Filter>
+    </Image>
+    <Image Include="..\Resources\Map\waffleChoco.png">
+      <Filter>resource\Map</Filter>
+    </Image>
+    <Image Include="..\Resources\Map\wilber_icon.png">
+      <Filter>resource\Map</Filter>
+    </Image>
+    <Image Include="..\Resources\Characters\hero-gnu.png">
+      <Filter>resource\Characters</Filter>
+    </Image>
+    <Image Include="..\Resources\Characters\hero-kisi.png">
+      <Filter>resource\Characters</Filter>
+    </Image>
+    <Image Include="..\Resources\Characters\hero-kit.png">
+      <Filter>resource\Characters</Filter>
+    </Image>
+    <Image Include="..\Resources\Characters\hero-pacman.png">
+      <Filter>resource\Characters</Filter>
+    </Image>
+    <Image Include="..\Resources\Characters\hero-tux.png">
+      <Filter>resource\Characters</Filter>
+    </Image>
+    <Image Include="..\Resources\Characters\hero-wilber.png">
+      <Filter>resource\Characters</Filter>
+    </Image>
+    <Image Include="..\Resources\Characters\red_hair_boy.png">
+      <Filter>resource\Characters</Filter>
+    </Image>
+    <Image Include="..\Resources\Other\progress-bg.png">
+      <Filter>resource\Other</Filter>
+    </Image>
+    <Image Include="..\Resources\Other\progress-fill.png">
+      <Filter>resource\Other</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Resources\Map\country_road.tmx">
+      <Filter>resource\Map</Filter>
+    </None>
+    <None Include="..\Resources\Map\floor.tmx">
+      <Filter>resource\Map</Filter>
+    </None>
+    <None Include="..\Resources\Map\hall_navigation.tmx">
+      <Filter>resource\Map</Filter>
+    </None>
+    <None Include="..\Resources\Map\hall_stage.tmx">
+      <Filter>resource\Map</Filter>
+    </None>
+    <None Include="..\Resources\Map\kingdom_candy.tmx">
+      <Filter>resource\Map</Filter>
+    </None>
+    <None Include="..\Resources\Map\menu.tmx">
+      <Filter>resource\Map</Filter>
+    </None>
+    <None Include="..\Resources\Characters\hero-gnu.plist">
+      <Filter>resource\Characters</Filter>
+    </None>
+    <None Include="..\Resources\Characters\hero-kisi.plist">
+      <Filter>resource\Characters</Filter>
+    </None>
+    <None Include="..\Resources\Characters\hero-kit.plist">
+      <Filter>resource\Characters</Filter>
+    </None>
+    <None Include="..\Resources\Characters\hero-pacman.plist">
+      <Filter>resource\Characters</Filter>
+    </None>
+    <None Include="..\Resources\Characters\hero-tux.plist">
+      <Filter>resource\Characters</Filter>
+    </None>
+    <None Include="..\Resources\Characters\hero-wilber.plist">
+      <Filter>resource\Characters</Filter>
+    </None>
+    <None Include="..\Resources\Characters\red_hair_boy.plist">
+      <Filter>resource\Characters</Filter>
+    </None>
+    <None Include="..\Resources\Settings\country_road.plist">
+      <Filter>resource\Settings</Filter>
+    </None>
+    <None Include="..\Resources\Settings\kingdom_candy.plist">
+      <Filter>resource\Settings</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="..\Resources\fonts\Marker Felt.ttf">
+      <Filter>resource\fonts</Filter>
+    </Font>
   </ItemGroup>
 </Project>

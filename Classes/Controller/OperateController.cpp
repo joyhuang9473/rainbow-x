@@ -3,10 +3,12 @@
 USING_NS_CC;
 
 bool OperateController::init() {
-    this->setVelocityX(0);
+	this->m_role = nullptr;
+
+	this->setVelocityX(0);
     this->setVelocityY(0);
-    
     this->scheduleUpdate();
+
     return true;
 }
 
@@ -75,4 +77,12 @@ void OperateController::registerWithKeyboardDispatcher() {
     keyboardListener->onKeyPressed = CC_CALLBACK_2(OperateController::keyPressed, this);
     keyboardListener->onKeyReleased = CC_CALLBACK_2(OperateController::keyReleased, this);
     Director::getInstance()->getEventDispatcher()->addEventListenerWithSceneGraphPriority(keyboardListener, this);
+}
+
+void OperateController::setRole(Role* role) {
+	this->m_role = role;
+}
+
+Role* OperateController::getRole() {
+	return this->m_role;
 }

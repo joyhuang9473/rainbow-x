@@ -3,7 +3,10 @@
 USING_NS_CC;
 
 bool AIController::init() {
-    this->setVelocityX(0);
+	this->m_role = nullptr;
+	this->m_target = nullptr;
+
+	this->setVelocityX(0);
     this->setVelocityY(0);
 
     this->m_eyeArea = 380;
@@ -18,6 +21,7 @@ bool AIController::init() {
 
 void AIController::update(float dt) {
     if (this->m_controllerListener == nullptr) {
+		log("listener null");
         return;
     }
 
@@ -29,6 +33,7 @@ void AIController::update(float dt) {
 
 void AIController::updateExecute(float dt) {
     if (this->m_target == nullptr) {
+		log("target null");
         return;
     }
 
@@ -113,3 +118,18 @@ void AIController::execute(const cocos2d::Vec2& target) {
     }
 }
 
+void AIController::setRole(Role* role) {
+	this->m_role = role;
+}
+
+void AIController::setTarget(Role* role) {
+	this->m_target = role;
+}
+
+Role* AIController::getRole() {
+	return this->m_role;
+}
+
+Role* AIController::getTarget() {
+	return this->m_target;
+}

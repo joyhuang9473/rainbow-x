@@ -15,8 +15,11 @@ public:
     virtual void keyPressed(cocos2d::EventKeyboard::KeyCode keyCode, cocos2d::Event *event);
     virtual void keyReleased(cocos2d::EventKeyboard::KeyCode keyCode, cocos2d::Event *event);
 
+	void setRole(Role* role);
+	Role* getRole();
+
 private:
-    CC_SYNTHESIZE_RETAIN(Role*, m_role, Role);
+	Role* m_role;
     CC_SYNTHESIZE(int, m_VelocityX, VelocityX);
     CC_SYNTHESIZE(int, m_VelocityY, VelocityY);
 };

@@ -138,12 +138,59 @@ xcopy /Y /Q "$(EngineRoot)external\websockets\prebuilt\win32\*.*" "$(OutDir)"</C
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\Classes\AppDelegate.cpp" />
-    <ClCompile Include="..\Classes\HelloWorldScene.cpp" />
+    <ClCompile Include="..\Classes\Controller\AIController.cpp" />
+    <ClCompile Include="..\Classes\Controller\ContactListener.cpp" />
+    <ClCompile Include="..\Classes\Controller\Controller.cpp" />
+    <ClCompile Include="..\Classes\Controller\OperateController.cpp" />
+    <ClCompile Include="..\Classes\Controller\ThreeDirectionController.cpp" />
+    <ClCompile Include="..\Classes\Entity\Role\FSM.cpp" />
+    <ClCompile Include="..\Classes\Entity\Role\Hero.cpp" />
+    <ClCompile Include="..\Classes\Entity\Role\Progress.cpp" />
+    <ClCompile Include="..\Classes\Entity\Role\Role.cpp" />
+    <ClCompile Include="..\Classes\Layer\GameLayer\ConditionLayer.cpp" />
+    <ClCompile Include="..\Classes\Layer\GameLayer\GameLayer.cpp" />
+    <ClCompile Include="..\Classes\Layer\GameLayer\GameManager.cpp" />
+    <ClCompile Include="..\Classes\Layer\GameLayer\GroupEnemy.cpp" />
+    <ClCompile Include="..\Classes\Layer\GameLayer\VisibleRect.cpp" />
+    <ClCompile Include="..\Classes\Layer\HallLayer\HallNavigationLayer.cpp" />
+    <ClCompile Include="..\Classes\Layer\HallLayer\HallStageLayer.cpp" />
+    <ClCompile Include="..\Classes\Layer\MenuLayer\MenuLayer.cpp" />
+    <ClCompile Include="..\Classes\Scene\GameScene.cpp" />
+    <ClCompile Include="..\Classes\Scene\HallScene.cpp" />
+    <ClCompile Include="..\Classes\Scene\MenuScene.cpp" />
+    <ClCompile Include="..\Classes\Util\Animation\AnimationUtil.cpp" />
+    <ClCompile Include="..\Classes\Util\CSVParse\CsvParseUtil.cpp" />
+    <ClCompile Include="..\Classes\Util\CSVParse\FileLoadUtil.cpp" />
+    <ClCompile Include="..\Classes\Util\CSVParse\StringUtil.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\Classes\AppDelegate.h" />
-    <ClInclude Include="..\Classes\HelloWorldScene.h" />
+    <ClInclude Include="..\Classes\Controller\AIController.h" />
+    <ClInclude Include="..\Classes\Controller\ContactListener.h" />
+    <ClInclude Include="..\Classes\Controller\Controller.h" />
+    <ClInclude Include="..\Classes\Controller\ControllerListener.h" />
+    <ClInclude Include="..\Classes\Controller\OperateController.h" />
+    <ClInclude Include="..\Classes\Controller\ThreeDirectionController.h" />
+    <ClInclude Include="..\Classes\Entity\Role\FSM.h" />
+    <ClInclude Include="..\Classes\Entity\Role\Hero.h" />
+    <ClInclude Include="..\Classes\Entity\Role\Progress.h" />
+    <ClInclude Include="..\Classes\Entity\Role\Role.h" />
+    <ClInclude Include="..\Classes\Layer\GameLayer\ConditionLayer.h" />
+    <ClInclude Include="..\Classes\Layer\GameLayer\GameLayer.h" />
+    <ClInclude Include="..\Classes\Layer\GameLayer\GameManager.h" />
+    <ClInclude Include="..\Classes\Layer\GameLayer\GroupEnemy.h" />
+    <ClInclude Include="..\Classes\Layer\GameLayer\VisibleRect.h" />
+    <ClInclude Include="..\Classes\Layer\HallLayer\HallNavigationLayer.h" />
+    <ClInclude Include="..\Classes\Layer\HallLayer\HallStageLayer.h" />
+    <ClInclude Include="..\Classes\Layer\MenuLayer\MenuLayer.h" />
+    <ClInclude Include="..\Classes\Scene\GameScene.h" />
+    <ClInclude Include="..\Classes\Scene\HallScene.h" />
+    <ClInclude Include="..\Classes\Scene\MenuScene.h" />
+    <ClInclude Include="..\Classes\Util\Animation\AnimationUtil.h" />
+    <ClInclude Include="..\Classes\Util\CSVParse\CSVParseUtil.h" />
+    <ClInclude Include="..\Classes\Util\CSVParse\FileLoadUtil.h" />
+    <ClInclude Include="..\Classes\Util\CSVParse\StringUtil.h" />
     <ClInclude Include="main.h" />
   </ItemGroup>
   <ItemGroup>
@@ -160,6 +207,93 @@ xcopy /Y /Q "$(EngineRoot)external\websockets\prebuilt\win32\*.*" "$(OutDir)"</C
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="game.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="..\Resources\Audio\magic_town.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\Resources\buttons\CloseNormal.png" />
+    <Image Include="..\Resources\buttons\CloseSelected.png" />
+    <Image Include="..\Resources\buttons\HelloWorld.png" />
+    <Image Include="..\Resources\buttons\signAbout.png" />
+    <Image Include="..\Resources\buttons\signAboutEnable.png" />
+    <Image Include="..\Resources\buttons\signExit.png" />
+    <Image Include="..\Resources\buttons\signExitEnable.png" />
+    <Image Include="..\Resources\buttons\signHangingClose.png" />
+    <Image Include="..\Resources\buttons\signHangingOption.png" />
+    <Image Include="..\Resources\buttons\signStart.png" />
+    <Image Include="..\Resources\buttons\signStartEnable.png" />
+    <Image Include="..\Resources\buttons\StartNormal.png" />
+    <Image Include="..\Resources\Characters\hero-gnu.png" />
+    <Image Include="..\Resources\Characters\hero-kisi.png" />
+    <Image Include="..\Resources\Characters\hero-kit.png" />
+    <Image Include="..\Resources\Characters\hero-pacman.png" />
+    <Image Include="..\Resources\Characters\hero-tux.png" />
+    <Image Include="..\Resources\Characters\hero-wilber.png" />
+    <Image Include="..\Resources\Characters\red_hair_boy.png" />
+    <Image Include="..\Resources\Map\bg_grasslands.png" />
+    <Image Include="..\Resources\Map\cactus.png" />
+    <Image Include="..\Resources\Map\candyBlue.png" />
+    <Image Include="..\Resources\Map\candyGreen.png" />
+    <Image Include="..\Resources\Map\candyRed.png" />
+    <Image Include="..\Resources\Map\candyYellow.png" />
+    <Image Include="..\Resources\Map\canePink.png" />
+    <Image Include="..\Resources\Map\castleCenterFit.png" />
+    <Image Include="..\Resources\Map\chocoCenter.png" />
+    <Image Include="..\Resources\Map\cookieBrown.png" />
+    <Image Include="..\Resources\Map\country_road_icon.png" />
+    <Image Include="..\Resources\Map\dirt.png" />
+    <Image Include="..\Resources\Map\dirtCave.png" />
+    <Image Include="..\Resources\Map\dirt_bottom.png" />
+    <Image Include="..\Resources\Map\door_closedMidFit.png" />
+    <Image Include="..\Resources\Map\door_closedTopFit.png" />
+    <Image Include="..\Resources\Map\floor.jpg" />
+    <Image Include="..\Resources\Map\flyFly1.png" />
+    <Image Include="..\Resources\Map\gnu_icon.png" />
+    <Image Include="..\Resources\Map\grassCenter.png" />
+    <Image Include="..\Resources\Map\grassMidFit.png" />
+    <Image Include="..\Resources\Map\grassMidFit_down.png" />
+    <Image Include="..\Resources\Map\grass_top.png" />
+    <Image Include="..\Resources\Map\hill_smallFit.png" />
+    <Image Include="..\Resources\Map\houseFit.png" />
+    <Image Include="..\Resources\Map\kingdom_candy_icon.png" />
+    <Image Include="..\Resources\Map\kisi_icon.png" />
+    <Image Include="..\Resources\Map\kit_icon.png" />
+    <Image Include="..\Resources\Map\lollipopBaseBrown.png" />
+    <Image Include="..\Resources\Map\lollipopGreen.png" />
+    <Image Include="..\Resources\Map\lollipopRed.png" />
+    <Image Include="..\Resources\Map\pacman_icon.png" />
+    <Image Include="..\Resources\Map\plant.png" />
+    <Image Include="..\Resources\Map\rock.png" />
+    <Image Include="..\Resources\Map\snailWalk1.png" />
+    <Image Include="..\Resources\Map\stoneMid.png" />
+    <Image Include="..\Resources\Map\stoneMid_down.png" />
+    <Image Include="..\Resources\Map\tux_icon.png" />
+    <Image Include="..\Resources\Map\unknown.png" />
+    <Image Include="..\Resources\Map\waffleChoco.png" />
+    <Image Include="..\Resources\Map\wilber_icon.png" />
+    <Image Include="..\Resources\Other\progress-bg.png" />
+    <Image Include="..\Resources\Other\progress-fill.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Resources\Characters\hero-gnu.plist" />
+    <None Include="..\Resources\Characters\hero-kisi.plist" />
+    <None Include="..\Resources\Characters\hero-kit.plist" />
+    <None Include="..\Resources\Characters\hero-pacman.plist" />
+    <None Include="..\Resources\Characters\hero-tux.plist" />
+    <None Include="..\Resources\Characters\hero-wilber.plist" />
+    <None Include="..\Resources\Characters\red_hair_boy.plist" />
+    <None Include="..\Resources\Map\country_road.tmx" />
+    <None Include="..\Resources\Map\floor.tmx" />
+    <None Include="..\Resources\Map\hall_navigation.tmx" />
+    <None Include="..\Resources\Map\hall_stage.tmx" />
+    <None Include="..\Resources\Map\kingdom_candy.tmx" />
+    <None Include="..\Resources\Map\menu.tmx" />
+    <None Include="..\Resources\Settings\country_road.plist" />
+    <None Include="..\Resources\Settings\kingdom_candy.plist" />
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="..\Resources\fonts\Marker Felt.ttf" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

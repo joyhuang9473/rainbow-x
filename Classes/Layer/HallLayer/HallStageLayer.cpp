@@ -12,6 +12,8 @@ bool HallStageLayer::init() {
         return false;
     }
 
+	this->m_player = nullptr;
+
     // Map
     std::vector<std::string> searchPaths;
     searchPaths.push_back("Map");
@@ -28,13 +30,13 @@ bool HallStageLayer::init() {
 }
 
 void HallStageLayer::setPlayer() {
-    Vec2 position;
+    Vec2 position = Vec2(0.0, 0.0);
 
     if (this->m_player == nullptr) {
         TMXObjectGroup* heroObject = this->m_map->getObjectGroup("heroes");
         ValueMap kisi = heroObject->getObject("kisi");
         position.set(kisi["x"].asFloat(), kisi["y"].asFloat());
-    } else {
+	} else {
         position = this->m_player->getPosition();
     }
 

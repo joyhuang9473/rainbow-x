@@ -22,9 +22,15 @@ public:
     void decide(const cocos2d::Vec2& targetPos);
     void execute(const cocos2d::Vec2& targetPos);
 
+	void setRole(Role* role);
+	void setTarget(Role* role);
+	Role* getRole();
+	Role* getTarget();
+
 private:
-    CC_SYNTHESIZE_RETAIN(Role*, m_role, Role);
-    CC_SYNTHESIZE_RETAIN(Role*, m_target, Target);
+	Role* m_role;
+	Role* m_target;
+
     CC_SYNTHESIZE(int, m_VelocityX, VelocityX);
     CC_SYNTHESIZE(int, m_VelocityY, VelocityY);
 
