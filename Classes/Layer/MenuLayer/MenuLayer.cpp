@@ -13,7 +13,7 @@ bool MenuLayer::init() {
     }
 
     // Audio
-    SimpleAudioEngine::getInstance()->playBackgroundMusic("magic_town.mp3", true);
+    SimpleAudioEngine::getInstance()->playBackgroundMusic("Audio/magic_town.mp3", true);
 
     // Background
     this->setBackground();
@@ -23,16 +23,16 @@ bool MenuLayer::init() {
     Vec2 origin = Director::getInstance()->getVisibleOrigin();
     Vector<MenuItem*> MenuItems;
 
-    auto aboutItem = MenuItemImage::create("signAbout.png",
-                                           "signAboutEnable.png",
+    auto aboutItem = MenuItemImage::create("Buttons/signAbout.png",
+                                           "Buttons/signAboutEnable.png",
                                            CC_CALLBACK_0(MenuLayer::menuAboutCallback, this));
 
-    auto startItem = MenuItemImage::create("signStart.png",
-                                           "signStartEnable.png",
+    auto startItem = MenuItemImage::create("Buttons/signStart.png",
+                                           "Buttons/signStartEnable.png",
                                            CC_CALLBACK_0(MenuLayer::menuStartCallback, this));
 
-    auto closeItem = MenuItemImage::create("signExit.png",
-                                           "signExitEnable.png",
+    auto closeItem = MenuItemImage::create("Buttons/signExit.png",
+                                           "Buttons/signExitEnable.png",
                                            CC_CALLBACK_1(MenuLayer::menuCloseCallback, this));
 
     aboutItem->setPosition(Vec2(origin.x + visibleSize.width/2 - aboutItem->getContentSize().width*2, origin.y + visibleSize.height/3));
@@ -47,7 +47,7 @@ bool MenuLayer::init() {
     menu->setPosition(Vec2::ZERO);
     this->addChild(menu, 1);
 
-    auto label = Label::createWithTTF("Aslan-Rainbow-x", "fonts/Marker Felt.ttf", 72);
+    auto label = Label::createWithTTF("Aslan-Rainbow-x", "Fonts/Marker Felt.ttf", 72);
     label->setPosition(Vec2(origin.x + visibleSize.width/2,
                             origin.y + visibleSize.height - 2*label->getContentSize().height));
     this->addChild(label, 1);

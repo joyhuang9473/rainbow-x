@@ -12,12 +12,12 @@ bool ConditionLayer::init() {
 
     // Menu
     Vector<MenuItem*> MenuItems;
-    auto optionItem = MenuItemImage::create("signHangingOption.png",
-                                            "signHangingOption.png",
+    auto optionItem = MenuItemImage::create("Buttons/signHangingOption.png",
+                                            "Buttons/signHangingOption.png",
                                             CC_CALLBACK_0(ConditionLayer::menuOptionCallback, this));
     
-    auto closeItem = MenuItemImage::create("signHangingClose.png",
-                                           "signHangingClose.png",
+    auto closeItem = MenuItemImage::create("Buttons/signHangingClose.png",
+                                           "Buttons/signHangingClose.png",
                                            CC_CALLBACK_1(ConditionLayer::menuCloseCallback, this));
 
     optionItem->setPosition(Vec2(864, 736));
