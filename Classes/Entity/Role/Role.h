@@ -2,8 +2,9 @@
 #define __ROLE_ENTITY_H__
 
 #include "cocos2d.h"
-#include "../FSM.h"
 #include "../../Controller/Controller.h"
+#include "FSM.h"
+#include "Progress.h"
 
 typedef struct _BoundingBox {
     cocos2d::Rect actual;
@@ -20,7 +21,7 @@ public:
         ATTACKING,
         DEAD
     };
-
+    
     Role();
     ~Role();
 
@@ -30,19 +31,23 @@ public:
     void setController(Controller* controller);
     Controller* getController();
 
-	void setTiledMap(cocos2d::TMXTiledMap* map);
+    void setTiledMap(cocos2d::TMXTiledMap* map);
     virtual void setTagPosition(int x, int y);
     virtual cocos2d::Point getTagPosition();
 
     void initFSM();
 
-	virtual void update(float dt);
-	BoundingBox createBoundingBox(cocos2d::Point origin, cocos2d::Size size);
-	void updateBoxes();
+    virtual void update(float dt);
+    BoundingBox createBoundingBox(cocos2d::Point origin, cocos2d::Size size);
+    void updateBoxes();
+
+    void beHit(float attack);
+    void showHealthProgress();
+    void hideHealthProgress();
 
 protected:
-	cocos2d::Sprite* m_sprite;
-	cocos2d::TMXTiledMap* m_map;
+    cocos2d::Sprite* m_sprite;
+    cocos2d::TMXTiledMap* m_map;
     Controller* m_controller;
 
     CC_SYNTHESIZE_RETAIN(FSM*, m_fsm, FSM);
@@ -56,6 +61,12 @@ protected:
 
     CC_SYNTHESIZE(bool, m_direction, Direction);
     CC_SYNTHESIZE(BoundingBox, m_bodyBox, BodyBox);
+    CC_SYNTHESIZE(BoundingBox, m_hitBox, HitBox);
+
+    CC_SYNTHESIZE(float, m_health, Health);
+    CC_SYNTHESIZE(float, m_maxHealth, MaxHealth);
+    CC_SYNTHESIZE(float, m_attack, Attack);
+    CC_SYNTHESIZE_RETAIN(Progress*, m_progress, Progress);
 };
 
 #endif

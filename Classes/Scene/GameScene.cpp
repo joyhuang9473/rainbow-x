@@ -1,5 +1,7 @@
 #include "GameScene.h"
 #include "../Layer/GameLayer/GameLayer.h"
+#include "HallScene.h"
+#include "../Layer/GameLayer/ConditionLayer.h"
 
 USING_NS_CC;
 
@@ -12,6 +14,7 @@ bool GameScene::init() {
     Director::getInstance()->getEventDispatcher()->addCustomEventListener("missionFailed", CC_CALLBACK_0(GameScene::createFailedDialog, this));
 
     this->addChild(GameLayer::create());
+    this->addChild(ConditionLayer::create());
     return true;
 }
 
@@ -21,6 +24,12 @@ void GameScene::createCompleteDialog() {
 
     label->setPosition(Vec2(visibleSize.width/2, 2*visibleSize.height/3));
     this->addChild(label);
+
+    auto menuItem = MenuItemImage::create("signHangingOption.png",
+                                          "signHangingOption.png",
+                                          CC_CALLBACK_0(GameScene::menuCallback, this));
+    auto menu = Menu::create(menuItem, NULL);
+    this->addChild(menu);
 }
 
 void GameScene::createFailedDialog() {
@@ -29,8 +38,14 @@ void GameScene::createFailedDialog() {
 
     label->setPosition(Vec2(visibleSize.width/2, 2*visibleSize.height/3));
     this->addChild(label);
+
+    auto menuItem = MenuItemImage::create("signHangingOption.png",
+                                          "signHangingOption.png",
+                                          CC_CALLBACK_0(GameScene::menuCallback, this));
+    auto menu = Menu::create(menuItem, NULL);
+    this->addChild(menu);
 }
 
 void GameScene::menuCallback() {
-
+    Director::getInstance()->replaceScene(HallScene::create());
 }

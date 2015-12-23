@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="32" height="24" tilewidth="32" tileheight="32" nextobjectid="14">
+ <tileset firstgid="1" name="dirt" tilewidth="32" tileheight="32">
+  <image source="dirt.png" width="128" height="128"/>
+ </tileset>
+ <tileset firstgid="17" name="dirtCave" tilewidth="32" tileheight="32">
+  <image source="dirtCave.png" width="130" height="130"/>
+ </tileset>
+ <layer name="ground" width="32" height="24">
+  <data encoding="base64" compression="zlib">
+   eJzt0UkOwCAQA8EBAiELy/9fm34FgxS3VAefHcwsIuFAWLwzCk5Uh33hxoPXYTd0DEyHvfpv/a//9f8+/yullPpnHySBDME=
+  </data>
+ </layer>
+ <layer name="bound" width="32" height="24">
+  <data encoding="base64" compression="zlib">
+   eJztzcsRgCAQBNFNQRTwg2L+UdpROHuYV9XnviJixP8WKjTpFfwrNcHXzPI46BR8V9ropkfw77QLvmZmlsMH3sMBiQ==
+  </data>
+ </layer>
+ <objectgroup name="sections">
+  <object id="6" name="section1" x="245.333" y="217.333"/>
+  <object id="9" name="section2" x="493.333" y="140"/>
+  <object id="10" name="section3" x="757.333" y="216"/>
+ </objectgroup>
+</map>

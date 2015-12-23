@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="96" height="24" tilewidth="32" tileheight="32" nextobjectid="31">
+ <tileset firstgid="1" name="castleCenterFit" tilewidth="32" tileheight="32">
+  <image source="castleCenterFit.png" width="64" height="64"/>
+ </tileset>
+ <tileset firstgid="5" name="stoneMid" tilewidth="32" tileheight="32">
+  <image source="stoneMid.png" width="64" height="64"/>
+ </tileset>
+ <tileset firstgid="9" name="stoneMid_down" tilewidth="32" tileheight="32">
+  <image source="stoneMid_down.png" width="64" height="64"/>
+ </tileset>
+ <tileset firstgid="13" name="gnu_icon" tilewidth="32" tileheight="32">
+  <image source="gnu_icon.png" width="64" height="64"/>
+ </tileset>
+ <tileset firstgid="17" name="kit_icon" tilewidth="32" tileheight="32">
+  <image source="kit_icon.png" width="64" height="64"/>
+ </tileset>
+ <tileset firstgid="21" name="pacman_icon" tilewidth="32" tileheight="32">
+  <image source="pacman_icon.png" width="64" height="64"/>
+ </tileset>
+ <tileset firstgid="25" name="tux_icon" tilewidth="32" tileheight="32">
+  <image source="tux_icon.png" width="64" height="64"/>
+ </tileset>
+ <tileset firstgid="29" name="wilber_icon" tilewidth="32" tileheight="32">
+  <image source="wilber_icon.png" width="64" height="64"/>
+ </tileset>
+ <tileset firstgid="33" name="kisi_icon" tilewidth="32" tileheight="32">
+  <image source="kisi_icon.png" width="64" height="64"/>
+ </tileset>
+ <tileset firstgid="37" name="country_road_icon" tilewidth="32" tileheight="32">
+  <image source="country_road_icon.png" width="128" height="128"/>
+ </tileset>
+ <tileset firstgid="53" name="kingdom_candy_icon" tilewidth="32" tileheight="32">
+  <image source="kingdom_candy_icon.png" width="128" height="128"/>
+ </tileset>
+ <layer name="ground" width="96" height="24">
+  <data encoding="base64" compression="zlib">
+   eJzt0YkJADAAg8B++8/cbiFUD4IDZIwkSZIkSZL8bL6tinW/nYqV/t9e+n976f/tpf+3l/7fXvp/e+n/7aX/t5f+3176f3svG74LQQ==
+  </data>
+ </layer>
+ <layer name="upper_ground" width="96" height="24">
+  <data encoding="base64" compression="zlib">
+   eJztxcEJADAIADE/rd1/4rqFoAkcFwEAAADAZKe63vasnrcdAAAANvgRsATh
+  </data>
+ </layer>
+ <layer name="bottom_bound" width="96" height="24">
+  <data encoding="base64" compression="zlib">
+   eJztxcEJADAIADG/2u4/r24hQgLHRQAAAAAAAAAA3JZT+drf9H3tDXOlB+E=
+  </data>
+ </layer>
+ <layer name="kisi_icon" width="96" height="24">
+  <data encoding="base64" compression="zlib">
+   eJztzsEJADAIADFXqe3+M+oWgk3g/hcBAAAAALDX6XJ64mO3e9MTAAAAyxXMqQCL
+  </data>
+ </layer>
+ <layer name="kit_icon" width="96" height="24">
+  <data encoding="base64" compression="zlib">
+   eJztzsEJADAIADFXqO3+s+oWQk3g/hcBAAAAAAAAwC9Ol9MTi93uTU8A6xSjzwBL
+  </data>
+ </layer>
+ <layer name="pacman_icon" width="96" height="24">
+  <data encoding="base64" compression="zlib">
+   eJztzsEJADAIADGXqO3+k+oWQk3g/hcBAAAAALDH6XJ6YrHbvekJAACAzxQcCwBb
+  </data>
+ </layer>
+ <layer name="tux_icon" width="96" height="24">
+  <data encoding="base64" compression="zlib">
+   eJztzsEJADAIADHXqO3+c+oWgk3g/hcBAAAAAAAAwFany+mJj93uTU8A6xVEfgBr
+  </data>
+ </layer>
+ <layer name="wilber_icon" width="96" height="24">
+  <data encoding="base64" compression="zlib">
+   eJztzsEJADAIADEXqe3+U+oWUkzg/hcBAAAAALDX6XJ6YrHbvekJAACAzxXZugB7
+  </data>
+ </layer>
+ <layer name="gnu_icon" width="96" height="24">
+  <data encoding="base64" compression="zlib">
+   eJztzsEJADAIADEXqO3+0+oWQk3g/hcBAAAAAAAAwBany+mJxW73pieA7xRI7wA7
+  </data>
+ </layer>
+ <layer name="country_road_icon" width="96" height="24">
+  <data encoding="base64" compression="zlib">
+   eJzt0skNwlAQRMGfDBhjgzfyj40OwtIcpkp69z70GAAAAAAA3OWTvumRnsVbOjrSmeb0Lt7S0Zam9Ep78ZaOrrSkNf2Kt3Tk/7X8H4Du/hszBDU=
+  </data>
+ </layer>
+ <layer name="kingdom_candy_icon" width="96" height="24">
+  <data encoding="base64" compression="zlib">
+   eJzt0skNwlAQRMGfFBhjgzfyj4kOwtIcpkp69z70GAAAAABAV5/0TVN6FW/p6EhnWtJavKWjLT3SM+21U1q60pze6Ve8pSP/r+X/AMDd/qesBa0=
+  </data>
+ </layer>
+ <objectgroup name="heroes">
+  <object id="12" name="kisi" x="36" y="508"/>
+  <object id="13" name="gnu" x="289" y="701"/>
+  <object id="25" name="kit" x="34" y="701"/>
+  <object id="26" name="pacman" x="161" y="509"/>
+  <object id="27" name="tux" x="161" y="701"/>
+  <object id="28" name="wilber" x="290" y="508"/>
+ </objectgroup>
+ <objectgroup name="stages">
+  <object id="14" name="country_road" x="931" y="640"/>
+  <object id="29" name="kingdom_candy" x="1282" y="607"/>
+ </objectgroup>
+ <objectgroup name="player">
+  <object id="22" name="select_hero" x="376" y="395"/>
+ </objectgroup>
+</map>

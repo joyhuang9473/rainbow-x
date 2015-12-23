@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="32" height="24" tilewidth="32" tileheight="32" nextobjectid="1">
+ <tileset firstgid="1" name="bg_grasslands" tilewidth="32" tileheight="32">
+  <image source="bg_grasslands.png" width="1024" height="512"/>
+ </tileset>
+ <tileset firstgid="513" name="grassCenter" tilewidth="32" tileheight="32">
+  <image source="grassCenter.png" width="70" height="70"/>
+ </tileset>
+ <tileset firstgid="517" name="grassMidFit" tilewidth="32" tileheight="32">
+  <image source="grassMidFit.png" width="64" height="64"/>
+ </tileset>
+ <tileset firstgid="521" name="grassMidFit_down" tilewidth="32" tileheight="32">
+  <image source="grassMidFit_down.png" width="64" height="64"/>
+ </tileset>
+ <tileset firstgid="525" name="hill_smallFit" tilewidth="32" tileheight="32">
+  <image source="hill_smallFit.png" width="32" height="71"/>
+ </tileset>
+ <tileset firstgid="527" name="door_closedMidFit" tilewidth="32" tileheight="32">
+  <image source="door_closedMidFit.png" width="64" height="64"/>
+ </tileset>
+ <tileset firstgid="531" name="door_closedTopFit" tilewidth="32" tileheight="32">
+  <image source="door_closedTopFit.png" width="64" height="64"/>
+ </tileset>
+ <tileset firstgid="535" name="flyFly1" tilewidth="32" tileheight="32">
+  <image source="flyFly1.png" width="64" height="32"/>
+ </tileset>
+ <tileset firstgid="537" name="snailWalk1" tilewidth="32" tileheight="32">
+  <image source="snailWalk1.png" width="64" height="37"/>
+ </tileset>
+ <layer name="background" width="32" height="24">
+  <data encoding="base64" compression="zlib">
+   eJzt1YMSGAYARMHYaGy0sW0njW3bttnYtm3btm3bNrvT32je3H7DBQwQIEAgAhOEoAQjOCEISShCE4awhCM8fxCBiEQiMlGISjSiE4OYxCI2cYhLPOLzJ3+RgIQkIjFJSEoykpOClKQiNWlISzrSk4GMZCIzWchKNrKTg5zkIjd5yEs+8lOAvylIIQpThKIUozglKEkpSlOGspSjPBWoSCUqU4WqVKM6NahJLWpTh7rUoz4NaEgjGtOEpjSjOS1oSSta04a2tKM9HehIJzrTha50ozs96EkvetOHf+hLP/ozgIEMYjBDGMowhjOCkYxiNGMYyzjGM4GJTGIyU5jKNKYzg5nMYjZzmMs85rOAhSxiMUtYyjKWs4KVrGI1a1jLOtazgY1sYjNb2Mo2trODnexiN3vYyz72c4CDHOIwRzjKMY5zgpOc4jRnOMs5znOBi1ziMle4yjWuc4Ob3OI2d7jLPe7zgIc84jFPeMoznvOCl7ziNW94yzve84GPfOIzX/jKN77zg5/8IkBAIxCBCUJQghGcEIQkFKEJQ1jCEZ4/iEBEIhGZKEQlGtGJQUxiEZs4xCUe8fmTv0hAQhKRmCQkJRnJSUFKUpGaNKQlHenJQEYykZksZCUb2clBTnKRmzzkJR/5KcDfFKQQhSlCUYpRnBKUpBSlKUNZylGeClSkEpWpQlWqUZ0a1KQWtalDXepRnwY0pBGNaUJTmtGcFrSkFa1pQ1va0Z4OdKQTnelCV7rRnR70pBe96cM/9KUf/RnAQAYxmCEMZRjDGcFIRjGaMYxlHOOZwEQmMZkpTGUa05nBTGYxmznMZR7zWcBCFrGYJSxlGctZwUpWsZo1rGUd69nARjaxmS1sZRvb2cFOdrGbPexlH/s5wEEOcZgjHOUYxznBSU5xmjOc5RznucBFLnGZK1zlGte5wU1ucZs73OUe93nAQx7xmCc85RnPecFLXvGaN7zlHe/5wEc+8ZkvfOUb3/nBT37x3/H/7ne/+9/2L9c9ABI=
+  </data>
+ </layer>
+ <layer name="background_repetition" width="32" height="24">
+  <data encoding="base64" compression="zlib">
+   eJzt1YMSGAYARMHYaGy0sW0njW3bttnYtm3btm3bNrvT32je3H7DBQwQIEAgAhOEoAQjOCEISShCE4awhCM8fxCBiEQiMlGISjSiE4OYxCI2cYhLPOLzJ3+RgIQkIjFJSEoykpOClKQiNWlISzrSk4GMZCIzWchKNrKTg5zkIjd5yEs+8lOAvylIIQpThKIUozglKEkpSlOGspSjPBWoSCUqU4WqVKM6NahJLWpTh7rUoz4NaEgjGtOEpjSjOS1oSSta04a2tKM9HehIJzrTha50ozs96EkvetOHf+hLP/ozgIEMYjBDGMowhjOCkYxiNGMYyzjGM4GJTGIyU5jKNKYzg5nMYjZzmMs85rOAhSxiMUtYyjKWs4KVrGI1a1jLOtazgY1sYjNb2Mo2trODnexiN3vYyz72c4CDHOIwRzjKMY5zgpOc4jRnOMs5znOBi1ziMle4yjWuc4Ob3OI2d7jLPe7zgIc84jFPeMoznvOCl7ziNW94yzve84GPfOIzX/jKN77zg5/8IkBAIxCBCUJQghGcEIQkFKEJQ1jCEZ4/iEBEIhGZKEQlGtGJQUxiEZs4xCUe8fmTv0hAQhKRmCQkJRnJSUFKUpGaNKQlHenJQEYykZksZCUb2clBTnKRmzzkJR/5KcDfFKQQhSlCUYpRnBKUpBSlKUNZylGeClSkEpWpQlWqUZ0a1KQWtalDXepRnwY0pBGNaUJTmtGcFrSkFa1pQ1va0Z4OdKQTnelCV7rRnR70pBe96cM/9KUf/RnAQAYxmCEMZRjDGcFIRjGaMYxlHOOZwEQmMZkpTGUa05nBTGYxmznMZR7zWcBCFrGYJSxlGctZwUpWsZo1rGUd69nARjaxmS1sZRvb2cFOdrGbPexlH/s5wEEOcZgjHOUYxznBSU5xmjOc5RznucBFLnGZK1zlGte5wU1ucZs73OUe93nAQx7xmCc85RnPecFLXvGaN7zlHe/5wEc+8ZkvfOUb3/nBT37x3/H/7ne/+9/2L9c9ABI=
+  </data>
+ </layer>
+ <layer name="ground" width="32" height="24">
+  <data encoding="base64" compression="zlib">
+   eJztz7ENAAAIAkFE959Zt6DwLyHULwEA8E9ZsnPftwk+/fTT/7d/AdRDBaE=
+  </data>
+ </layer>
+ <layer name="upper_bound" width="32" height="24">
+  <data encoding="base64" compression="zlib">
+   eJztxckJADAMBLHFkKP/ipMu/LAEwyQATLQq2dX387uNB5jqAbAlAiE=
+  </data>
+ </layer>
+ <layer name="bottom_bound" width="32" height="24">
+  <data encoding="base64" compression="zlib">
+   eJztxbkNADAMxLCDuzz7zxtv4SIkICgBAIB/rEp2zf10d/APkY8DIQ==
+  </data>
+ </layer>
+ <layer name="decoration" width="32" height="24">
+  <data encoding="base64" compression="zlib">
+   eJztzUERAAAEADDnT/+4WuCxFVgEAAAfVN7+ffyzYwBOlAAg
+  </data>
+ </layer>
+ <layer name="decoration_door" width="32" height="24">
+  <data encoding="base64" compression="zlib">
+   eJztzUkRACAMBLCdGuDwLxZMMOWRGEgCALwyKpnV969778Yf+M8BS98ASw==
+  </data>
+ </layer>
+ <layer name="decoration_topdoor" width="32" height="24">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo2AUjIJRMApoB4SZGBhEmAbOflGg3WIDaP8oGAWjYBQMFgArjwHsOwCG
+  </data>
+ </layer>
+ <layer name="decoration_snail" width="32" height="24">
+  <data encoding="base64" compression="zlib">
+   eJztzgENADAIA7AFF8e/UGRwklZBEwAAuO9V0rW9+N8ASyQAOA==
+  </data>
+ </layer>
+ <layer name="decoration_flyer" width="32" height="24">
+  <data encoding="base64" compression="zlib">
+   eJztzkENAAAIBKCbJbR/UlM4P5CABOhKpr4XAAD3FtULADQ=
+  </data>
+ </layer>
+</map>

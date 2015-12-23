@@ -122,3 +122,12 @@ Role* RobotController::getRole() {
 Role* RobotController::getTarget() {
     return this->m_target;
 }
+
+void RobotController::execute(const cocos2d::Vec2& target) {
+    if (this->m_nextDecisionTime <= 0) {
+        this->decide(target);
+    } else {
+        --this->m_nextDecisionTime;
+    }
+}
+

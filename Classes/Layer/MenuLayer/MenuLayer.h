@@ -1,6 +1,7 @@
 #ifndef __MENU_LAYER_H__
 #define __MENU_LAYER_H__
 #include "cocos2d.h"
+#include "../../Entity/Role/Role.h"
 
 class MenuLayer : public cocos2d::Layer {
 public:
@@ -16,6 +17,11 @@ public:
 
     virtual void update(float dt);
 
+    void menuAboutCallback();
+    
+private:
+    cocos2d::TMXTiledMap* m_map;
+    Role* m_conductor;
 };
 
 #endif

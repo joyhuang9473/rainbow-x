@@ -35,9 +35,12 @@ bool AppDelegate::applicationDidFinishLaunching() {
     auto director = Director::getInstance();
     auto glview = director->getOpenGLView();
     if(!glview) {
-        glview = GLViewImpl::create("hackathon-application-demo");
+        glview = GLViewImpl::create("Rainbow-x");
         director->setOpenGLView(glview);
     }
+
+    glview->setFrameSize(1024, 768);
+    glview->setDesignResolutionSize(1024, 768, ResolutionPolicy::EXACT_FIT);
 
     // turn on display FPS
     director->setDisplayStats(true);

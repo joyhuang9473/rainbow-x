@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>stageInfo</key>
+	<dict>
+		<key>curStage</key>
+		<string>kingdom_candy.plist</string>
+		<key>nextStage</key>
+		<string></string>
+		<key>group</key>
+		<dict>
+			<key>1</key>
+			<dict>
+				<key>type1Num</key>
+				<string>0</string>
+				<key>type1Hp</key>
+				<string>0</string>
+				<key>type2Num</key>
+				<string>3</string>
+				<key>type2Hp</key>
+				<string>0</string>
+			</dict>
+			<key>2</key>
+			<dict>
+				<key>type1Num</key>
+				<string>0</string>
+				<key>type1Hp</key>
+				<string>0</string>
+				<key>type2Num</key>
+				<string>2</string>
+				<key>type2Hp</key>
+				<string>0</string>
+			</dict>
+			<key>3</key>
+			<dict>
+				<key>type1Num</key>
+				<string>0</string>
+				<key>type1Hp</key>
+				<string>0</string>
+				<key>type2Num</key>
+				<string>1</string>
+				<key>type2Hp</key>
+				<string>0</string>
+			</dict>
+		</dict>
+	</dict>
+	<key>resources</key>
+	<dict>
+		<key>map</key>
+		<string>kingdom_candy.tmx</string>
+	</dict>
+</dict>
+</plist>

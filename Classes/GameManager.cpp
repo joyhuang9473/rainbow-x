@@ -40,10 +40,25 @@ void GameManager::readStageInfo(const std::string plistpath) {
     this->setCurStageFile(this->stageInfo["curStage"].asString());
     this->setNextStageFile(this->stageInfo["nextStage"].asString());
     this->setCurMapName(this->resources["map"].asString());
-    //this->setCurBgName(this->resources["image"].asString());
+    this->setCurBgName(this->resources["image"].asString());
+
+    ValueMap& groupDict = this->stageInfo["group"].asValueMap();
+    this->setGroupNum(groupDict.size());
+
+    for (auto iter = groupDict.begin() ; iter != groupDict.end() ; ++iter) {
+        ValueMap& group = iter->second.asValueMap();
+        auto type1Num = group["type1Num"].asInt();
+        auto type2Num = group["type2Num"].asInt();
+        auto type1Hp = group["type1Hp"].asInt();
+        auto type2Hp = group["type2Hp"].asInt();
+
+        GroupEnemy* groupEnemy = GroupEnemy::create()->initGroupEnemy(type1Num, type1Hp, type2Num, type2Hp);
+        this->groupVector.pushBack(groupEnemy);
+    }
 }
 
 void GameManager::clear() {
     this->resources.clear();
     this->stageInfo.clear();
+    this->groupVector.clear();
 }

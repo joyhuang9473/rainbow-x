@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <map version="1.0" orientation="orthogonal" renderorder="right-down" width="100" height="100" tilewidth="32" tileheight="32" nextobjectid="1">
  <tileset firstgid="1" name="floor" tilewidth="32" tileheight="32">
   <image source="floor.jpg" width="512" height="512"/>
@@ -8,4 +9,34 @@
    eJzt2Ff7CGQAhvE/IZuskIgyyiqrjJKslK2yQwNFZI+oRNEgs2Fll8reK7NhZJeVvffWsLp9h/fgua7nPfgd3l/gTpSQkJAYdyEJkiIZ7kZypEBKpEJqpEFapEN6JIp90P4eZEBGZEJmZMG9yIpsyI77kAP3Iydy4YHYB+9zIw8exEPIi3zIjwJ4GI+gIAqhMIqgKB6NffD+MRRDcZRASZTC43gCpVEGZVEOT+IplMfTsQ/eV8AzqIhKqIwqqIpnUQ3P4XlURw3URC3Ujn3wvg7qoh5ewIt4CfXRAA3RCI3RBE3xMpqheeyD9y3wCl7Fa3gdLdEKrfEG3kQbtMVbaIf2eDv2wfsO6IhO6Iwu6Ipu6I4e6Il30Au98S7ew/uxD973wQfoi374EB+hPwbgY3yCT/EZBmIQPsfg2Afvh2AohmE4RuALfImv8DVGYhRGYwzG4huMi33wfjwmYCImYTKm4Ft8h6n4Hj/gR0zDdMzAzNgH72dhNuZgLuZhPhZgIRZhMZZgKZbhJyzHitgH71diFVZjDX7GL/gVv2Et1mE9NuB3bMQmbI598H4LtmIbtuMP/Ikd2Ild2I09+At7sQ/7cSD2wfuDOITDOIKjOIbjOIGTOIXTOIOzOIfzuBD74P1FXMJlXMFVXMPf+Af/4j9cxw3cxC3cxp1ZHPuwvdr/d+/V/r97r/b/3Xu1/+/eq/1/917t/7v3av/fvVf7/+692v9379X+v3uv9v/de7X/796r/X/3Xu3/u/dq/9+9V/v/7r3a/3fv1f6/e6/2/917tf/v3qv9f/de7f+792r/371X+//uvdr/d+/V/r97r/b/3Xu1/+/eq/1/917t/7v3av/fvVf7/+692v9379X+v3uv9v/de7X/796r/X/3Xu3/u/dq/9+9V/v/7r3a/3fv1f6/e6/2/917tf/v3qv9f/de7f+792r/371X+//uvdr/d+/V/r97r/b/3Xu1/+/eq/1/917t/7v3av/fvVf7/+692v9379X+v3uv9v/de7X/796r/X/3Xu3/u/dq/9+9V/v/7r3a/3fv1f6/e6/2/917tf/v3qv9f/de7f+792r/371X+//uvdr/d+/V/r97r/b/3Xu1/+/eq/1/917t/7v3av/fvVf7/+692v9379X+v3uv9v/de7X/797/D/Rf2Vs=
   </data>
  </layer>
+=======
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="96" height="24" tilewidth="32" tileheight="32" nextobjectid="18">
+ <tileset firstgid="1" name="floor" tilewidth="32" tileheight="32">
+  <image source="floor.jpg" width="512" height="512"/>
+ </tileset>
+ <layer name="ground" width="96" height="24">
+  <data encoding="base64" compression="zlib">
+   eJzt2FfDjgUAgOHvI6vs7L1ShMyQmb1SsiVkZCWiEsrM3nsUWrJnStMqm7JL9shIVraWq9/wHDwH73NwHd5/4I6Pi4tLQEIeIBGJSUJSkvEgD5GcFKQkFamJj/pAfRrS8jDpSE8GMpKJzGQhK9nITg5ykivqA/e5yUNe8vEI+XmUxyhAQR6nEIUpwhMUjfrAfTGKU4KSlOJJSlOGsjxFOcpTgYpUonLUB+6fpgpVqUZ1alCTWtSmDnWpxzPU51mei/rAfQOepyGNaEwTmtKM5rTgBVryIq1oTZuoD9y/RFva0Z4OvExHOtGZLnTlFbrxKt3pEfWB+9foSS9e5w3epDdv0Ye+9ONt3qE/AxgY9YH7QQxmCO8ylGEMZwQjGcVoxjCWcYxnQtQH7icyiclMYSrTmM4MZjKL93if2cxhLh9EfeD+Qz7iYz5hHp8ynwUsZBGLWcJSlrGcFVEfuF/JKj5jNZ/zBWv4kq/4mm/4lu9YyzrWR33gfgMb+Z4f2MRmtrCVbWxnBzvZxY/8xO6oD9zvYS/72M8BDvIzv3CIXznMEY5yjOOciPrA/UlOcZoz/MZZznGeC/zORf7gEpe5wtWoD9xf40+uc4Ob3OI2d7jLPf7ib/7hX/7j//ka9cH6sP93rPdh/+9Y78P+37Heh/2/Y70P+3/Heh/2/471Puz/Het92P871vv71qO+tA==
+  </data>
+ </layer>
+ <objectgroup name="player">
+  <object id="1" name="start_point" x="49" y="329"/>
+  <object id="4" name="access_point" x="2991" y="344"/>
+ </objectgroup>
+ <objectgroup name="enemy_group0">
+  <object id="5" name="check_point" x="400" y="328"/>
+  <object id="7" name="start_point0" x="860" y="333"/>
+ </objectgroup>
+ <objectgroup name="enemy_group1">
+  <object id="8" name="check_point" x="1310" y="333"/>
+  <object id="12" name="start_point0" x="1789" y="206"/>
+  <object id="13" name="start_point1" x="1789" y="474"/>
+ </objectgroup>
+ <objectgroup name="enemy_group2">
+  <object id="14" name="check_point" x="2262" y="329"/>
+  <object id="15" name="start_point0" x="2787" y="111"/>
+  <object id="16" name="start_point1" x="2787" y="339"/>
+  <object id="17" name="start_point2" x="2787" y="621"/>
+ </objectgroup>
+>>>>>>> local-origin
 </map>

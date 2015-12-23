@@ -44,15 +44,14 @@ void KeyboardController::keyPressed(EventKeyboard::KeyCode keyCode, Event *event
             this->m_role->getFSM()->doEvent("walk");
             this->setVelocityY(-3);
             break;
-		// Action
-        //case EventKeyboard::KeyCode::KEY_S:
-        //    this->m_role->getFSM()->doEvent("attack");
-        //    break;
-        //case EventKeyboard::KeyCode::KEY_D:
-        //    this->m_role->getFSM()->doEvent("skill");
-        //    break;
-        //default:
-        //    break;
+        case EventKeyboard::KeyCode::KEY_S:
+           this->m_role->getFSM()->doEvent("attack");
+           break;
+        case EventKeyboard::KeyCode::KEY_D:
+           this->m_role->getFSM()->doEvent("skill");
+           break;
+        default:
+           break;
     }
 }
 

@@ -5,7 +5,7 @@
 
 class CSVParseUtil : public cocos2d::Node {
 public:
-	static CSVParseUtil* sharedCSVParseUtil();
+    static CSVParseUtil* sharedCSVParseUtil();
     bool init();
     void loadFile(const char* sPath);
     void releaseFile(const char* sPath);
