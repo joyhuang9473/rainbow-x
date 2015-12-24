@@ -54,6 +54,7 @@ bool MenuLayer::init() {
     this->addChild(menu, 1);
 
     auto label = Label::createWithTTF("Rainbow-x", "Marker Felt.ttf", 72);
+    label->setColor(Color3B(30, 139, 195));
     label->setPosition(Vec2(origin.x + VISIBLESIZE.width/2,
                             origin.y + VISIBLESIZE.height - 2*label->getContentSize().height));
     this->addChild(label, 1);
