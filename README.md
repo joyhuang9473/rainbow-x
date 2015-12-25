@@ -1,4 +1,4 @@
-![rainbow-x@460](http://imgur.com/syiXlMB.png)
+![rainbow-x@480](http://imgur.com/syiXlMB.png)
 
 Rainbow-x
 =========
@@ -66,11 +66,11 @@ for mac:
 Screenshot
 -----------------------
 
-![screenshot1](http://imgur.com/c4c7Nub.png)
+![screenshot1](http://imgur.com/iqe75F8.png)
 
-![screenshot2](http://imgur.com/wmN4Zmz.png)
+![screenshot2](http://imgur.com/sx5zC2E.png)
 
-![screenshot3](http://imgur.com/4BG8VJD.png)
+![screenshot3](http://imgur.com/OKi8TxS.png)
 
 More details in [http://imgur.com/a/dHi9K](http://imgur.com/a/dHi9K)
 
