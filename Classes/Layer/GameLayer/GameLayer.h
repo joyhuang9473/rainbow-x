@@ -15,6 +15,7 @@ public:
 
     virtual bool init();
     CREATE_FUNC(GameLayer);
+
     void setPlayer(Role* player);
     void bindRoleToMap(Role* role, cocos2d::TMXTiledMap* map);
     void setEnemy(cocos2d::TMXTiledMap* map, Hero* enemy, Hero* target);

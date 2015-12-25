@@ -17,7 +17,7 @@ bool GameLayer::init() {
         return false;
     }
 
-	// Physics World
+    // Physics World
     this->initPhysics();
 
     // Stage

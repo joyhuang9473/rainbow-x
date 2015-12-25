@@ -16,7 +16,7 @@ public:
     const int findValueInWithLine(const char* chValue, int valueCol, const char* csvFilePath);
 
 private:
-	static CSVParseUtil* m_csvParseUtil;
+    static CSVParseUtil* m_csvParseUtil;
     std::map<const char*, std::vector<std::vector<std::string>>> m_csvDict;
 };
 
